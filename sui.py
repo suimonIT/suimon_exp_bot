@@ -417,45 +417,16 @@ web_app = web.Application()
 routes = web.RouteTableDef()
 
 # Utility functions
-async def should_process_message(message: types.Message) -> bool:
-    """
-    Check if the bot should process this message
-    Returns True if allowed, False if not allowed
-    """
-    # Allow messages from any bot admin in any chat
-    if message.from_user.id in OWNER_IDS:
+async def should_process_message(message):
+    # ALLES LÖSCHEN vor "if message.chat.type in ['group', 'supergroup']:"
+    
+    # NEU:
+    if message.chat.id == -1002664937769:  # HARDCODE!
         return True
     
-    # Handle private chats
-    if message.chat.type == 'private':
-        # Only allow admins in private chats
-        if message.from_user.id in OWNER_IDS:
-            return True
-        else:
-            # Send contact message for unauthorized private chats
-            await message.answer(
-                f"🤖 This bot only works in the authorized group.\n\n"
-                f"📍 Join our group: {ALLOWED_GROUP_LINK}\n"
-                f"👨‍💻 Contact developer: {DEVELOPER_CONTACT}"
-            )
-            return False
-    
-    # Handle group chats
-    if message.chat.type in ['group', 'supergroup']:
-        # Check if this is the allowed group
-        if ALLOWED_GROUP_ID and message.chat.id == ALLOWED_GROUP_ID:
-            return True
-        else:
-            # Send contact message for unauthorized groups
-            await message.answer(
-                f"🚫 This bot is not authorized for this group.\n\n"
-                f"🤖 This bot only works in: {ALLOWED_GROUP_LINK}\n"
-                f"👨‍💻 Contact developer: {DEVELOPER_CONTACT}"
-            )
-            return False
-    
-    # Deny all other chat types
+    await message.answer("❌ Falsche Gruppe!")
     return False
+
 
 async def is_user_admin(user_id: int) -> bool:
     """Check if user is the bot owner/admin"""
@@ -2090,3 +2061,4 @@ if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
 
     asyncio.run(main())
+
