@@ -51,12 +51,12 @@ if not OWNER_IDS and os.getenv('OWNER_ID'):
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
 ALLOWED_GROUP_LINK = os.getenv('ALLOWED_GROUP_LINK', 'the authorized group')
-DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@mrpdevlord')
+DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@IceFlurryX')
 
 # GitHub Configuration
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'Prosper0013')
-REPO_NAME = os.getenv('REPO_NAME', 'xp-leaderboard-data')
+GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'suimonIT')
+REPO_NAME = os.getenv('REPO_NAME', 'suimon_exp_bot')
 BRANCH = os.getenv('BRANCH', 'main')
 
 # Weekly Reset Configuration
@@ -2088,4 +2088,5 @@ async def main():
 
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
+
     asyncio.run(main())
