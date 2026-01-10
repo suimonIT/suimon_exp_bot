@@ -20,6 +20,20 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import CommandObject
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+logger.warning("📂 Files in BASE_DIR:")
+for f in os.listdir(BASE_DIR):
+    logger.warning(f" - {f}")
+
 # ---- Load config ----
 load_dotenv(".env.sui")
 BOT_TOKEN = os.getenv('BOT_TOKEN')
@@ -70,7 +84,7 @@ if not BOT_TOKEN:
 
 # ---- SQLite Database ----
 class SQLiteStorage:
-    def __init__(self, db_path="xp_bot.db"):
+    def __init__(self, db_path=DB_PATH):
         self.db_path = db_path
         self._init_db()
         self.create_weekly_reports_table()
@@ -397,7 +411,7 @@ class SQLiteStorage:
             return [result[0] for result in results]
         
 # Initialize database
-db = SQLiteStorage("xp_bot.db")
+db = SQLiteStorage("DB_PATH")
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -417,16 +431,45 @@ web_app = web.Application()
 routes = web.RouteTableDef()
 
 # Utility functions
-async def should_process_message(message):
-    # ALLES LÖSCHEN vor "if message.chat.type in ['group', 'supergroup']:"
-    
-    # NEU:
-    if message.chat.id == -1002664937769:  # HARDCODE!
+async def should_process_message(message: types.Message) -> bool:
+    """
+    Check if the bot should process this message
+    Returns True if allowed, False if not allowed
+    """
+    # Allow messages from any bot admin in any chat
+    if message.from_user.id in OWNER_IDS:
         return True
     
-    await message.answer("❌ Falsche Gruppe!")
+    # Handle private chats
+    if message.chat.type == 'private':
+        # Only allow admins in private chats
+        if message.from_user.id in OWNER_IDS:
+            return True
+        else:
+            # Send contact message for unauthorized private chats
+            await message.answer(
+                f"🤖 This bot only works in the authorized group.\n\n"
+                f"📍 Join our group: {ALLOWED_GROUP_LINK}\n"
+                f"👨‍💻 Contact developer: {DEVELOPER_CONTACT}"
+            )
+            return False
+    
+    # Handle group chats
+    if message.chat.type in ['group', 'supergroup']:
+        # Check if this is the allowed group
+        if ALLOWED_GROUP_ID and message.chat.id == ALLOWED_GROUP_ID:
+            return True
+        else:
+            # Send contact message for unauthorized groups
+            await message.answer(
+                f"🚫 This bot is not authorized for this group.\n\n"
+                f"🤖 This bot only works in: {ALLOWED_GROUP_LINK}\n"
+                f"👨‍💻 Contact developer: {DEVELOPER_CONTACT}"
+            )
+            return False
+    
+    # Deny all other chat types
     return False
-
 
 async def is_user_admin(user_id: int) -> bool:
     """Check if user is the bot owner/admin"""
@@ -690,7 +733,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("xp_bot.db") as conn:
+        with sqlite3.connect("DB_PATH") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -846,7 +889,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("xp_bot.db") as conn:
+    with sqlite3.connect("DB_PATH") as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
@@ -1872,7 +1915,7 @@ async def cmd_remove_role_threshold(message: types.Message):
 async def show_bot_stats(callback: CallbackQuery):
     """Show bot statistics with proper refresh handling"""
     try:
-        with sqlite3.connect("xp_bot.db") as conn:
+        with sqlite3.connect(DB_PATH) as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -2059,6 +2102,5 @@ async def main():
 
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
-
     asyncio.run(main())
 
