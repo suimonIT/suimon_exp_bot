@@ -818,19 +818,10 @@ async def start_web_server():
             raise e
 
 # Daily Check-in System
-def can_check_in_today(user_id: int) -> bool:
-    return db.can_check_in_today(user_id, get_today_key())
-
 def get_user_streak(user_id: int) -> int:
     return db.get_streak(user_id)
 
 def process_daily_checkin(user: types.User) -> Dict:
-    """Process daily check-in and return reward details"""
-    user_id = user.id
-    today_key = get_today_key()
-    
-    # Check if already checked in today
-    def process_daily_checkin(user: types.User) -> Dict:
     """Process daily check-in and return reward details"""
     user_id = user.id
     today_date = datetime.now(timezone.utc).date()
@@ -863,7 +854,7 @@ def process_daily_checkin(user: types.User) -> Dict:
         weekly_bonus = WEEKLY_STREAK_BONUS
         total_xp += weekly_bonus
 
-    # Update DB (WICHTIG: NUR EINMAL)
+    # Update DB
     db.update_streak_and_checkin(user_id, new_streak, today_key, total_xp)
     db.update_user_profile(user.id, user.username or '', user.first_name or '')
 
@@ -876,7 +867,6 @@ def process_daily_checkin(user: types.User) -> Dict:
         'weekly_bonus': weekly_bonus,
         'message': '✅ Daily check-in successful!'
     }
-
 # Most Active User System
 def track_daily_message(user: types.User, chat_id: int):
     """Track user's daily message count"""
@@ -2102,6 +2092,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
