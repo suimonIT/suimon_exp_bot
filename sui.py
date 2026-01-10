@@ -20,74 +20,12 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQu
 from aiogram.filters import CommandObject
 import sys
 
-# RENDER-FIX: Kein __file__ verfügbar
-BASE_DIR = os.getcwd() if not hasattr(sys.modules['__main__'], '__file__') else os.path.dirname(os.path.abspath(__file__))
-DB_PATH = "/tmp/suimon_xp.db"  # Render-safe persistent path
-
-# Sofort DB initialisieren
-def ensure_db_tables():
-    """Erstellt alle Tabellen sicher"""
-    try:
-        with sqlite3.connect(DB_PATH) as conn:
-            # Users table
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS users (
-                    user_id INTEGER PRIMARY KEY,
-                    username TEXT,
-                    first_name TEXT,
-                    xp INTEGER DEFAULT 0,
-                    streak INTEGER DEFAULT 0,
-                    last_checkin TEXT,
-                    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-                )
-            """)
-            # Daily activity
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS daily_activity (
-                    date TEXT,
-                    chat_id INTEGER,
-                    user_id INTEGER,
-                    message_count INTEGER DEFAULT 0,
-                    PRIMARY KEY (date, chat_id, user_id)
-                )
-            """)
-            # Role thresholds
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS role_thresholds (
-                    chat_id INTEGER,
-                    role_name TEXT,
-                    level_threshold INTEGER,
-                    PRIMARY KEY (chat_id, role_name)
-                )
-            """)
-            # User roles
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS user_roles (
-                    chat_id INTEGER,
-                    user_id INTEGER,
-                    role_name TEXT,
-                    assigned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    PRIMARY KEY (chat_id, user_id, role_name)
-                )
-            """)
-            # Weekly reports
-            conn.execute("""
-                CREATE TABLE IF NOT EXISTS weekly_reports (
-                    week_start_date TEXT PRIMARY KEY,
-                    winners_data TEXT,
-                    total_participants INTEGER,
-                    total_xp_distributed INTEGER,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-                )
-            """)
-            # Indexes
-            conn.execute("CREATE INDEX IF NOT EXISTS idx_users_xp ON users(xp DESC)")
-            conn.commit()
-        print("✅ Database tables created/verified")
-    except Exception as e:
-        print(f"❌ DB Error: {e}")
-
-ensure_db_tables()
+# RENDER-FIX: __file__ Problem lösen
+if '__file__' not in globals():
+    BASE_DIR = os.getcwd()
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
 
 logging.basicConfig(
     level=logging.INFO,
