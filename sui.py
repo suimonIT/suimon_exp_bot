@@ -830,47 +830,43 @@ def process_daily_checkin(user: types.User) -> Dict:
     today_key = get_today_key()
     
     # Check if already checked in today
-    if not can_check_in_today(user_id):
-        return {'success': False, 'message': 'You have already checked in today!'}
-    
-    # Get current streak
-    current_streak = get_user_streak(user_id)
+    def process_daily_checkin(user: types.User) -> Dict:
+    """Process daily check-in and return reward details"""
+    user_id = user.id
+    today_date = datetime.now(timezone.utc).date()
+    today_key = today_date.isoformat()
+
     user_profile = db.get_user_profile(user_id)
     last_checkin_date = user_profile[4] if user_profile else None
-    
-    # Check streak continuity
+
+    # Determine streak
     if last_checkin_date:
         last_date = datetime.strptime(last_checkin_date, '%Y-%m-%d').date()
-        today_date = datetime.now(timezone.utc).date()
-        yesterday = today_date - timedelta(days=1)
-        
-        if last_date == yesterday:
-            # Streak continues
-            new_streak = current_streak + 1
-        elif last_date == today_date:
-            # Already checked in today
+
+        if last_date == today_date:
             return {'success': False, 'message': 'You have already checked in today!'}
+
+        yesterday = today_date - timedelta(days=1)
+        if last_date == yesterday:
+            new_streak = get_user_streak(user_id) + 1
         else:
-            # Streak broken
             new_streak = 1
     else:
-        # First check-in
         new_streak = 1
-    
-    # Calculate XP reward
+
+    # Calculate XP
     streak_bonus = min(new_streak * 10, MAX_STREAK_BONUS)
     total_xp = DAILY_CHECKIN_BASE_XP + streak_bonus
-    
-    # Weekly bonus
+
     weekly_bonus = 0
-    if new_streak % 7 == 0:  # Every 7 days
+    if new_streak % 7 == 0:
         weekly_bonus = WEEKLY_STREAK_BONUS
         total_xp += weekly_bonus
-    
-    # Update records
+
+    # Update DB (WICHTIG: NUR EINMAL)
     db.update_streak_and_checkin(user_id, new_streak, today_key, total_xp)
     db.update_user_profile(user.id, user.username or '', user.first_name or '')
-    
+
     return {
         'success': True,
         'xp': total_xp,
@@ -878,7 +874,7 @@ def process_daily_checkin(user: types.User) -> Dict:
         'base_xp': DAILY_CHECKIN_BASE_XP,
         'streak_bonus': streak_bonus,
         'weekly_bonus': weekly_bonus,
-        'message': f'✅ Daily check-in successful!'
+        'message': '✅ Daily check-in successful!'
     }
 
 # Most Active User System
@@ -2106,6 +2102,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
