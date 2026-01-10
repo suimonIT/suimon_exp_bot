@@ -9,6 +9,7 @@ import socketserver
 import base64
 import requests
 import time
+
 from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, types
@@ -18,24 +19,6 @@ from aiohttp import web
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import CommandObject
-import sys
-
-# RENDER-FIX: __file__ Problem lösen
-if '__file__' not in globals():
-    BASE_DIR = os.getcwd()
-else:
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
-
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s"
-)
-logger = logging.getLogger(__name__)
-
-logger.warning("📂 Files in BASE_DIR:")
-for f in os.listdir(BASE_DIR):
-    logger.warning(f" - {f}")
 
 # ---- Load config ----
 load_dotenv(".env.sui")
@@ -57,7 +40,7 @@ if owner_ids_str:
         OWNER_IDS = []
         logger.warning("Invalid OWNER_IDS format in environment variables")
 
-# Keep backward compatibility  single OWNER_ID
+# Keep backward compatibility with single OWNER_ID
 if not OWNER_IDS and os.getenv('OWNER_ID'):
     try:
         OWNER_IDS = [int(os.getenv('OWNER_ID'))]
@@ -68,12 +51,12 @@ if not OWNER_IDS and os.getenv('OWNER_ID'):
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
 ALLOWED_GROUP_LINK = os.getenv('ALLOWED_GROUP_LINK', 'the authorized group')
-DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@IceFlurryX')
+DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@iceflurryx')
 
 # GitHub Configuration
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'suimonIT')
-REPO_NAME = os.getenv('REPO_NAME', 'suimon_exp_bot')
+GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'Prosper0013')
+REPO_NAME = os.getenv('REPO_NAME', 'xp-leaderboard-data')
 BRANCH = os.getenv('BRANCH', 'main')
 
 # Weekly Reset Configuration
@@ -87,21 +70,21 @@ if not BOT_TOKEN:
 
 # ---- SQLite Database ----
 class SQLiteStorage:
-    def __init__(self, db_path=DB_PATH):
+    def __init__(self, db_path="xp_bot.db"):
         self.db_path = db_path
         self._init_db()
         self.create_weekly_reports_table()
     
     def _init_db(self):
         with sqlite3.connect(self.db_path) as conn:
-            # Users table - stores XP, s, and user info
+            # Users table - stores XP, streaks, and user info
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS users (
                     user_id INTEGER PRIMARY KEY,
                     username TEXT,
                     first_name TEXT,
                     xp INTEGER DEFAULT 0,
-                     INTEGER DEFAULT 0,
+                    streak INTEGER DEFAULT 0,
                     last_checkin TEXT,
                     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
@@ -200,7 +183,7 @@ class SQLiteStorage:
     def get_user_profile(self, user_id: int):
         with sqlite3.connect(self.db_path) as conn:
             return conn.execute(
-                "SELECT username, first_name, xp, , last_checkin FROM users WHERE user_id = ?",
+                "SELECT username, first_name, xp, streak, last_checkin FROM users WHERE user_id = ?",
                 (user_id,)
             ).fetchone()
     
@@ -211,18 +194,21 @@ class SQLiteStorage:
                 "SELECT last_checkin FROM users WHERE user_id = ?", (user_id,)
             ).fetchone()
             return not last_checkin or last_checkin[0] != today
-            
+    
     def update_streak_and_checkin(self, user_id: int, streak: int, today: str, xp_earned: int):
         with sqlite3.connect(self.db_path) as conn:
-            conn.execute("""
-                INSERT INTO users (user_id, xp, streak, last_checkin)
-                VALUES (?, ?, ?, ?)
-                ON CONFLICT(user_id) DO UPDATE SET
-                    streak = excluded.streak,
-                    last_checkin = excluded.last_checkin,
-                    xp = users.xp + excluded.xp
-            """, (user_id, xp_earned, streak, today))
-        
+            conn.execute(
+                "UPDATE users SET streak = ?, last_checkin = ?, xp = xp + ? WHERE user_id = ?",
+                (streak, today, xp_earned, user_id)
+            )
+    
+    def get_streak(self, user_id: int) -> int:
+        with sqlite3.connect(self.db_path) as conn:
+            result = conn.execute(
+                "SELECT streak FROM users WHERE user_id = ?", (user_id,)
+            ).fetchone()
+            return result[0] if result else 0
+    
     # Daily activity operations
     def track_daily_message(self, user_id: int, chat_id: int, today: str):
         with sqlite3.connect(self.db_path) as conn:
@@ -411,7 +397,7 @@ class SQLiteStorage:
             return [result[0] for result in results]
         
 # Initialize database
-db = SQLiteStorage("DB_PATH")
+db = SQLiteStorage("xp_bot.db")
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -733,7 +719,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("DB_PATH") as conn:
+        with sqlite3.connect("xp_bot.db") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -815,46 +801,59 @@ async def start_web_server():
             raise e
 
 # Daily Check-in System
+def can_check_in_today(user_id: int) -> bool:
+    return db.can_check_in_today(user_id, get_today_key())
+
 def get_user_streak(user_id: int) -> int:
     return db.get_streak(user_id)
 
 def process_daily_checkin(user: types.User) -> Dict:
     """Process daily check-in and return reward details"""
     user_id = user.id
-    today_date = datetime.now(timezone.utc).date()
-    today_key = today_date.isoformat()
-
+    today_key = get_today_key()
+    
+    # Check if already checked in today
+    if not can_check_in_today(user_id):
+        return {'success': False, 'message': 'You have already checked in today!'}
+    
+    # Get current streak
+    current_streak = get_user_streak(user_id)
     user_profile = db.get_user_profile(user_id)
     last_checkin_date = user_profile[4] if user_profile else None
-
-    # Determine streak
+    
+    # Check streak continuity
     if last_checkin_date:
         last_date = datetime.strptime(last_checkin_date, '%Y-%m-%d').date()
-
-        if last_date == today_date:
-            return {'success': False, 'message': 'You have already checked in today!'}
-
+        today_date = datetime.now(timezone.utc).date()
         yesterday = today_date - timedelta(days=1)
+        
         if last_date == yesterday:
-            new_streak = get_user_streak(user_id) + 1
+            # Streak continues
+            new_streak = current_streak + 1
+        elif last_date == today_date:
+            # Already checked in today
+            return {'success': False, 'message': 'You have already checked in today!'}
         else:
+            # Streak broken
             new_streak = 1
     else:
+        # First check-in
         new_streak = 1
-
-    # Calculate XP
+    
+    # Calculate XP reward
     streak_bonus = min(new_streak * 10, MAX_STREAK_BONUS)
     total_xp = DAILY_CHECKIN_BASE_XP + streak_bonus
-
+    
+    # Weekly bonus
     weekly_bonus = 0
-    if new_streak % 7 == 0:
+    if new_streak % 7 == 0:  # Every 7 days
         weekly_bonus = WEEKLY_STREAK_BONUS
         total_xp += weekly_bonus
-
-    # Update DB
+    
+    # Update records
     db.update_streak_and_checkin(user_id, new_streak, today_key, total_xp)
     db.update_user_profile(user.id, user.username or '', user.first_name or '')
-
+    
     return {
         'success': True,
         'xp': total_xp,
@@ -862,8 +861,9 @@ def process_daily_checkin(user: types.User) -> Dict:
         'base_xp': DAILY_CHECKIN_BASE_XP,
         'streak_bonus': streak_bonus,
         'weekly_bonus': weekly_bonus,
-        'message': '✅ Daily check-in successful!'
+        'message': f'✅ Daily check-in successful!'
     }
+
 # Most Active User System
 def track_daily_message(user: types.User, chat_id: int):
     """Track user's daily message count"""
@@ -875,7 +875,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("DB_PATH") as conn:
+    with sqlite3.connect("xp_bot.db") as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
@@ -1558,7 +1558,7 @@ async def cmd_xp(message: types.Message):
     sent_message = await message.reply(response)
     await delete_command_message(message)
 
-@dp.message(Command('top'))
+@dp.message(Command('leaderboard', 'lb', 'top'))
 async def cmd_leaderboard(message: types.Message):
     """Show XP leaderboard"""
     if not await should_process_message(message):
@@ -1901,7 +1901,7 @@ async def cmd_remove_role_threshold(message: types.Message):
 async def show_bot_stats(callback: CallbackQuery):
     """Show bot statistics with proper refresh handling"""
     try:
-        with sqlite3.connect(DB_PATH) as conn:
+        with sqlite3.connect("xp_bot.db") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -2089,9 +2089,6 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
-
-
-
 
 
 
