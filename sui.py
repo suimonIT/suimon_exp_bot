@@ -1559,7 +1559,7 @@ async def cmd_xp(message: types.Message):
     sent_message = await message.reply(response)
     await delete_command_message(message)
 
-@dp.message(Command('leaderboard', 'lb', 'top'))
+@dp.message(Command('top'))
 async def cmd_leaderboard(message: types.Message):
     """Show XP leaderboard"""
     if not await should_process_message(message):
@@ -2090,6 +2090,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
