@@ -213,11 +213,15 @@ class SQLiteStorage:
             return not last_checkin or last_checkin[0] != today
     
     def update_streak_and_checkin(self, user_id: int, streak: int, today: str, xp_earned: int):
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute(
-                "UPDATE users SET streak = ?, last_checkin = ?, xp = xp + ? WHERE user_id = ?",
-                (streak, today, xp_earned, user_id)
-            )
+    with sqlite3.connect(self.db_path) as conn:
+        conn.execute("""
+            INSERT INTO users (user_id, xp, streak, last_checkin)
+            VALUES (?, ?, ?, ?)
+            ON CONFLICT(user_id) DO UPDATE SET
+                streak = excluded.streak,
+                last_checkin = excluded.last_checkin,
+                xp = users.xp + excluded.xp
+        """, (user_id, xp_earned, streak, today))
     
     def get_streak(self, user_id: int) -> int:
         with sqlite3.connect(self.db_path) as conn:
@@ -2092,6 +2096,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
