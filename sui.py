@@ -57,7 +57,7 @@ if owner_ids_str:
         OWNER_IDS = []
         logger.warning("Invalid OWNER_IDS format in environment variables")
 
-# Keep backward compatibility with single OWNER_ID
+# Keep backward compatibility  single OWNER_ID
 if not OWNER_IDS and os.getenv('OWNER_ID'):
     try:
         OWNER_IDS = [int(os.getenv('OWNER_ID'))]
@@ -212,7 +212,7 @@ class SQLiteStorage:
             ).fetchone()
             return not last_checkin or last_checkin[0] != today
     
-    def update_streak_and_checkin(self, user_id: int, streak: int, today: str, xp_earned: int):
+   def update_streak_and_checkin(self, user_id: int, streak: int, today: str, xp_earned: int):
     with sqlite3.connect(self.db_path) as conn:
         conn.execute("""
             INSERT INTO users (user_id, xp, streak, last_checkin)
@@ -222,14 +222,7 @@ class SQLiteStorage:
                 last_checkin = excluded.last_checkin,
                 xp = users.xp + excluded.xp
         """, (user_id, xp_earned, streak, today))
-    
-    def get_streak(self, user_id: int) -> int:
-        with sqlite3.connect(self.db_path) as conn:
-            result = conn.execute(
-                "SELECT streak FROM users WHERE user_id = ?", (user_id,)
-            ).fetchone()
-            return result[0] if result else 0
-    
+        
     # Daily activity operations
     def track_daily_message(self, user_id: int, chat_id: int, today: str):
         with sqlite3.connect(self.db_path) as conn:
@@ -2096,6 +2089,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
