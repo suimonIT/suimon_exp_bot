@@ -19,15 +19,15 @@ from aiohttp import web
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import CommandObject
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Fix for Render
+import sys
+BASE_DIR = os.getcwd() if not hasattr(sys.modules['__main__'], '__file__') else os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
-
 logger = logging.getLogger(__name__)
 
 logger.warning("📂 Files in BASE_DIR:")
@@ -2103,5 +2103,6 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
