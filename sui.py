@@ -94,14 +94,14 @@ class SQLiteStorage:
     
     def _init_db(self):
         with sqlite3.connect(self.db_path) as conn:
-            # Users table - stores XP, streaks, and user info
+            # Users table - stores XP, s, and user info
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS users (
                     user_id INTEGER PRIMARY KEY,
                     username TEXT,
                     first_name TEXT,
                     xp INTEGER DEFAULT 0,
-                    streak INTEGER DEFAULT 0,
+                     INTEGER DEFAULT 0,
                     last_checkin TEXT,
                     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
@@ -200,7 +200,7 @@ class SQLiteStorage:
     def get_user_profile(self, user_id: int):
         with sqlite3.connect(self.db_path) as conn:
             return conn.execute(
-                "SELECT username, first_name, xp, streak, last_checkin FROM users WHERE user_id = ?",
+                "SELECT username, first_name, xp, , last_checkin FROM users WHERE user_id = ?",
                 (user_id,)
             ).fetchone()
     
@@ -213,7 +213,7 @@ class SQLiteStorage:
             return not last_checkin or last_checkin[0] != today
     
    def update_streak_and_checkin(self, user_id: int, streak: int, today: str, xp_earned: int):
-    with sqlite3.connect(self.db_path) as conn:
+       with sqlite3.connect(self.db_path) as conn:
         conn.execute("""
             INSERT INTO users (user_id, xp, streak, last_checkin)
             VALUES (?, ?, ?, ?)
@@ -2089,6 +2089,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
