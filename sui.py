@@ -20,6 +20,20 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import CommandObject
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+logger.warning("📂 Files in BASE_DIR:")
+for f in os.listdir(BASE_DIR):
+    logger.warning(f" - {f}")
+
 # ---- Load config ----
 load_dotenv(".env.sui")
 BOT_TOKEN = os.getenv('BOT_TOKEN')
@@ -32,23 +46,18 @@ logger = logging.getLogger(__name__)
 
 # Multiple admin support
 OWNER_IDS = []
-
-owner_ids_str = os.getenv("OWNER_IDS")
+owner_ids_str = os.getenv('OWNER_IDS')
 if owner_ids_str:
     try:
-        OWNER_IDS = [
-            int(uid.strip())
-            for uid in owner_ids_str.split(",")
-            if uid.strip().isdigit()
-        ]
+        OWNER_IDS = [int(uid.strip()) for uid in owner_ids_str.split(',') if uid.strip().isdigit()]
     except ValueError:
         OWNER_IDS = []
         logger.warning("Invalid OWNER_IDS format in environment variables")
 
 # Keep backward compatibility with single OWNER_ID
-if not OWNER_IDS and os.getenv("OWNER_ID"):
+if not OWNER_IDS and os.getenv('OWNER_ID'):
     try:
-        OWNER_IDS = [int(os.getenv("OWNER_ID"))]
+        OWNER_IDS = [int(os.getenv('OWNER_ID'))]
     except ValueError:
         OWNER_IDS = []
         logger.warning("Invalid OWNER_ID format in environment variables")
@@ -56,12 +65,12 @@ if not OWNER_IDS and os.getenv("OWNER_ID"):
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
 ALLOWED_GROUP_LINK = os.getenv('ALLOWED_GROUP_LINK', 'the authorized group')
-DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@iceflurryx')
+DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@IceFlurryX')
 
 # GitHub Configuration
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'Prosper0013')
-REPO_NAME = os.getenv('REPO_NAME', 'xp-leaderboard-data')
+GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'suimonIT')
+REPO_NAME = os.getenv('REPO_NAME', 'suimon_exp_bot')
 BRANCH = os.getenv('BRANCH', 'main')
 
 # Weekly Reset Configuration
@@ -75,7 +84,7 @@ if not BOT_TOKEN:
 
 # ---- SQLite Database ----
 class SQLiteStorage:
-    def __init__(self, db_path="xp_bot.db"):
+    def __init__(self, db_path=DB_PATH):
         self.db_path = db_path
         self._init_db()
         self.create_weekly_reports_table()
@@ -288,7 +297,7 @@ class SQLiteStorage:
         """Reset all users' XP to 0 for new week"""
         with sqlite3.connect(self.db_path) as conn:
             conn.execute("UPDATE users SET xp = 0")
-            .info("Weekly XP reset completed")
+            logger.info("Weekly XP reset completed")
 
     def backup_weekly_results(self, winners_data: List[Dict]):
         """Backup weekly winners to a separate table for history"""
@@ -339,7 +348,7 @@ class SQLiteStorage:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
-            .info("Weekly reports table ensured")
+            logger.info("Weekly reports table ensured")
 
     def save_weekly_report(self, week_start_date: str, winners_data: List[Dict], 
                           total_participants: int, total_xp_distributed: int):
@@ -402,7 +411,7 @@ class SQLiteStorage:
             return [result[0] for result in results]
         
 # Initialize database
-db = SQLiteStorage("xp_bot.db")
+db = SQLiteStorage("DB_PATH")
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -472,9 +481,9 @@ async def delete_command_message(message: types.Message):
         # Only delete in groups, not in private chats
         if message.chat.type in ['group', 'supergroup']:
             await message.delete()
-            .info(f"Deleted command message from {message.from_user.id} in chat {message.chat.id}")
+            logger.info(f"Deleted command message from {message.from_user.id} in chat {message.chat.id}")
     except Exception as e:
-        .debug(f"Could not delete message: {e}")
+        logger.debug(f"Could not delete message: {e}")
 
 def format_response_with_username(message: types.Message, response: str) -> str:
     """Format response with username mention"""
@@ -497,7 +506,7 @@ def get_today_key() -> str:
 def award_xp(user: types.User, amount: int, reason: str = ""):
     db.award_xp(user.id, amount)
     db.update_user_profile(user.id, user.username or '', user.first_name or '')
-    .info(f"Awarded {amount} XP to {user.id} for: {reason}")
+    logger.info(f"Awarded {amount} XP to {user.id} for: {reason}")
 
 def get_xp_and_rank(user_id: int) -> Tuple[int, Optional[int]]:
     return db.get_xp_and_rank(user_id)
@@ -596,17 +605,17 @@ def start_simple_server():
     """Start a simple HTTP server on port 8081"""
     try:
         server = HTTPServer(('0.0.0.0', 8081), APIHandler)
-        .info("🌐 Simple API server started on port 8081")
-        .info("📊 API URL: http://204.12.218.42:8081/api/leaderboard")
+        logger.info("🌐 Simple API server started on port 8081")
+        logger.info("📊 API URL: http://204.12.218.42:8081/api/leaderboard")
         server.serve_forever()
     except Exception as e:
-        .error(f"❌ Failed to start simple server: {e}")
+        logger.error(f"❌ Failed to start simple server: {e}")
 
 def update_github_leaderboard():
     """Update leaderboard data on GitHub with better error handling"""
     try:
         if not GITHUB_TOKEN:
-            .warning("GitHub token not configured")
+            logger.warning("GitHub token not configured")
             return False
             
         # Get leaderboard data from your database
@@ -724,7 +733,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("xp_bot.db") as conn:
+        with sqlite3.connect("DB_PATH") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -814,52 +823,51 @@ def get_user_streak(user_id: int) -> int:
 
 def process_daily_checkin(user: types.User) -> Dict:
     """Process daily check-in and return reward details"""
-    
     user_id = user.id
-
-    # 🔧 WICHTIGER FIX:
-    # Stelle sicher, dass der User sofort in der DB existiert
-    db.update_user_profile(user.id, user.username or '', user.first_name or '')
-
     today_key = get_today_key()
     
     # Check if already checked in today
     if not can_check_in_today(user_id):
         return {'success': False, 'message': 'You have already checked in today!'}
-
+    
     # Get current streak
     current_streak = get_user_streak(user_id)
     user_profile = db.get_user_profile(user_id)
     last_checkin_date = user_profile[4] if user_profile else None
-
+    
     # Check streak continuity
     if last_checkin_date:
         last_date = datetime.strptime(last_checkin_date, '%Y-%m-%d').date()
         today_date = datetime.now(timezone.utc).date()
         yesterday = today_date - timedelta(days=1)
-
+        
         if last_date == yesterday:
+            # Streak continues
             new_streak = current_streak + 1
         elif last_date == today_date:
+            # Already checked in today
             return {'success': False, 'message': 'You have already checked in today!'}
         else:
+            # Streak broken
             new_streak = 1
     else:
+        # First check-in
         new_streak = 1
-
+    
     # Calculate XP reward
     streak_bonus = min(new_streak * 10, MAX_STREAK_BONUS)
     total_xp = DAILY_CHECKIN_BASE_XP + streak_bonus
-
+    
     # Weekly bonus
     weekly_bonus = 0
-    if new_streak % 7 == 0:
+    if new_streak % 7 == 0:  # Every 7 days
         weekly_bonus = WEEKLY_STREAK_BONUS
         total_xp += weekly_bonus
-
+    
     # Update records
     db.update_streak_and_checkin(user_id, new_streak, today_key, total_xp)
-
+    db.update_user_profile(user.id, user.username or '', user.first_name or '')
+    
     return {
         'success': True,
         'xp': total_xp,
@@ -867,7 +875,7 @@ def process_daily_checkin(user: types.User) -> Dict:
         'base_xp': DAILY_CHECKIN_BASE_XP,
         'streak_bonus': streak_bonus,
         'weekly_bonus': weekly_bonus,
-        'message': '✅ Daily check-in successful!'
+        'message': f'✅ Daily check-in successful!'
     }
 
 # Most Active User System
@@ -881,7 +889,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("xp_bot.db") as conn:
+    with sqlite3.connect("DB_PATH") as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
@@ -1465,8 +1473,9 @@ async def process_weekly_reset():
                 parse_mode='Markdown'
             )
             logger.info(f"Weekly winners announced in group {ALLOWED_GROUP_ID}")
-        except Exception:
-            logger.exception("Failed to announce weekly winners")
+        except Exception as e:
+            logger.error(f"Failed to announce weekly winners: {e}")
+    
     # Reset all XP for new week
     db.reset_weekly_xp()
     
@@ -1563,7 +1572,7 @@ async def cmd_xp(message: types.Message):
     sent_message = await message.reply(response)
     await delete_command_message(message)
 
-@dp.message(Command('top'))
+@dp.message(Command('leaderboard', 'lb', 'top'))
 async def cmd_leaderboard(message: types.Message):
     """Show XP leaderboard"""
     if not await should_process_message(message):
@@ -1906,7 +1915,7 @@ async def cmd_remove_role_threshold(message: types.Message):
 async def show_bot_stats(callback: CallbackQuery):
     """Show bot statistics with proper refresh handling"""
     try:
-        with sqlite3.connect("xp_bot.db") as conn:
+        with sqlite3.connect(DB_PATH) as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -2094,14 +2103,3 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
-
-
-
-
-
-
-
-
-
-
-
