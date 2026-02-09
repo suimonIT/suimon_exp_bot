@@ -77,8 +77,15 @@
       "username": "@PeterGeorg36078",
       "xp": 1,
       "level": 0
+    },
+    {
+      "rank": 12,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 1,
+      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T21:13:48.386573",
-  "total_users": 11
+  "last_updated": "2026-02-09T21:15:49.476051",
+  "total_users": 12
 }
