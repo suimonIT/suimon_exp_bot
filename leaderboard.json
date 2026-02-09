@@ -84,8 +84,15 @@
       "username": "@PeterGeorg36078",
       "xp": 1,
       "level": 0
+    },
+    {
+      "rank": 13,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 1,
+      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T22:00:16.367056",
-  "total_users": 12
+  "last_updated": "2026-02-09T22:02:17.558052",
+  "total_users": 13
 }
