@@ -7,8 +7,15 @@
       "username": "@IceFlurryX",
       "xp": 60,
       "level": 0
+    },
+    {
+      "rank": 2,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 2,
+      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T11:31:02.909419",
-  "total_users": 1
+  "last_updated": "2026-02-09T11:33:04.064764",
+  "total_users": 2
 }
