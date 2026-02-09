@@ -20,20 +20,6 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import CommandObject
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
-
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s"
-)
-
-logger = logging.getLogger(__name__)
-
-logger.warning("📂 Files in BASE_DIR:")
-for f in os.listdir(BASE_DIR):
-    logger.warning(f" - {f}")
-
 # ---- Load config ----
 load_dotenv(".env.sui")
 BOT_TOKEN = os.getenv('BOT_TOKEN')
@@ -65,12 +51,12 @@ if not OWNER_IDS and os.getenv('OWNER_ID'):
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
 ALLOWED_GROUP_LINK = os.getenv('ALLOWED_GROUP_LINK', 'the authorized group')
-DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@IceFlurryX')
+DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@iceflurryx')
 
 # GitHub Configuration
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'suimonIT')
-REPO_NAME = os.getenv('REPO_NAME', 'suimon_exp_bot')
+GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'Prosper0013')
+REPO_NAME = os.getenv('REPO_NAME', 'xp-leaderboard-data')
 BRANCH = os.getenv('BRANCH', 'main')
 
 # Weekly Reset Configuration
@@ -84,7 +70,7 @@ if not BOT_TOKEN:
 
 # ---- SQLite Database ----
 class SQLiteStorage:
-    def __init__(self, db_path=DB_PATH):
+    def __init__(self, db_path="xp_bot.db"):
         self.db_path = db_path
         self._init_db()
         self.create_weekly_reports_table()
@@ -411,7 +397,7 @@ class SQLiteStorage:
             return [result[0] for result in results]
         
 # Initialize database
-db = SQLiteStorage("DB_PATH")
+db = SQLiteStorage("xp_bot.db")
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -733,7 +719,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("DB_PATH") as conn:
+        with sqlite3.connect("xp_bot.db") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -823,51 +809,52 @@ def get_user_streak(user_id: int) -> int:
 
 def process_daily_checkin(user: types.User) -> Dict:
     """Process daily check-in and return reward details"""
+    
     user_id = user.id
+
+    # 🔧 WICHTIGER FIX:
+    # Stelle sicher, dass der User sofort in der DB existiert
+    db.update_user_profile(user.id, user.username or '', user.first_name or '')
+
     today_key = get_today_key()
     
     # Check if already checked in today
     if not can_check_in_today(user_id):
         return {'success': False, 'message': 'You have already checked in today!'}
-    
+
     # Get current streak
     current_streak = get_user_streak(user_id)
     user_profile = db.get_user_profile(user_id)
     last_checkin_date = user_profile[4] if user_profile else None
-    
+
     # Check streak continuity
     if last_checkin_date:
         last_date = datetime.strptime(last_checkin_date, '%Y-%m-%d').date()
         today_date = datetime.now(timezone.utc).date()
         yesterday = today_date - timedelta(days=1)
-        
+
         if last_date == yesterday:
-            # Streak continues
             new_streak = current_streak + 1
         elif last_date == today_date:
-            # Already checked in today
             return {'success': False, 'message': 'You have already checked in today!'}
         else:
-            # Streak broken
             new_streak = 1
     else:
-        # First check-in
         new_streak = 1
-    
+
     # Calculate XP reward
     streak_bonus = min(new_streak * 10, MAX_STREAK_BONUS)
     total_xp = DAILY_CHECKIN_BASE_XP + streak_bonus
-    
+
     # Weekly bonus
     weekly_bonus = 0
-    if new_streak % 7 == 0:  # Every 7 days
+    if new_streak % 7 == 0:
         weekly_bonus = WEEKLY_STREAK_BONUS
         total_xp += weekly_bonus
-    
+
     # Update records
     db.update_streak_and_checkin(user_id, new_streak, today_key, total_xp)
-    db.update_user_profile(user.id, user.username or '', user.first_name or '')
-    
+
     return {
         'success': True,
         'xp': total_xp,
@@ -875,7 +862,7 @@ def process_daily_checkin(user: types.User) -> Dict:
         'base_xp': DAILY_CHECKIN_BASE_XP,
         'streak_bonus': streak_bonus,
         'weekly_bonus': weekly_bonus,
-        'message': f'✅ Daily check-in successful!'
+        'message': '✅ Daily check-in successful!'
     }
 
 # Most Active User System
@@ -889,7 +876,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("DB_PATH") as conn:
+    with sqlite3.connect("xp_bot.db") as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
@@ -1466,15 +1453,20 @@ async def process_weekly_reset():
     # Announce winners in the allowed group
     if ALLOWED_GROUP_ID:
         try:
-            announcement = '\n'.join(announcement_lines)
+            html_lines = []
+            for line in announcement_lines:
+                html_lines.append(html.escape(str(line)))
+                
+            announcement = "<br>".join(html_lines)
+
             await bot.send_message(
                 ALLOWED_GROUP_ID,
                 announcement,
-                parse_mode='Markdown'
+                parse_mode="HTML"
             )
             logger.info(f"Weekly winners announced in group {ALLOWED_GROUP_ID}")
-        except Exception as e:
-            logger.error(f"Failed to announce weekly winners: {e}")
+        except Exception:
+            logger.exception("Failed to announce weekly winners")
     
     # Reset all XP for new week
     db.reset_weekly_xp()
@@ -1572,7 +1564,7 @@ async def cmd_xp(message: types.Message):
     sent_message = await message.reply(response)
     await delete_command_message(message)
 
-@dp.message(Command('leaderboard', 'lb', 'top'))
+@dp.message(Command('top'))
 async def cmd_leaderboard(message: types.Message):
     """Show XP leaderboard"""
     if not await should_process_message(message):
@@ -1915,7 +1907,7 @@ async def cmd_remove_role_threshold(message: types.Message):
 async def show_bot_stats(callback: CallbackQuery):
     """Show bot statistics with proper refresh handling"""
     try:
-        with sqlite3.connect(DB_PATH) as conn:
+        with sqlite3.connect("xp_bot.db") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -2103,3 +2095,12 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
+
+
+
+
+
+
+
+
