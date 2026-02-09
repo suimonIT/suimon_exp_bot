@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 66,
+      "xp": 67,
       "level": 0
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 32,
+      "xp": 33,
       "level": 0
     },
     {
@@ -79,6 +79,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T20:11:10.783696",
+  "last_updated": "2026-02-09T20:13:12.023163",
   "total_users": 11
 }
