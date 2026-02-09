@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 78,
+      "xp": 80,
       "level": 0
     },
     {
       "rank": 3,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 74,
+      "xp": 75,
       "level": 0
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 3,
+      "xp": 5,
       "level": 0
     },
     {
@@ -93,6 +93,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T22:14:25.043735",
+  "last_updated": "2026-02-09T22:16:26.131119",
   "total_users": 13
 }
