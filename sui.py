@@ -1,4 +1,5 @@
 import os
+import html
 import asyncio
 import logging
 import sqlite3
