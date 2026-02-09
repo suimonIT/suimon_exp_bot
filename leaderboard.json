@@ -10,12 +10,19 @@
     },
     {
       "rank": 2,
+      "user_id": 8068660109,
+      "username": "@OfficerJenny_SUI",
+      "xp": 60,
+      "level": 0
+    },
+    {
+      "rank": 3,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 3,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T11:37:06.422364",
-  "total_users": 2
+  "last_updated": "2026-02-09T11:39:07.826709",
+  "total_users": 3
 }
