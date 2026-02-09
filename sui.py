@@ -32,21 +32,26 @@ logger = logging.getLogger(__name__)
 
 # Multiple admin support
 OWNER_IDS = []
-owner_ids_str = os.getenv('OWNER_IDS')
+
+owner_ids_str = os.getenv("OWNER_IDS")
 if owner_ids_str:
     try:
-        OWNER_IDS = [int(uid.strip()) for uid in owner_ids_str.split(',') if uid.strip().isdigit()]
+        OWNER_IDS = [
+            int(uid.strip())
+            for uid in owner_ids_str.split(",")
+            if uid.strip().isdigit()
+        ]
     except ValueError:
         OWNER_IDS = []
-        .warning("Invalid OWNER_IDS format in environment variables")
+        logger.warning("Invalid OWNER_IDS format in environment variables")
 
 # Keep backward compatibility with single OWNER_ID
-if not OWNER_IDS and os.getenv('OWNER_ID'):
+if not OWNER_IDS and os.getenv("OWNER_ID"):
     try:
-        OWNER_IDS = [int(os.getenv('OWNER_ID'))]
+        OWNER_IDS = [int(os.getenv("OWNER_ID"))]
     except ValueError:
         OWNER_IDS = []
-        .warning("Invalid OWNER_ID format in environment variables")
+        logger.warning("Invalid OWNER_ID format in environment variables")
 
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
@@ -1462,7 +1467,6 @@ async def process_weekly_reset():
             logger.info(f"Weekly winners announced in group {ALLOWED_GROUP_ID}")
         except Exception:
             logger.exception("Failed to announce weekly winners")
-    
     # Reset all XP for new week
     db.reset_weekly_xp()
     
@@ -2090,6 +2094,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
