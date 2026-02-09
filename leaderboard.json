@@ -56,8 +56,15 @@
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
+    },
+    {
+      "rank": 9,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 1,
+      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T16:38:12.885895",
-  "total_users": 8
+  "last_updated": "2026-02-09T16:40:14.778052",
+  "total_users": 9
 }
