@@ -38,7 +38,7 @@ if owner_ids_str:
         OWNER_IDS = [int(uid.strip()) for uid in owner_ids_str.split(',') if uid.strip().isdigit()]
     except ValueError:
         OWNER_IDS = []
-        logger.warning("Invalid OWNER_IDS format in environment variables")
+        .warning("Invalid OWNER_IDS format in environment variables")
 
 # Keep backward compatibility with single OWNER_ID
 if not OWNER_IDS and os.getenv('OWNER_ID'):
@@ -46,7 +46,7 @@ if not OWNER_IDS and os.getenv('OWNER_ID'):
         OWNER_IDS = [int(os.getenv('OWNER_ID'))]
     except ValueError:
         OWNER_IDS = []
-        logger.warning("Invalid OWNER_ID format in environment variables")
+        .warning("Invalid OWNER_ID format in environment variables")
 
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
@@ -283,7 +283,7 @@ class SQLiteStorage:
         """Reset all users' XP to 0 for new week"""
         with sqlite3.connect(self.db_path) as conn:
             conn.execute("UPDATE users SET xp = 0")
-            logger.info("Weekly XP reset completed")
+            .info("Weekly XP reset completed")
 
     def backup_weekly_results(self, winners_data: List[Dict]):
         """Backup weekly winners to a separate table for history"""
@@ -334,7 +334,7 @@ class SQLiteStorage:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
-            logger.info("Weekly reports table ensured")
+            .info("Weekly reports table ensured")
 
     def save_weekly_report(self, week_start_date: str, winners_data: List[Dict], 
                           total_participants: int, total_xp_distributed: int):
@@ -467,9 +467,9 @@ async def delete_command_message(message: types.Message):
         # Only delete in groups, not in private chats
         if message.chat.type in ['group', 'supergroup']:
             await message.delete()
-            logger.info(f"Deleted command message from {message.from_user.id} in chat {message.chat.id}")
+            .info(f"Deleted command message from {message.from_user.id} in chat {message.chat.id}")
     except Exception as e:
-        logger.debug(f"Could not delete message: {e}")
+        .debug(f"Could not delete message: {e}")
 
 def format_response_with_username(message: types.Message, response: str) -> str:
     """Format response with username mention"""
@@ -492,7 +492,7 @@ def get_today_key() -> str:
 def award_xp(user: types.User, amount: int, reason: str = ""):
     db.award_xp(user.id, amount)
     db.update_user_profile(user.id, user.username or '', user.first_name or '')
-    logger.info(f"Awarded {amount} XP to {user.id} for: {reason}")
+    .info(f"Awarded {amount} XP to {user.id} for: {reason}")
 
 def get_xp_and_rank(user_id: int) -> Tuple[int, Optional[int]]:
     return db.get_xp_and_rank(user_id)
@@ -591,17 +591,17 @@ def start_simple_server():
     """Start a simple HTTP server on port 8081"""
     try:
         server = HTTPServer(('0.0.0.0', 8081), APIHandler)
-        logger.info("🌐 Simple API server started on port 8081")
-        logger.info("📊 API URL: http://204.12.218.42:8081/api/leaderboard")
+        .info("🌐 Simple API server started on port 8081")
+        .info("📊 API URL: http://204.12.218.42:8081/api/leaderboard")
         server.serve_forever()
     except Exception as e:
-        logger.error(f"❌ Failed to start simple server: {e}")
+        .error(f"❌ Failed to start simple server: {e}")
 
 def update_github_leaderboard():
     """Update leaderboard data on GitHub with better error handling"""
     try:
         if not GITHUB_TOKEN:
-            logger.warning("GitHub token not configured")
+            .warning("GitHub token not configured")
             return False
             
         # Get leaderboard data from your database
@@ -1460,8 +1460,8 @@ async def process_weekly_reset():
                 parse_mode='Markdown'
             )
             logger.info(f"Weekly winners announced in group {ALLOWED_GROUP_ID}")
-        except Exception as e:
-            logger.error(f"Failed to announce weekly winners: {e}")
+        except Exception:
+            logger.exception("Failed to announce weekly winners")
     
     # Reset all XP for new week
     db.reset_weekly_xp()
@@ -2090,6 +2090,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
