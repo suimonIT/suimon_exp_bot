@@ -35,8 +35,15 @@
       "username": "@MarkFisherr_001",
       "xp": 1,
       "level": 0
+    },
+    {
+      "rank": 6,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 1,
+      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T14:12:39.663933",
-  "total_users": 5
+  "last_updated": "2026-02-09T14:14:41.005884",
+  "total_users": 6
 }
