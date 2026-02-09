@@ -1,6 +1,14 @@
 {
   "success": true,
-  "leaderboard": [],
-  "last_updated": "2026-02-09T11:29:06.817761",
-  "total_users": 0
+  "leaderboard": [
+    {
+      "rank": 1,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 60,
+      "level": 0
+    }
+  ],
+  "last_updated": "2026-02-09T11:31:02.909419",
+  "total_users": 1
 }
