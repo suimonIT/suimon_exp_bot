@@ -24,26 +24,26 @@
     },
     {
       "rank": 4,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 5,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 1,
       "level": 0
-    },
-    {
-      "rank": 6,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T14:16:42.158706",
+  "last_updated": "2026-02-09T14:18:43.302654",
   "total_users": 6
 }
