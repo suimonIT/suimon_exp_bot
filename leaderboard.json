@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 33,
+      "xp": 35,
       "level": 0
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 20,
+      "xp": 21,
       "level": 0
     },
     {
@@ -72,6 +72,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T18:41:31.772750",
+  "last_updated": "2026-02-09T18:43:32.995277",
   "total_users": 10
 }
