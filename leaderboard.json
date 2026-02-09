@@ -17,23 +17,23 @@
     },
     {
       "rank": 3,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 20,
+      "level": 0
+    },
+    {
+      "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 20,
       "level": 0
     },
     {
-      "rank": 4,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 17,
-      "level": 0
-    },
-    {
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 10,
+      "xp": 12,
       "level": 0
     },
     {
@@ -52,19 +52,26 @@
     },
     {
       "rank": 8,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 9,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 1,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T17:08:35.295542",
-  "total_users": 9
+  "last_updated": "2026-02-09T17:10:36.548534",
+  "total_users": 10
 }
