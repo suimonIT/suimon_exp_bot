@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 6,
+      "xp": 7,
       "level": 0
     },
     {
@@ -38,15 +38,15 @@
     },
     {
       "rank": 6,
-      "user_id": 6342086796,
-      "username": "@MarkFisherr_001",
-      "xp": 2,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 3,
       "level": 0
     },
     {
       "rank": 7,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
+      "user_id": 6342086796,
+      "username": "@MarkFisherr_001",
       "xp": 2,
       "level": 0
     },
@@ -58,6 +58,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T15:23:25.167061",
+  "last_updated": "2026-02-09T15:25:26.440855",
   "total_users": 8
 }
