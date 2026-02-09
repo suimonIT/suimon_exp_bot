@@ -17,16 +17,16 @@
     },
     {
       "rank": 3,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
+      "user_id": 7105730933,
+      "username": "@abiclighter",
       "xp": 5,
       "level": 0
     },
     {
       "rank": 4,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 4,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 5,
       "level": 0
     },
     {
@@ -44,6 +44,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T14:36:55.178772",
+  "last_updated": "2026-02-09T14:38:56.971355",
   "total_users": 6
 }
