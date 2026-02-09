@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "rank": 1,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 83,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 84,
       "level": 0
     },
     {
       "rank": 2,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
       "xp": 83,
       "level": 0
     },
@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 76,
+      "xp": 77,
       "level": 0
     },
     {
@@ -93,6 +93,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T22:52:46.934680",
+  "last_updated": "2026-02-09T22:54:48.115516",
   "total_users": 13
 }
