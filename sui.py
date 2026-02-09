@@ -1458,7 +1458,7 @@ async def process_weekly_reset():
             for line in announcement_lines:
                 html_lines.append(html.escape(str(line)))
                 
-            announcement = "<br>".join(html_lines)
+            announcement = "\n".join(html_lines)
 
             await bot.send_message(
                 ALLOWED_GROUP_ID,
@@ -2096,6 +2096,7 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
+
 
 
 
