@@ -28,8 +28,15 @@
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
+    },
+    {
+      "rank": 5,
+      "user_id": 6342086796,
+      "username": "@MarkFisherr_001",
+      "xp": 1,
+      "level": 0
     }
   ],
-  "last_updated": "2026-02-09T13:32:15.408785",
-  "total_users": 4
+  "last_updated": "2026-02-09T13:34:16.578470",
+  "total_users": 5
 }
