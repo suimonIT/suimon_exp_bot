@@ -3,44 +3,44 @@
   "leaderboard": [
     {
       "rank": 1,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 86,
-      "level": 0
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 141,
+      "level": 1
     },
     {
       "rank": 2,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 136,
+      "level": 1
+    },
+    {
+      "rank": 3,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 113,
+      "level": 1
+    },
+    {
+      "rank": 4,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 84,
       "level": 0
     },
     {
-      "rank": 3,
+      "rank": 5,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 77,
       "level": 0
     },
     {
-      "rank": 4,
+      "rank": 6,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 66,
-      "level": 0
-    },
-    {
-      "rank": 5,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 41,
-      "level": 0
-    },
-    {
-      "rank": 6,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 38,
       "level": 0
     },
     {
@@ -100,6 +100,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-09T23:59:25.963995",
+  "last_updated": "2026-02-10T00:01:27.009129",
   "total_users": 14
 }
