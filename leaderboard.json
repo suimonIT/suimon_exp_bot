@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 61,
+      "xp": 62,
       "level": 0
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 36,
+      "xp": 37,
       "level": 0
     },
     {
@@ -114,6 +114,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T08:53:56.919045",
+  "last_updated": "2026-02-10T08:55:57.911819",
   "total_users": 16
 }
