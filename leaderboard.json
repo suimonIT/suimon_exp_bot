@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 252,
+      "xp": 253,
       "level": 2
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 81,
+      "xp": 83,
       "level": 0
     },
     {
@@ -73,16 +73,16 @@
     },
     {
       "rank": 11,
-      "user_id": 7759088610,
-      "username": "@KYRIAKOSKOS",
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
       "xp": 60,
       "level": 0
     },
     {
       "rank": 12,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 58,
+      "user_id": 7759088610,
+      "username": "@KYRIAKOSKOS",
+      "xp": 60,
       "level": 0
     },
     {
@@ -128,6 +128,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T22:37:15.409399",
+  "last_updated": "2026-02-10T22:39:16.440306",
   "total_users": 18
 }
