@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 154,
+      "xp": 156,
       "level": 1
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 7,
+      "xp": 8,
       "level": 0
     },
     {
@@ -121,6 +121,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T17:50:45.703022",
+  "last_updated": "2026-02-10T17:52:46.732133",
   "total_users": 17
 }
