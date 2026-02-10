@@ -3,16 +3,16 @@
   "leaderboard": [
     {
       "rank": 1,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 183,
-      "level": 1
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 214,
+      "level": 2
     },
     {
       "rank": 2,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 143,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 183,
       "level": 1
     },
     {
@@ -52,61 +52,68 @@
     },
     {
       "rank": 8,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 61,
+      "level": 0
+    },
+    {
+      "rank": 9,
       "user_id": 6933753100,
       "username": "@Jehoshaphat150",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 29,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 14,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 5,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 5444918592,
       "username": "@candle200",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6429106561,
       "username": "@PeterGeorg36078",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6969979739,
       "username": "D",
       "xp": 1,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T08:09:34.597347",
-  "total_users": 15
+  "last_updated": "2026-02-10T08:11:35.604936",
+  "total_users": 16
 }
