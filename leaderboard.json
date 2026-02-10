@@ -45,61 +45,68 @@
     },
     {
       "rank": 7,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 71,
+      "level": 0
+    },
+    {
+      "rank": 8,
+      "user_id": 6933753100,
+      "username": "@Jehoshaphat150",
+      "xp": 60,
+      "level": 0
+    },
+    {
+      "rank": 9,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 29,
       "level": 0
     },
     {
-      "rank": 8,
+      "rank": 10,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 14,
       "level": 0
     },
     {
-      "rank": 9,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 11,
-      "level": 0
-    },
-    {
-      "rank": 10,
+      "rank": 11,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 5,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 5444918592,
       "username": "@candle200",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 6429106561,
       "username": "@PeterGeorg36078",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6969979739,
       "username": "D",
       "xp": 1,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T07:51:25.530258",
-  "total_users": 14
+  "last_updated": "2026-02-10T07:53:26.492127",
+  "total_users": 15
 }
