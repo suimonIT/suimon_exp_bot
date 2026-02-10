@@ -108,19 +108,26 @@
     },
     {
       "rank": 16,
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 17,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6429106561,
       "username": "@PeterGeorg36078",
       "xp": 1,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T18:47:15.978728",
-  "total_users": 17
+  "last_updated": "2026-02-10T18:49:17.107835",
+  "total_users": 18
 }
