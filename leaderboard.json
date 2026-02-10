@@ -38,16 +38,16 @@
     },
     {
       "rank": 6,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 96,
+      "user_id": 6342086796,
+      "username": "@MarkFisherr_001",
+      "xp": 97,
       "level": 0
     },
     {
       "rank": 7,
-      "user_id": 6342086796,
-      "username": "@MarkFisherr_001",
-      "xp": 95,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 96,
       "level": 0
     },
     {
@@ -128,6 +128,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T21:40:47.198378",
+  "last_updated": "2026-02-10T21:42:48.177607",
   "total_users": 18
 }
