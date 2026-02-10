@@ -24,23 +24,23 @@
     },
     {
       "rank": 4,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 136,
+      "level": 1
+    },
+    {
+      "rank": 5,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 84,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 77,
-      "level": 0
-    },
-    {
-      "rank": 6,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 66,
       "level": 0
     },
     {
@@ -100,6 +100,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T00:15:34.928577",
+  "last_updated": "2026-02-10T00:17:36.086589",
   "total_users": 14
 }
