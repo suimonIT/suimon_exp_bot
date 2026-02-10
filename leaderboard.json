@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
-      "xp": 74,
+      "xp": 76,
       "level": 0
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 30,
+      "xp": 32,
       "level": 0
     },
     {
@@ -114,6 +114,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-10T08:39:49.620094",
+  "last_updated": "2026-02-10T08:41:50.671341",
   "total_users": 16
 }
