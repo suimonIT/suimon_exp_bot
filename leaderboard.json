@@ -129,12 +129,19 @@
     },
     {
       "rank": 19,
+      "user_id": 7090548617,
+      "username": "@Eddieshq",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 20,
       "user_id": 7892787822,
       "username": "@Andrewbrooks00",
       "xp": 1,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-11T20:26:26.072863",
-  "total_users": 19
+  "last_updated": "2026-02-11T20:28:27.092528",
+  "total_users": 20
 }
