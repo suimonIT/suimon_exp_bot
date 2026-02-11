@@ -115,33 +115,33 @@
     },
     {
       "rank": 17,
+      "user_id": 1056804623,
+      "username": "@ShulyGC",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 18,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 6429106561,
       "username": "@PeterGeorg36078",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 7090548617,
       "username": "@Eddieshq",
       "xp": 1,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7892787822,
-      "username": "@Andrewbrooks00",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-11T23:05:52.438915",
+  "last_updated": "2026-02-11T23:07:53.509821",
   "total_users": 20
 }
