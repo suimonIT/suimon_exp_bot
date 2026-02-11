@@ -47,14 +47,14 @@
       "rank": 7,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
-      "xp": 115,
+      "xp": 117,
       "level": 1
     },
     {
       "rank": 8,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 112,
+      "xp": 113,
       "level": 1
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 10,
+      "xp": 11,
       "level": 0
     },
     {
@@ -128,6 +128,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-11T16:38:23.273513",
+  "last_updated": "2026-02-11T16:40:24.389527",
   "total_users": 18
 }
