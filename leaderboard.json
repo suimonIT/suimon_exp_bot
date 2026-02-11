@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 344,
+      "xp": 346,
       "level": 3
     },
     {
       "rank": 3,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 170,
+      "xp": 173,
       "level": 1
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
-      "xp": 102,
+      "xp": 104,
       "level": 1
     },
     {
@@ -128,6 +128,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-11T01:28:39.585174",
+  "last_updated": "2026-02-11T01:30:40.647099",
   "total_users": 18
 }
