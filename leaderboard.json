@@ -94,15 +94,15 @@
     },
     {
       "rank": 14,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 2,
+      "user_id": 5444918592,
+      "username": "@candle200",
+      "xp": 3,
       "level": 0
     },
     {
       "rank": 15,
-      "user_id": 5444918592,
-      "username": "@candle200",
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
       "xp": 2,
       "level": 0
     },
@@ -128,6 +128,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-11T09:02:21.828367",
+  "last_updated": "2026-02-11T09:04:22.842207",
   "total_users": 18
 }
