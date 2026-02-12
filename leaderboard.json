@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 265,
+      "xp": 268,
       "level": 2
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 92,
+      "xp": 93,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T12:06:20.000808",
+  "last_updated": "2026-02-12T12:08:21.118467",
   "total_users": 20
 }
