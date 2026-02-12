@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 465,
+      "xp": 466,
       "level": 4
     },
     {
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 273,
+      "xp": 274,
       "level": 2
     },
     {
@@ -45,30 +45,30 @@
     },
     {
       "rank": 7,
+      "user_id": 6342086796,
+      "username": "@MarkFisherr_001",
+      "xp": 181,
+      "level": 1
+    },
+    {
+      "rank": 8,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 150,
       "level": 1
     },
     {
-      "rank": 8,
+      "rank": 9,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 150,
       "level": 1
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 6933753100,
       "username": "@Jehoshaphat150",
       "xp": 130,
-      "level": 1
-    },
-    {
-      "rank": 10,
-      "user_id": 6342086796,
-      "username": "@MarkFisherr_001",
-      "xp": 121,
       "level": 1
     },
     {
@@ -80,68 +80,68 @@
     },
     {
       "rank": 12,
+      "user_id": 8123282681,
+      "username": "@Blaze19_99",
+      "xp": 61,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 7759088610,
       "username": "@KYRIAKOSKOS",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 23,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 7615025841,
       "username": "@stepper_web_3",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6639175545,
       "username": "@stoner_web_3",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 5444918592,
       "username": "@candle200",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 7892787822,
       "username": "@Andrewbrooks00",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 6452860616,
       "username": "@Kendrickjamal1",
       "xp": 2,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 6969979739,
-      "username": "D",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-12T06:57:44.228931",
+  "last_updated": "2026-02-12T06:59:45.218803",
   "total_users": 20
 }
