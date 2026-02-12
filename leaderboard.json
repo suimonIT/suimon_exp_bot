@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 278,
+      "xp": 279,
       "level": 2
     },
     {
@@ -94,15 +94,15 @@
     },
     {
       "rank": 14,
-      "user_id": 8123282681,
-      "username": "@Blaze19_99",
-      "xp": 61,
+      "user_id": 8429265331,
+      "username": "@Messy_Jr",
+      "xp": 62,
       "level": 0
     },
     {
       "rank": 15,
-      "user_id": 8429265331,
-      "username": "@Messy_Jr",
+      "user_id": 8123282681,
+      "username": "@Blaze19_99",
       "xp": 61,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T08:10:21.060168",
+  "last_updated": "2026-02-12T08:12:22.052684",
   "total_users": 20
 }
