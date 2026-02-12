@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 152,
+      "xp": 153,
       "level": 1
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 7615025841,
       "username": "@stepper_web_3",
-      "xp": 66,
+      "xp": 67,
       "level": 0
     },
     {
@@ -96,7 +96,7 @@
       "rank": 14,
       "user_id": 8429265331,
       "username": "@Messy_Jr",
-      "xp": 62,
+      "xp": 63,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T08:12:22.052684",
+  "last_updated": "2026-02-12T08:14:23.005160",
   "total_users": 20
 }
