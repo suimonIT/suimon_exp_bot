@@ -94,15 +94,15 @@
     },
     {
       "rank": 14,
-      "user_id": 5444918592,
-      "username": "@candle200",
-      "xp": 3,
+      "user_id": 7615025841,
+      "username": "@stepper_web_3",
+      "xp": 4,
       "level": 0
     },
     {
       "rank": 15,
-      "user_id": 7615025841,
-      "username": "@stepper_web_3",
+      "user_id": 5444918592,
+      "username": "@candle200",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T05:20:57.915919",
+  "last_updated": "2026-02-12T05:22:58.880845",
   "total_users": 20
 }
