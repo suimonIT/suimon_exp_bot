@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 467,
+      "xp": 469,
       "level": 4
     },
     {
@@ -38,23 +38,23 @@
     },
     {
       "rank": 6,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 211,
+      "level": 2
+    },
+    {
+      "rank": 7,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 183,
       "level": 1
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 182,
-      "level": 1
-    },
-    {
-      "rank": 8,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 150,
       "level": 1
     },
     {
@@ -80,44 +80,44 @@
     },
     {
       "rank": 12,
+      "user_id": 7615025841,
+      "username": "@stepper_web_3",
+      "xp": 66,
+      "level": 0
+    },
+    {
+      "rank": 13,
+      "user_id": 6639175545,
+      "username": "@stoner_web_3",
+      "xp": 64,
+      "level": 0
+    },
+    {
+      "rank": 14,
       "user_id": 8123282681,
       "username": "@Blaze19_99",
       "xp": 61,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 15,
       "user_id": 7759088610,
       "username": "@KYRIAKOSKOS",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 16,
       "user_id": 8157946462,
       "username": "@elvin211",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 17,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 23,
-      "level": 0
-    },
-    {
-      "rank": 16,
-      "user_id": 7615025841,
-      "username": "@stepper_web_3",
-      "xp": 6,
-      "level": 0
-    },
-    {
-      "rank": 17,
-      "user_id": 6639175545,
-      "username": "@stoner_web_3",
-      "xp": 4,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T07:03:46.978013",
+  "last_updated": "2026-02-12T07:05:47.922172",
   "total_users": 20
 }
