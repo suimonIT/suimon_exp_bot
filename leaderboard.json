@@ -101,47 +101,47 @@
     },
     {
       "rank": 15,
+      "user_id": 8429265331,
+      "username": "@Messy_Jr",
+      "xp": 61,
+      "level": 0
+    },
+    {
+      "rank": 16,
       "user_id": 7759088610,
       "username": "@KYRIAKOSKOS",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 8157946462,
       "username": "@elvin211",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 23,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 5444918592,
       "username": "@candle200",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 7892787822,
       "username": "@Andrewbrooks00",
       "xp": 3,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-12T07:09:50.276725",
+  "last_updated": "2026-02-12T07:11:51.310591",
   "total_users": 20
 }
