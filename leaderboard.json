@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 466,
+      "xp": 467,
       "level": 4
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
-      "xp": 181,
+      "xp": 182,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T07:01:46.091632",
+  "last_updated": "2026-02-12T07:03:46.978013",
   "total_users": 20
 }
