@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 305,
+      "xp": 306,
       "level": 3
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 198,
+      "xp": 199,
       "level": 1
     },
     {
@@ -129,19 +129,19 @@
     },
     {
       "rank": 19,
-      "user_id": 6969979739,
-      "username": "D",
-      "xp": 4,
+      "user_id": 8507071822,
+      "username": "@Ojoaju",
+      "xp": 5,
       "level": 0
     },
     {
       "rank": 20,
-      "user_id": 8507071822,
-      "username": "@Ojoaju",
+      "user_id": 6969979739,
+      "username": "D",
       "xp": 4,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T21:07:09.109918",
+  "last_updated": "2026-02-12T21:09:10.210382",
   "total_users": 20
 }
