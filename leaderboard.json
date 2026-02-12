@@ -101,22 +101,22 @@
     },
     {
       "rank": 15,
+      "user_id": 7892787822,
+      "username": "@Andrewbrooks00",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 16,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6969979739,
       "username": "D",
-      "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 17,
-      "user_id": 7892787822,
-      "username": "@Andrewbrooks00",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-12T00:06:23.064294",
+  "last_updated": "2026-02-12T00:08:24.142771",
   "total_users": 20
 }
