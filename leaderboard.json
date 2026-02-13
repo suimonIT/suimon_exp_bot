@@ -38,16 +38,16 @@
     },
     {
       "rank": 6,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
-      "xp": 228,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 285,
       "level": 2
     },
     {
       "rank": 7,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 215,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 228,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-13T05:43:20.344240",
+  "last_updated": "2026-02-13T05:45:21.327779",
   "total_users": 20
 }
