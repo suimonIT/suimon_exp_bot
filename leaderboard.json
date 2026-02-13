@@ -52,16 +52,16 @@
     },
     {
       "rank": 8,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
-      "xp": 228,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 268,
       "level": 2
     },
     {
       "rank": 9,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 208,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 228,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-13T08:10:33.675100",
+  "last_updated": "2026-02-13T08:12:34.626469",
   "total_users": 20
 }
