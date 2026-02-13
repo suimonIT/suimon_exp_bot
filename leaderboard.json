@@ -82,8 +82,8 @@
       "rank": 12,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 99,
-      "level": 0
+      "xp": 100,
+      "level": 1
     },
     {
       "rank": 13,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-13T15:46:23.706388",
+  "last_updated": "2026-02-13T15:48:24.803221",
   "total_users": 20
 }
