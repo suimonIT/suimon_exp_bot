@@ -108,16 +108,16 @@
     },
     {
       "rank": 16,
-      "user_id": 8429265331,
-      "username": "@Messy_Jr",
+      "user_id": 7313537091,
+      "username": "Adnan",
       "xp": 63,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 62,
+      "user_id": 8429265331,
+      "username": "@Messy_Jr",
+      "xp": 63,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-14T15:47:41.153264",
+  "last_updated": "2026-02-14T15:49:41.793055",
   "total_users": 20
 }
