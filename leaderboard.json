@@ -26,28 +26,28 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 420,
+      "xp": 480,
       "level": 4
     },
     {
       "rank": 5,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 393,
+      "level": 3
+    },
+    {
+      "rank": 6,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 378,
       "level": 3
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 326,
-      "level": 3
-    },
-    {
-      "rank": 7,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 313,
       "level": 3
     },
     {
@@ -87,51 +87,51 @@
     },
     {
       "rank": 13,
+      "user_id": 7395105664,
+      "username": "@sauce_101",
+      "xp": 80,
+      "level": 0
+    },
+    {
+      "rank": 14,
       "user_id": 7615025841,
       "username": "@stepper_web_3",
       "xp": 68,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6639175545,
       "username": "@stoner_web_3",
       "xp": 64,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 8429265331,
       "username": "@Messy_Jr",
       "xp": 63,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 8123282681,
       "username": "@Blaze19_99",
       "xp": 61,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 8157946462,
       "username": "@elvin211",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 34,
-      "level": 0
-    },
-    {
-      "rank": 19,
-      "user_id": 7395105664,
-      "username": "@sauce_101",
-      "xp": 20,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-14T11:22:07.326642",
+  "last_updated": "2026-02-14T11:24:08.031996",
   "total_users": 20
 }
