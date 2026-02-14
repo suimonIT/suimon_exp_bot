@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 122,
+      "xp": 123,
       "level": 1
     },
     {
@@ -131,7 +131,7 @@
       "rank": 19,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 37,
+      "xp": 38,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-14T15:01:24.561935",
+  "last_updated": "2026-02-14T15:03:25.238585",
   "total_users": 20
 }
