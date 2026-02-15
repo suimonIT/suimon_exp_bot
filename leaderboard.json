@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 328,
+      "xp": 329,
       "level": 3
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 197,
+      "xp": 198,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-15T07:39:09.958897",
+  "last_updated": "2026-02-15T07:41:10.623434",
   "total_users": 20
 }
