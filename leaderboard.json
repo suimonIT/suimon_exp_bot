@@ -10,16 +10,16 @@
     },
     {
       "rank": 2,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 917,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 922,
       "level": 9
     },
     {
       "rank": 3,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 916,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 918,
       "level": 9
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-15T11:48:38.422638",
+  "last_updated": "2026-02-15T11:50:39.091669",
   "total_users": 20
 }
