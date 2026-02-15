@@ -19,21 +19,21 @@
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 954,
+      "xp": 955,
       "level": 9
     },
     {
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 587,
+      "xp": 588,
       "level": 5
     },
     {
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 564,
+      "xp": 565,
       "level": 5
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 413,
+      "xp": 414,
       "level": 4
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-15T20:03:29.694336",
+  "last_updated": "2026-02-15T20:05:30.401717",
   "total_users": 20
 }
