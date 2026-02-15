@@ -3,50 +3,50 @@
   "leaderboard": [
     {
       "rank": 1,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 2,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 2,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
+      "rank": 3,
+      "user_id": 8517921271,
+      "username": "@Hectooorrrrr",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "user_id": 7395105664,
       "username": "@sauce_101",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 7,
-      "user_id": 8517921271,
-      "username": "@Hectooorrrrr",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-15T23:02:32.065152",
+  "last_updated": "2026-02-15T23:04:32.714702",
   "total_users": 20
 }
