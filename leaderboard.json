@@ -5,20 +5,20 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 4,
+      "xp": 7,
       "level": 0
     },
     {
       "rank": 2,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 3,
+      "user_id": 8517921271,
+      "username": "@Hectooorrrrr",
+      "xp": 5,
       "level": 0
     },
     {
       "rank": 3,
-      "user_id": 8517921271,
-      "username": "@Hectooorrrrr",
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
       "xp": 3,
       "level": 0
     },
@@ -31,106 +31,106 @@
     },
     {
       "rank": 5,
+      "user_id": 6342086796,
+      "username": "@MarkFisherr_001",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 6,
       "user_id": 7395105664,
       "username": "@sauce_101",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 957149245,
       "username": "@ErichG1991",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 1056804623,
       "username": "@ShulyGC",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 1189624171,
       "username": "@iiiMrMiii",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 5120149080,
       "username": "@bigboy1m",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 5444918592,
       "username": "@candle200",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 5677305009,
       "username": "Suimon CTO $SUIMON",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6129491359,
       "username": "@Scryptchizzy",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6211682631,
       "username": "@BrookdrawsArts",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 6287829824,
       "username": "@selina32345",
-      "xp": 0,
-      "level": 0
-    },
-    {
-      "rank": 19,
-      "user_id": 6342086796,
-      "username": "@MarkFisherr_001",
       "xp": 0,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-15T23:04:32.714702",
+  "last_updated": "2026-02-15T23:06:33.359349",
   "total_users": 20
 }
