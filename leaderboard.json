@@ -10,16 +10,16 @@
     },
     {
       "rank": 2,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 916,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 917,
       "level": 9
     },
     {
       "rank": 3,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 905,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 916,
       "level": 9
     },
     {
@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 531,
+      "xp": 536,
       "level": 5
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 333,
+      "xp": 339,
       "level": 3
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 107,
+      "xp": 109,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-15T11:40:35.904668",
+  "last_updated": "2026-02-15T11:42:36.541357",
   "total_users": 20
 }
