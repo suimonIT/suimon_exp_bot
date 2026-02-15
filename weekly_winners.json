@@ -1,16 +1,97 @@
 {
   "success": true,
-  "week_start_date": "2026-02-08",
+  "week_start_date": "2026-02-15",
   "winners": [
     {
       "rank": 1,
+      "user_id": 7105730933,
+      "username": "abiclighter",
+      "first_name": "J.D.L",
+      "display_name": "@abiclighter",
+      "xp": 1441,
+      "level": 14
+    },
+    {
+      "rank": 2,
+      "user_id": 1268008610,
+      "username": "Joybaeart",
+      "first_name": "Justjoy",
+      "display_name": "@Joybaeart",
+      "xp": 1029,
+      "level": 10
+    },
+    {
+      "rank": 3,
+      "user_id": 6363051488,
+      "username": "Jeffnatius",
+      "first_name": "Sgt. Jeff \u2696\ufe0f \ud83d\udc38\ud83e\ude96",
+      "display_name": "@Jeffnatius",
+      "xp": 969,
+      "level": 9
+    },
+    {
+      "rank": 4,
+      "user_id": 7373203214,
+      "username": "still_gordon",
+      "first_name": "Gordon",
+      "display_name": "@still_gordon",
+      "xp": 590,
+      "level": 5
+    },
+    {
+      "rank": 5,
+      "user_id": 7611709300,
+      "username": "VanJohnovich",
+      "first_name": "VanJohnovich",
+      "display_name": "@VanJohnovich",
+      "xp": 573,
+      "level": 5
+    },
+    {
+      "rank": 6,
+      "user_id": 6909943871,
+      "username": "otexfemi",
+      "first_name": "\u014ctex",
+      "display_name": "@otexfemi",
+      "xp": 542,
+      "level": 5
+    },
+    {
+      "rank": 7,
+      "user_id": 6933753100,
+      "username": "Jehoshaphat150",
+      "first_name": "Jehoshaphat",
+      "display_name": "@Jehoshaphat150",
+      "xp": 444,
+      "level": 4
+    },
+    {
+      "rank": 8,
       "user_id": 1638084297,
       "username": "IceFlurryX",
       "first_name": "ICEFLURRYX",
       "display_name": "@IceFlurryX",
-      "xp": 60,
-      "level": 0
+      "xp": 427,
+      "level": 4
+    },
+    {
+      "rank": 9,
+      "user_id": 8112916103,
+      "username": "Oxninjasui",
+      "first_name": "NINJA\u2728",
+      "display_name": "@Oxninjasui",
+      "xp": 369,
+      "level": 3
+    },
+    {
+      "rank": 10,
+      "user_id": 6342086796,
+      "username": "MarkFisherr_001",
+      "first_name": "Mark",
+      "display_name": "@MarkFisherr_001",
+      "xp": 262,
+      "level": 2
     }
   ],
-  "last_updated": "2026-02-09T11:25:22.566785"
+  "last_updated": "2026-02-15T22:00:00.011559"
 }
