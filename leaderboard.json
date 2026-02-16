@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 121,
+      "xp": 122,
       "level": 1
     },
     {
@@ -45,16 +45,16 @@
     },
     {
       "rank": 7,
-      "user_id": 7313537091,
-      "username": "Adnan",
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
       "xp": 60,
       "level": 0
     },
     {
       "rank": 8,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 58,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 60,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T19:24:02.381484",
+  "last_updated": "2026-02-16T19:26:03.096186",
   "total_users": 20
 }
