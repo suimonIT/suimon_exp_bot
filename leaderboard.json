@@ -24,124 +24,124 @@
     },
     {
       "rank": 4,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 100,
+      "level": 1
+    },
+    {
+      "rank": 5,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 95,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 76,
       "level": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 7313537091,
       "username": "Adnan",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 51,
       "level": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 8517921271,
       "username": "@Hectooorrrrr",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 6476061153,
       "username": "@cromaxx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6188618475,
       "username": "@temmyex",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6780621455,
       "username": "@MiaKolsMarketing",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 7049827364,
       "username": "@Stevoses",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 7529649660,
       "username": "@Zerebully",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 7759088610,
       "username": "@KYRIAKOSKOS",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 957149245,
-      "username": "@ErichG1991",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T10:02:28.790405",
+  "last_updated": "2026-02-16T10:04:29.536559",
   "total_users": 20
 }
