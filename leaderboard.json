@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 143,
+      "xp": 144,
       "level": 1
     },
     {
@@ -38,16 +38,16 @@
     },
     {
       "rank": 6,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 93,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 98,
       "level": 0
     },
     {
       "rank": 7,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 93,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 97,
       "level": 0
     },
     {
@@ -94,36 +94,36 @@
     },
     {
       "rank": 14,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 1282633651,
       "username": "@wealthonweb3",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6476061153,
       "username": "@cromaxx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6810580045,
       "username": "@BiafgiAb",
-      "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 18,
-      "user_id": 6969979739,
-      "username": "D",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T20:34:28.365185",
+  "last_updated": "2026-02-16T20:36:29.149850",
   "total_users": 20
 }
