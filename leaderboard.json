@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 107,
+      "xp": 108,
       "level": 1
     },
     {
@@ -80,68 +80,68 @@
     },
     {
       "rank": 12,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 7529649660,
       "username": "@Zerebully",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 7759088610,
       "username": "@KYRIAKOSKOS",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 957149245,
       "username": "@ErichG1991",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 1056804623,
       "username": "@ShulyGC",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 1189624171,
       "username": "@iiiMrMiii",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 5120149080,
       "username": "@bigboy1m",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 5444918592,
-      "username": "@candle200",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T06:29:08.182192",
+  "last_updated": "2026-02-16T06:31:08.894450",
   "total_users": 20
 }
