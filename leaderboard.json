@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 96,
+      "xp": 97,
       "level": 0
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 23,
+      "xp": 24,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T10:52:48.075865",
+  "last_updated": "2026-02-16T10:54:48.798047",
   "total_users": 20
 }
