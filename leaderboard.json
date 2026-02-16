@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 32,
+      "xp": 34,
       "level": 0
     },
     {
@@ -73,16 +73,16 @@
     },
     {
       "rank": 11,
-      "user_id": 8517921271,
-      "username": "@Hectooorrrrr",
-      "xp": 6,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 8,
       "level": 0
     },
     {
       "rank": 12,
-      "user_id": 6969979739,
-      "username": "D",
-      "xp": 5,
+      "user_id": 8517921271,
+      "username": "@Hectooorrrrr",
+      "xp": 6,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T22:25:12.961784",
+  "last_updated": "2026-02-16T22:27:13.599117",
   "total_users": 20
 }
