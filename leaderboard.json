@@ -10,64 +10,64 @@
     },
     {
       "rank": 2,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 101,
+      "level": 1
+    },
+    {
+      "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
       "xp": 100,
       "level": 1
     },
     {
-      "rank": 3,
+      "rank": 4,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 51,
       "level": 0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "user_id": 7395105664,
       "username": "@sauce_101",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 8517921271,
       "username": "@Hectooorrrrr",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 6780621455,
       "username": "@MiaKolsMarketing",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 10,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T02:39:47.672654",
+  "last_updated": "2026-02-16T02:41:48.328296",
   "total_users": 20
 }
