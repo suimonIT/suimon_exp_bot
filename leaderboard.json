@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 22,
+      "xp": 23,
       "level": 0
     },
     {
@@ -122,26 +122,26 @@
     },
     {
       "rank": 18,
+      "user_id": 1042180833,
+      "username": "@ty_retrooo",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 19,
       "user_id": 6188618475,
       "username": "@temmyex",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 6618436789,
       "username": "@Kelvintutor",
       "xp": 1,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 6780621455,
-      "username": "@MiaKolsMarketing",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T10:50:47.356830",
+  "last_updated": "2026-02-16T10:52:48.075865",
   "total_users": 20
 }
