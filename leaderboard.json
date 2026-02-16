@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 236,
+      "xp": 237,
       "level": 2
     },
     {
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 137,
+      "xp": 139,
       "level": 1
     },
     {
@@ -38,16 +38,16 @@
     },
     {
       "rank": 6,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
       "xp": 87,
       "level": 0
     },
     {
       "rank": 7,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 84,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 87,
       "level": 0
     },
     {
@@ -94,54 +94,54 @@
     },
     {
       "rank": 14,
+      "user_id": 8068660109,
+      "username": "@OfficerJenny_SUI",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 1282633651,
       "username": "@wealthonweb3",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6476061153,
       "username": "@cromaxx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6810580045,
       "username": "@BiafgiAb",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6969979739,
       "username": "D",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 7593160319,
       "username": "@solboydeee",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 2,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 8255723235,
-      "username": "@damianeth",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T20:28:25.959932",
+  "last_updated": "2026-02-16T20:30:26.819277",
   "total_users": 20
 }
