@@ -5,21 +5,21 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 394,
+      "xp": 395,
       "level": 3
     },
     {
       "rank": 2,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 103,
+      "xp": 105,
       "level": 1
     },
     {
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 100,
+      "xp": 102,
       "level": 1
     },
     {
@@ -87,61 +87,61 @@
     },
     {
       "rank": 13,
+      "user_id": 7759088610,
+      "username": "@KYRIAKOSKOS",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 14,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 957149245,
       "username": "@ErichG1991",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 1056804623,
       "username": "@ShulyGC",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 1189624171,
       "username": "@iiiMrMiii",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 5120149080,
       "username": "@bigboy1m",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 5444918592,
       "username": "@candle200",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 5677305009,
       "username": "Suimon CTO $SUIMON",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 6129491359,
-      "username": "@Scryptchizzy",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T05:20:43.840712",
+  "last_updated": "2026-02-16T05:22:44.601356",
   "total_users": 20
 }
