@@ -54,14 +54,14 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 56,
+      "xp": 57,
       "level": 0
     },
     {
       "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 20,
+      "xp": 22,
       "level": 0
     },
     {
@@ -94,54 +94,54 @@
     },
     {
       "rank": 14,
+      "user_id": 1282633651,
+      "username": "@wealthonweb3",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 6476061153,
       "username": "@cromaxx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 984000478,
       "username": "@jebogzz",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6188618475,
       "username": "@temmyex",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6780621455,
       "username": "@MiaKolsMarketing",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 6810580045,
       "username": "@BiafgiAb",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 7049827364,
       "username": "@Stevoses",
       "xp": 1,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7529649660,
-      "username": "@Zerebully",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T10:42:44.500337",
+  "last_updated": "2026-02-16T10:44:45.275893",
   "total_users": 20
 }
