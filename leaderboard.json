@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 407,
+      "xp": 409,
       "level": 4
     },
     {
@@ -26,14 +26,14 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 94,
+      "xp": 95,
       "level": 0
     },
     {
       "rank": 5,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 75,
+      "xp": 76,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T09:44:21.948521",
+  "last_updated": "2026-02-16T09:46:22.722618",
   "total_users": 20
 }
