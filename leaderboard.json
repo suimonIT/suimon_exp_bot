@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 411,
+      "xp": 413,
       "level": 4
     },
     {
@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 108,
+      "xp": 109,
       "level": 1
     },
     {
@@ -54,14 +54,14 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 51,
+      "xp": 52,
       "level": 0
     },
     {
       "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 8,
+      "xp": 9,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T10:10:31.887026",
+  "last_updated": "2026-02-16T10:12:32.775281",
   "total_users": 20
 }
