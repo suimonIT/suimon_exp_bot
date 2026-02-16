@@ -26,14 +26,14 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 143,
+      "xp": 146,
       "level": 1
     },
     {
       "rank": 5,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 113,
+      "xp": 116,
       "level": 1
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 105,
+      "xp": 106,
       "level": 1
     },
     {
@@ -80,68 +80,68 @@
     },
     {
       "rank": 12,
+      "user_id": 7899878373,
+      "username": "@Bwhite7w",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6969979739,
       "username": "D",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 1282633651,
       "username": "@wealthonweb3",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 5728658575,
       "username": "@HeeHee2DaMoon",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 6476061153,
       "username": "@cromaxx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 6810580045,
       "username": "@BiafgiAb",
       "xp": 2,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7593160319,
-      "username": "@solboydeee",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T20:54:35.415570",
+  "last_updated": "2026-02-16T20:56:36.107465",
   "total_users": 20
 }
