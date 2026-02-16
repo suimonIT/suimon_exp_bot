@@ -19,14 +19,14 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 114,
+      "xp": 115,
       "level": 1
     },
     {
       "rank": 4,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 102,
+      "xp": 103,
       "level": 1
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 12,
+      "xp": 15,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T10:34:41.519662",
+  "last_updated": "2026-02-16T10:36:42.297570",
   "total_users": 20
 }
