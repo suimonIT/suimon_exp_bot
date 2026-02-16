@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 105,
+      "xp": 106,
       "level": 1
     },
     {
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 102,
+      "xp": 103,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T05:24:45.229726",
+  "last_updated": "2026-02-16T05:26:46.014112",
   "total_users": 20
 }
