@@ -26,14 +26,14 @@
       "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 127,
+      "xp": 129,
       "level": 1
     },
     {
       "rank": 5,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 111,
+      "xp": 112,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T19:54:13.308361",
+  "last_updated": "2026-02-16T19:56:14.040405",
   "total_users": 20
 }
