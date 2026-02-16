@@ -122,26 +122,26 @@
     },
     {
       "rank": 18,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 19,
       "user_id": 8255723235,
       "username": "@damianeth",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 984000478,
       "username": "@jebogzz",
       "xp": 1,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 1042180833,
-      "username": "@ty_retrooo",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-16T18:45:48.426452",
+  "last_updated": "2026-02-16T18:47:49.131223",
   "total_users": 20
 }
