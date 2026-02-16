@@ -80,36 +80,36 @@
     },
     {
       "rank": 12,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 5,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 7899878373,
       "username": "@Bwhite7w",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
-      "xp": 3,
-      "level": 0
-    },
-    {
-      "rank": 16,
-      "user_id": 6969979739,
-      "username": "D",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T21:52:57.632912",
+  "last_updated": "2026-02-16T21:54:58.976873",
   "total_users": 20
 }
