@@ -5,21 +5,21 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 406,
+      "xp": 407,
       "level": 4
     },
     {
       "rank": 2,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 108,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 109,
       "level": 1
     },
     {
       "rank": 3,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 107,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 108,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-16T09:20:11.978883",
+  "last_updated": "2026-02-16T09:22:12.856925",
   "total_users": 20
 }
