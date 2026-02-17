@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 157,
+      "xp": 158,
       "level": 1
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
-      "xp": 16,
+      "xp": 18,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T23:35:21.894445",
+  "last_updated": "2026-02-17T23:37:22.830932",
   "total_users": 20
 }
