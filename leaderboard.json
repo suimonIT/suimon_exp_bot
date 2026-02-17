@@ -80,15 +80,15 @@
     },
     {
       "rank": 12,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 10,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 12,
       "level": 0
     },
     {
       "rank": 13,
-      "user_id": 6969979739,
-      "username": "D",
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
       "xp": 10,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T07:56:32.194824",
+  "last_updated": "2026-02-17T07:58:32.929593",
   "total_users": 20
 }
