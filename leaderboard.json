@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 269,
+      "xp": 271,
       "level": 2
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 118,
+      "xp": 120,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T11:25:50.752779",
+  "last_updated": "2026-02-17T11:27:51.438985",
   "total_users": 20
 }
