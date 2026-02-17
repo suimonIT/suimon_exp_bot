@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 383,
+      "xp": 387,
       "level": 3
     },
     {
@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 268,
+      "xp": 269,
       "level": 2
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 116,
+      "xp": 118,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T11:23:49.663841",
+  "last_updated": "2026-02-17T11:25:50.752779",
   "total_users": 20
 }
