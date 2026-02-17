@@ -19,14 +19,14 @@
       "rank": 3,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 276,
+      "xp": 280,
       "level": 2
     },
     {
       "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 272,
+      "xp": 275,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T11:31:52.906208",
+  "last_updated": "2026-02-17T11:33:53.585843",
   "total_users": 20
 }
