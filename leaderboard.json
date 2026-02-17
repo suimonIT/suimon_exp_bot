@@ -31,16 +31,16 @@
     },
     {
       "rank": 5,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 198,
-      "level": 1
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 216,
+      "level": 2
     },
     {
       "rank": 6,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 116,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 198,
       "level": 1
     },
     {
@@ -59,89 +59,89 @@
     },
     {
       "rank": 9,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 63,
+      "level": 0
+    },
+    {
+      "rank": 10,
       "user_id": 7313537091,
       "username": "Adnan",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 10,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 6969979739,
       "username": "D",
       "xp": 10,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 9,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 8517921271,
       "username": "@Hectooorrrrr",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6936972757,
       "username": "JJ",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 7899878373,
       "username": "@Bwhite7w",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6342086796,
       "username": "@MarkFisherr_001",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 7781501214,
       "username": "@Crane_SUI",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 1189624171,
       "username": "@iiiMrMiii",
       "xp": 2,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 1282633651,
-      "username": "@wealthonweb3",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-17T07:24:20.799598",
+  "last_updated": "2026-02-17T07:26:21.506985",
   "total_users": 20
 }
