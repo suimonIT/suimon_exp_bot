@@ -47,14 +47,14 @@
       "rank": 7,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 110,
+      "xp": 111,
       "level": 1
     },
     {
       "rank": 8,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 101,
+      "xp": 102,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T08:24:42.151230",
+  "last_updated": "2026-02-17T08:26:42.887372",
   "total_users": 20
 }
