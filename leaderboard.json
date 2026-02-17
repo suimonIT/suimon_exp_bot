@@ -52,16 +52,16 @@
     },
     {
       "rank": 8,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 60,
+      "user_id": 7395105664,
+      "username": "@sauce_101",
+      "xp": 98,
       "level": 0
     },
     {
       "rank": 9,
-      "user_id": 7395105664,
-      "username": "@sauce_101",
-      "xp": 38,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 60,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-17T00:03:47.236781",
+  "last_updated": "2026-02-17T00:05:47.935594",
   "total_users": 20
 }
