@@ -24,16 +24,16 @@
     },
     {
       "rank": 4,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 525,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 526,
       "level": 5
     },
     {
       "rank": 5,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 524,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 525,
       "level": 5
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T16:07:29.805820",
+  "last_updated": "2026-02-18T16:09:30.836739",
   "total_users": 20
 }
