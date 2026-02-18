@@ -10,23 +10,23 @@
     },
     {
       "rank": 2,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 700,
+      "level": 7
+    },
+    {
+      "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
       "xp": 471,
       "level": 4
     },
     {
-      "rank": 3,
+      "rank": 4,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 443,
-      "level": 4
-    },
-    {
-      "rank": 4,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 400,
       "level": 4
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T02:48:55.178109",
+  "last_updated": "2026-02-18T02:50:56.097248",
   "total_users": 20
 }
