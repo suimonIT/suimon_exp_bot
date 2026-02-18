@@ -73,65 +73,65 @@
     },
     {
       "rank": 11,
+      "user_id": 6188618475,
+      "username": "@temmyex",
+      "xp": 64,
+      "level": 0
+    },
+    {
+      "rank": 12,
       "user_id": 7313537091,
       "username": "Adnan",
       "xp": 60,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 20,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 20,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6969979739,
       "username": "D",
       "xp": 15,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6145703353,
       "username": "@PapaIguanaDon",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 8517921271,
       "username": "@Hectooorrrrr",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 6936972757,
       "username": "JJ",
       "xp": 5,
-      "level": 0
-    },
-    {
-      "rank": 19,
-      "user_id": 6188618475,
-      "username": "@temmyex",
-      "xp": 4,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T04:51:53.791134",
+  "last_updated": "2026-02-18T04:53:54.792027",
   "total_users": 20
 }
