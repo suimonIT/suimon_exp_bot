@@ -59,16 +59,16 @@
     },
     {
       "rank": 9,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 131,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 134,
       "level": 1
     },
     {
       "rank": 10,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 120,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 131,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T07:51:18.875716",
+  "last_updated": "2026-02-18T07:53:19.811401",
   "total_users": 20
 }
