@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 150,
+      "xp": 151,
       "level": 1
     },
     {
@@ -87,15 +87,15 @@
     },
     {
       "rank": 13,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 20,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 22,
       "level": 0
     },
     {
       "rank": 14,
-      "user_id": 7642527839,
-      "username": "RonnyR",
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
       "xp": 20,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T11:31:07.079632",
+  "last_updated": "2026-02-18T11:33:08.065745",
   "total_users": 20
 }
