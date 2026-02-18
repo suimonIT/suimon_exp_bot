@@ -52,23 +52,23 @@
     },
     {
       "rank": 8,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 150,
+      "level": 1
+    },
+    {
+      "rank": 9,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 140,
       "level": 1
     },
     {
-      "rank": 9,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 134,
-      "level": 1
-    },
-    {
       "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 131,
+      "xp": 137,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T07:53:19.811401",
+  "last_updated": "2026-02-18T07:55:20.775169",
   "total_users": 20
 }
