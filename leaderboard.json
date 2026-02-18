@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 738,
+      "xp": 740,
       "level": 7
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 145,
+      "xp": 146,
       "level": 1
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 28,
+      "xp": 29,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-18T18:24:41.104252",
+  "last_updated": "2026-02-18T18:26:42.085437",
   "total_users": 20
 }
