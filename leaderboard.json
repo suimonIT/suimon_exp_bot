@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 820,
+      "xp": 821,
       "level": 8
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 154,
+      "xp": 155,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-19T20:03:15.791673",
+  "last_updated": "2026-02-19T20:05:16.605559",
   "total_users": 20
 }
