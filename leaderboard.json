@@ -59,23 +59,23 @@
     },
     {
       "rank": 9,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 229,
+      "level": 2
+    },
+    {
+      "rank": 10,
       "user_id": 7781501214,
       "username": "@Crane_SUI",
       "xp": 217,
       "level": 2
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 154,
-      "level": 1
-    },
-    {
-      "rank": 11,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
-      "xp": 147,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-19T13:56:46.242447",
+  "last_updated": "2026-02-19T13:58:47.056690",
   "total_users": 20
 }
