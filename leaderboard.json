@@ -38,23 +38,23 @@
     },
     {
       "rank": 6,
+      "user_id": 7395105664,
+      "username": "@sauce_101",
+      "xp": 327,
+      "level": 3
+    },
+    {
+      "rank": 7,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 283,
       "level": 2
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 7313537091,
       "username": "Adnan",
       "xp": 265,
-      "level": 2
-    },
-    {
-      "rank": 8,
-      "user_id": 7395105664,
-      "username": "@sauce_101",
-      "xp": 247,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-19T00:11:36.828458",
+  "last_updated": "2026-02-19T00:13:37.814876",
   "total_users": 20
 }
