@@ -80,15 +80,15 @@
     },
     {
       "rank": 12,
-      "user_id": 6188618475,
-      "username": "@temmyex",
-      "xp": 68,
+      "user_id": 6299316032,
+      "username": "@PREMIRA_1",
+      "xp": 69,
       "level": 0
     },
     {
       "rank": 13,
-      "user_id": 6299316032,
-      "username": "@PREMIRA_1",
+      "user_id": 6188618475,
+      "username": "@temmyex",
       "xp": 68,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-20T22:09:22.579813",
+  "last_updated": "2026-02-20T22:11:23.344087",
   "total_users": 20
 }
