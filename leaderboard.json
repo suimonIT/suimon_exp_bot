@@ -10,16 +10,16 @@
     },
     {
       "rank": 2,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 867,
-      "level": 8
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 924,
+      "level": 9
     },
     {
       "rank": 3,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 824,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 867,
       "level": 8
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-20T00:00:50.001163",
+  "last_updated": "2026-02-20T00:02:50.718811",
   "total_users": 20
 }
