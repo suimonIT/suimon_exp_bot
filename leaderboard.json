@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 1029,
+      "xp": 1036,
       "level": 10
     },
     {
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 962,
+      "xp": 966,
       "level": 9
     },
     {
@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 752,
+      "xp": 761,
       "level": 7
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 330,
+      "xp": 331,
       "level": 3
     },
     {
@@ -94,37 +94,37 @@
     },
     {
       "rank": 14,
+      "user_id": 6299316032,
+      "username": "@PREMIRA_1",
+      "xp": 37,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 20,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6969979739,
       "username": "D",
       "xp": 19,
       "level": 0
     },
     {
-      "rank": 16,
-      "user_id": 6299316032,
-      "username": "@PREMIRA_1",
-      "xp": 15,
-      "level": 0
-    },
-    {
       "rank": 17,
-      "user_id": 7090548617,
-      "username": "@Eddieshq",
-      "xp": 12,
+      "user_id": 5728658575,
+      "username": "@HeeHee2DaMoon",
+      "xp": 14,
       "level": 0
     },
     {
       "rank": 18,
-      "user_id": 5728658575,
-      "username": "@HeeHee2DaMoon",
-      "xp": 11,
+      "user_id": 7090548617,
+      "username": "@Eddieshq",
+      "xp": 12,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-20T19:00:10.265029",
+  "last_updated": "2026-02-20T19:02:11.045717",
   "total_users": 20
 }
