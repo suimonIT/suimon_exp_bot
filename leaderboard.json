@@ -59,17 +59,17 @@
     },
     {
       "rank": 9,
-      "user_id": 7781501214,
-      "username": "@Crane_SUI",
-      "xp": 307,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 325,
       "level": 3
     },
     {
       "rank": 10,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 265,
-      "level": 2
+      "user_id": 7781501214,
+      "username": "@Crane_SUI",
+      "xp": 307,
+      "level": 3
     },
     {
       "rank": 11,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-21T07:36:45.720548",
+  "last_updated": "2026-02-21T07:38:46.422817",
   "total_users": 20
 }
