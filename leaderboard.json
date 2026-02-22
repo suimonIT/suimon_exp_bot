@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1670,
+      "xp": 1671,
       "level": 16
     },
     {
@@ -108,15 +108,15 @@
     },
     {
       "rank": 16,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 24,
+      "user_id": 7067817294,
+      "username": "@omotolani999",
+      "xp": 25,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 7067817294,
-      "username": "@omotolani999",
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
       "xp": 24,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-22T11:36:29.569233",
+  "last_updated": "2026-02-22T11:38:30.284954",
   "total_users": 20
 }
