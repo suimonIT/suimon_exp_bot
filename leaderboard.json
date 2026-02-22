@@ -19,8 +19,8 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 1175,
-      "level": 11
+      "xp": 1275,
+      "level": 12
     },
     {
       "rank": 4,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-22T02:09:13.554607",
+  "last_updated": "2026-02-22T02:11:14.243009",
   "total_users": 20
 }
