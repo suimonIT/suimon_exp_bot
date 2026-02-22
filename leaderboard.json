@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 1001,
+      "xp": 1002,
       "level": 10
     },
     {
@@ -96,7 +96,7 @@
       "rank": 14,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 47,
+      "xp": 48,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-22T13:37:11.000420",
+  "last_updated": "2026-02-22T13:39:11.701610",
   "total_users": 20
 }
