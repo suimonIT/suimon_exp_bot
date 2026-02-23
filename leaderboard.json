@@ -10,16 +10,16 @@
     },
     {
       "rank": 2,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
+      "user_id": 6909943871,
+      "username": "@otexfemi",
       "xp": 102,
       "level": 1
     },
     {
       "rank": 3,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 101,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 102,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-23T00:51:06.579657",
+  "last_updated": "2026-02-23T00:53:07.284277",
   "total_users": 20
 }
