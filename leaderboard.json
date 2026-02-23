@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 103,
+      "xp": 105,
       "level": 1
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 8099191714,
       "username": "@dandotsui",
-      "xp": 5,
+      "xp": 7,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-23T02:56:08.353520",
+  "last_updated": "2026-02-23T02:58:09.583202",
   "total_users": 20
 }
