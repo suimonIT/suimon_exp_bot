@@ -61,21 +61,21 @@
       "rank": 9,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 31,
+      "xp": 33,
       "level": 0
     },
     {
       "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 29,
+      "xp": 31,
       "level": 0
     },
     {
       "rank": 11,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 10,
+      "xp": 16,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-23T20:57:01.191952",
+  "last_updated": "2026-02-23T20:59:02.137297",
   "total_users": 20
 }
