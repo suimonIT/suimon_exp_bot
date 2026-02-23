@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 160,
+      "xp": 162,
       "level": 1
     },
     {
@@ -66,30 +66,30 @@
     },
     {
       "rank": 10,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 11,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 7557086826,
       "username": "@Sexylily123",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 13,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 1,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-23T08:00:41.693492",
+  "last_updated": "2026-02-23T08:02:42.432307",
   "total_users": 20
 }
