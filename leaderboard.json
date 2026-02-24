@@ -26,8 +26,8 @@
       "rank": 4,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 299,
-      "level": 2
+      "xp": 300,
+      "level": 3
     },
     {
       "rank": 5,
@@ -73,16 +73,16 @@
     },
     {
       "rank": 11,
-      "user_id": 8379981601,
-      "username": "@richie_SparkStudio",
+      "user_id": 5026820734,
+      "username": "@tidus1986",
       "xp": 27,
       "level": 0
     },
     {
       "rank": 12,
-      "user_id": 5026820734,
-      "username": "@tidus1986",
-      "xp": 25,
+      "user_id": 8379981601,
+      "username": "@richie_SparkStudio",
+      "xp": 27,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T20:47:14.514821",
+  "last_updated": "2026-02-24T20:49:15.503723",
   "total_users": 20
 }
