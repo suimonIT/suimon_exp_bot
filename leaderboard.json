@@ -101,15 +101,15 @@
     },
     {
       "rank": 15,
-      "user_id": 6638050753,
-      "username": "@roberto9135",
-      "xp": 6,
+      "user_id": 8379981601,
+      "username": "@richie_SparkStudio",
+      "xp": 7,
       "level": 0
     },
     {
       "rank": 16,
-      "user_id": 8379981601,
-      "username": "@richie_SparkStudio",
+      "user_id": 6638050753,
+      "username": "@roberto9135",
       "xp": 6,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T10:16:47.099862",
+  "last_updated": "2026-02-24T10:18:48.040904",
   "total_users": 20
 }
