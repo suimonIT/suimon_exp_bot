@@ -108,16 +108,16 @@
     },
     {
       "rank": 16,
-      "user_id": 7090548617,
-      "username": "@Eddieshq",
+      "user_id": 5156624955,
+      "username": "@rustySham",
       "xp": 3,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 5156624955,
-      "username": "@rustySham",
-      "xp": 2,
+      "user_id": 7090548617,
+      "username": "@Eddieshq",
+      "xp": 3,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T09:50:33.165304",
+  "last_updated": "2026-02-24T09:52:34.294982",
   "total_users": 20
 }
