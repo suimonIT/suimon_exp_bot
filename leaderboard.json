@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 105,
+      "xp": 106,
       "level": 1
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 5026820734,
       "username": "@tidus1986",
-      "xp": 27,
+      "xp": 28,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T21:05:24.398911",
+  "last_updated": "2026-02-24T21:07:25.406348",
   "total_users": 20
 }
