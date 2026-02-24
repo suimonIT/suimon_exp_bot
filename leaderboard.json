@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 825,
+      "xp": 826,
       "level": 8
     },
     {
@@ -87,16 +87,16 @@
     },
     {
       "rank": 13,
-      "user_id": 7642527839,
-      "username": "RonnyR",
-      "xp": 13,
+      "user_id": 5026820734,
+      "username": "@tidus1986",
+      "xp": 14,
       "level": 0
     },
     {
       "rank": 14,
-      "user_id": 5026820734,
-      "username": "@tidus1986",
-      "xp": 10,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 13,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T20:39:10.013303",
+  "last_updated": "2026-02-24T20:41:11.028761",
   "total_users": 20
 }
