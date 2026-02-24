@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 829,
+      "xp": 831,
       "level": 8
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 100,
+      "xp": 102,
       "level": 1
     },
     {
@@ -80,16 +80,16 @@
     },
     {
       "rank": 12,
-      "user_id": 8068660109,
-      "username": "@OfficerJenny_SUI",
-      "xp": 24,
+      "user_id": 5026820734,
+      "username": "@tidus1986",
+      "xp": 25,
       "level": 0
     },
     {
       "rank": 13,
-      "user_id": 5026820734,
-      "username": "@tidus1986",
-      "xp": 23,
+      "user_id": 8068660109,
+      "username": "@OfficerJenny_SUI",
+      "xp": 24,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T20:45:13.499364",
+  "last_updated": "2026-02-24T20:47:14.514821",
   "total_users": 20
 }
