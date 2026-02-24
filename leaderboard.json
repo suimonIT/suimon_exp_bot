@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 103,
+      "xp": 104,
       "level": 1
     },
     {
@@ -96,7 +96,7 @@
       "rank": 14,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 13,
+      "xp": 14,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T21:01:22.358227",
+  "last_updated": "2026-02-24T21:03:23.450827",
   "total_users": 20
 }
