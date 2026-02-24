@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 822,
+      "xp": 825,
       "level": 8
     },
     {
@@ -19,21 +19,21 @@
       "rank": 3,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 419,
+      "xp": 420,
       "level": 4
     },
     {
       "rank": 4,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 296,
+      "xp": 299,
       "level": 2
     },
     {
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 270,
+      "xp": 271,
       "level": 2
     },
     {
@@ -61,8 +61,8 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 99,
-      "level": 0
+      "xp": 100,
+      "level": 1
     },
     {
       "rank": 10,
@@ -94,54 +94,54 @@
     },
     {
       "rank": 14,
+      "user_id": 5026820734,
+      "username": "@tidus1986",
+      "xp": 10,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 8099191714,
       "username": "@dandotsui",
       "xp": 10,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 7191017936,
       "username": "@Balikis_eth",
       "xp": 7,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6638050753,
       "username": "@roberto9135",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 8389373126,
       "username": "@waterminddotsui",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 5156624955,
       "username": "@rustySham",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 7090548617,
       "username": "@Eddieshq",
       "xp": 3,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7358917477,
-      "username": "@Crypt_willie1",
-      "xp": 3,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-24T20:35:07.762414",
+  "last_updated": "2026-02-24T20:37:08.988633",
   "total_users": 20
 }
