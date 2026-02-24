@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 309,
+      "xp": 310,
       "level": 3
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 5026820734,
       "username": "@tidus1986",
-      "xp": 34,
+      "xp": 35,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T22:05:54.628974",
+  "last_updated": "2026-02-24T22:07:55.694096",
   "total_users": 20
 }
