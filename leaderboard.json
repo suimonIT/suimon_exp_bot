@@ -31,15 +31,15 @@
     },
     {
       "rank": 5,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 127,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 128,
       "level": 1
     },
     {
       "rank": 6,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
       "xp": 127,
       "level": 1
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T06:42:14.759624",
+  "last_updated": "2026-02-24T06:44:15.837506",
   "total_users": 20
 }
