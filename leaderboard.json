@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 107,
+      "xp": 108,
       "level": 1
     },
     {
@@ -73,16 +73,16 @@
     },
     {
       "rank": 11,
-      "user_id": 8379981601,
-      "username": "@richie_SparkStudio",
+      "user_id": 5026820734,
+      "username": "@tidus1986",
       "xp": 29,
       "level": 0
     },
     {
       "rank": 12,
-      "user_id": 5026820734,
-      "username": "@tidus1986",
-      "xp": 28,
+      "user_id": 8379981601,
+      "username": "@richie_SparkStudio",
+      "xp": 29,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-24T21:47:45.652637",
+  "last_updated": "2026-02-24T21:49:46.643136",
   "total_users": 20
 }
