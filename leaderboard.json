@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1004,
+      "xp": 1009,
       "level": 10
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 230,
+      "xp": 232,
       "level": 2
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 112,
+      "xp": 113,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-25T11:52:35.553625",
+  "last_updated": "2026-02-25T11:54:36.310195",
   "total_users": 20
 }
