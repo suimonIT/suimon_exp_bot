@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 1080,
+      "xp": 1082,
       "level": 10
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 5026820734,
       "username": "@tidus1986",
-      "xp": 43,
+      "xp": 44,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-25T17:55:12.030060",
+  "last_updated": "2026-02-25T17:57:13.058698",
   "total_users": 20
 }
