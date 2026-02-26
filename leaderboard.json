@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1318,
+      "xp": 1323,
       "level": 13
     },
     {
@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 622,
+      "xp": 627,
       "level": 6
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 484,
+      "xp": 489,
       "level": 4
     },
     {
@@ -80,68 +80,68 @@
     },
     {
       "rank": 12,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 61,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 58,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 8379981601,
       "username": "@richie_SparkStudio",
       "xp": 29,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 25,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6638050753,
       "username": "@roberto9135",
       "xp": 23,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 7191017936,
       "username": "@Balikis_eth",
       "xp": 10,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 8099191714,
       "username": "@dandotsui",
       "xp": 10,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 1575936630,
       "username": "@ProfessorPepeXCalls",
       "xp": 9,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 7090548617,
       "username": "@Eddieshq",
       "xp": 6,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7067817294,
-      "username": "@omotolani999",
-      "xp": 4,
-      "level": 0
     }
   ],
-  "last_updated": "2026-02-26T09:36:54.125809",
+  "last_updated": "2026-02-26T09:38:55.168813",
   "total_users": 20
 }
