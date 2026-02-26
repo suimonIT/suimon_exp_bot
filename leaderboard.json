@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 612,
+      "xp": 615,
       "level": 6
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 7313537091,
       "username": "Adnan",
-      "xp": 143,
+      "xp": 151,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-26T09:49:00.303817",
+  "last_updated": "2026-02-26T09:51:01.465413",
   "total_users": 20
 }
