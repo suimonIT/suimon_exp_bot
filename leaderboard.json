@@ -3,17 +3,17 @@
   "leaderboard": [
     {
       "rank": 1,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 1120,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 1193,
       "level": 11
     },
     {
       "rank": 2,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 1093,
-      "level": 10
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 1170,
+      "level": 11
     },
     {
       "rank": 3,
@@ -47,8 +47,8 @@
       "rank": 7,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 346,
-      "level": 3
+      "xp": 421,
+      "level": 4
     },
     {
       "rank": 8,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-25T23:58:14.712701",
+  "last_updated": "2026-02-26T00:00:15.605183",
   "total_users": 20
 }
