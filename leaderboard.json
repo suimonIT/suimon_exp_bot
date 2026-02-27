@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 755,
+      "xp": 756,
       "level": 7
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 667,
+      "xp": 668,
       "level": 6
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-27T20:19:06.447166",
+  "last_updated": "2026-02-27T20:21:07.410670",
   "total_users": 20
 }
