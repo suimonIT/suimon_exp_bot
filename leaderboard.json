@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 777,
+      "xp": 778,
       "level": 7
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 259,
+      "xp": 261,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-27T22:18:40.829781",
+  "last_updated": "2026-02-27T22:20:41.831048",
   "total_users": 20
 }
