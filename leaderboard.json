@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 714,
+      "xp": 722,
       "level": 7
     },
     {
@@ -101,16 +101,16 @@
     },
     {
       "rank": 15,
-      "user_id": 8068660109,
-      "username": "@OfficerJenny_SUI",
+      "user_id": 5967525636,
+      "username": "@tkeys506",
       "xp": 25,
       "level": 0
     },
     {
       "rank": 16,
-      "user_id": 5967525636,
-      "username": "@tkeys506",
-      "xp": 24,
+      "user_id": 8068660109,
+      "username": "@OfficerJenny_SUI",
+      "xp": 25,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-27T07:24:40.808352",
+  "last_updated": "2026-02-27T07:26:41.787171",
   "total_users": 20
 }
