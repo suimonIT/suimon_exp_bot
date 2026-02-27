@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 1602,
+      "xp": 1603,
       "level": 16
     },
     {
@@ -129,19 +129,19 @@
     },
     {
       "rank": 19,
-      "user_id": 8329446678,
-      "username": "Kendrek \ud83c\udfa7",
-      "xp": 14,
+      "user_id": 5967525636,
+      "username": "@tkeys506",
+      "xp": 15,
       "level": 0
     },
     {
       "rank": 20,
-      "user_id": 5967525636,
-      "username": "@tkeys506",
-      "xp": 13,
+      "user_id": 8329446678,
+      "username": "Kendrek \ud83c\udfa7",
+      "xp": 14,
       "level": 0
     }
   ],
-  "last_updated": "2026-02-27T06:38:19.187748",
+  "last_updated": "2026-02-27T06:40:20.053032",
   "total_users": 20
 }
