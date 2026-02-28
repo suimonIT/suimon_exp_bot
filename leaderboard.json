@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 829,
+      "xp": 831,
       "level": 8
     },
     {
@@ -47,14 +47,14 @@
       "rank": 7,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 704,
+      "xp": 707,
       "level": 7
     },
     {
       "rank": 8,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 469,
+      "xp": 473,
       "level": 4
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-28T16:04:52.759937",
+  "last_updated": "2026-02-28T16:06:53.646096",
   "total_users": 20
 }
