@@ -54,14 +54,14 @@
       "rank": 8,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 338,
-      "level": 3
+      "xp": 400,
+      "level": 4
     },
     {
       "rank": 9,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 302,
+      "xp": 365,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-28T15:00:23.396775",
+  "last_updated": "2026-02-28T15:02:24.373271",
   "total_users": 20
 }
