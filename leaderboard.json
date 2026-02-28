@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1768,
+      "xp": 1770,
       "level": 17
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 681,
+      "xp": 682,
       "level": 6
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 404,
+      "xp": 405,
       "level": 4
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 7075903599,
       "username": "@founding_monkey",
-      "xp": 86,
+      "xp": 89,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-02-28T15:34:39.149102",
+  "last_updated": "2026-02-28T15:36:40.014380",
   "total_users": 20
 }
