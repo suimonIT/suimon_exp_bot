@@ -108,16 +108,16 @@
     },
     {
       "rank": 16,
-      "user_id": 8379981601,
-      "username": "@richie_SparkStudio",
-      "xp": 29,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 30,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
-      "xp": 28,
+      "user_id": 8379981601,
+      "username": "@richie_SparkStudio",
+      "xp": 29,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-01T13:12:20.078636",
+  "last_updated": "2026-03-01T13:14:20.747828",
   "total_users": 20
 }
