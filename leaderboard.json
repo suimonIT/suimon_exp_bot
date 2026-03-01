@@ -31,17 +31,17 @@
     },
     {
       "rank": 5,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 804,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 848,
       "level": 8
     },
     {
       "rank": 6,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
-      "xp": 787,
-      "level": 7
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 804,
+      "level": 8
     },
     {
       "rank": 7,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-01T06:42:04.979159",
+  "last_updated": "2026-03-01T06:44:05.763361",
   "total_users": 20
 }
