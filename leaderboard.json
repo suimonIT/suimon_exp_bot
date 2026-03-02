@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 157,
+      "xp": 160,
       "level": 1
     },
     {
@@ -38,15 +38,15 @@
     },
     {
       "rank": 6,
-      "user_id": 6492833173,
-      "username": "@Gtrixt1904",
-      "xp": 2,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 3,
       "level": 0
     },
     {
       "rank": 7,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
+      "user_id": 6492833173,
+      "username": "@Gtrixt1904",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-02T07:58:59.506581",
+  "last_updated": "2026-03-02T08:01:00.243878",
   "total_users": 20
 }
