@@ -108,40 +108,40 @@
     },
     {
       "rank": 16,
+      "user_id": 6620611798,
+      "username": "@better_Ton",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 17,
       "user_id": 7449430002,
       "username": "@AlinaNoor_UAE",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 7960137014,
       "username": "@moonboy1110",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 8222602505,
       "username": "@Miss_Sahir_92",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 354826749,
-      "username": "@BrandonZora",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-02T22:26:41.293491",
+  "last_updated": "2026-03-02T22:28:42.007449",
   "total_users": 20
 }
