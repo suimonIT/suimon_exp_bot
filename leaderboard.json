@@ -66,22 +66,22 @@
     },
     {
       "rank": 10,
+      "user_id": 7435782960,
+      "username": "@bigjoeeeeeee",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 11,
       "user_id": 1933322951,
       "username": "@lukeisbest",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 7191017936,
       "username": "@Balikis_eth",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 12,
-      "user_id": 7435782960,
-      "username": "@bigjoeeeeeee",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-02T10:03:47.240454",
+  "last_updated": "2026-03-02T10:05:48.078156",
   "total_users": 20
 }
