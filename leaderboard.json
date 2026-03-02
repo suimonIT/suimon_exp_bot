@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 247,
+      "xp": 261,
       "level": 2
     },
     {
@@ -59,15 +59,15 @@
     },
     {
       "rank": 9,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 9,
+      "user_id": 7191017936,
+      "username": "@Balikis_eth",
+      "xp": 13,
       "level": 0
     },
     {
       "rank": 10,
-      "user_id": 7191017936,
-      "username": "@Balikis_eth",
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
       "xp": 9,
       "level": 0
     },
@@ -94,54 +94,54 @@
     },
     {
       "rank": 14,
+      "user_id": 6638050753,
+      "username": "@roberto9135",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 1933322951,
       "username": "@lukeisbest",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 7449430002,
       "username": "@AlinaNoor_UAE",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 7960137014,
       "username": "@moonboy1110",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 8222602505,
       "username": "@Miss_Sahir_92",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 502893727,
-      "username": "@CryptoLogiccc",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-02T20:42:00.319701",
+  "last_updated": "2026-03-02T20:44:01.071637",
   "total_users": 20
 }
