@@ -26,8 +26,8 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 99,
-      "level": 0
+      "xp": 100,
+      "level": 1
     },
     {
       "rank": 5,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-02T21:32:20.168577",
+  "last_updated": "2026-03-02T21:34:21.121015",
   "total_users": 20
 }
