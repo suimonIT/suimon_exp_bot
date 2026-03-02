@@ -24,16 +24,16 @@
     },
     {
       "rank": 4,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
+      "user_id": 7373203214,
+      "username": "@still_gordon",
       "xp": 91,
       "level": 0
     },
     {
       "rank": 5,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 90,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 91,
       "level": 0
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 17,
+      "xp": 19,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-02T19:13:26.314548",
+  "last_updated": "2026-03-02T19:15:27.072222",
   "total_users": 20
 }
