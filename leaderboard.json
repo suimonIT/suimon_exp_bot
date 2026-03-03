@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 131,
+      "xp": 132,
       "level": 1
     },
     {
@@ -87,16 +87,16 @@
     },
     {
       "rank": 13,
-      "user_id": 6969979739,
-      "username": "D",
+      "user_id": 6174387414,
+      "username": "@Vidkharbigstepper",
       "xp": 4,
       "level": 0
     },
     {
       "rank": 14,
-      "user_id": 6174387414,
-      "username": "@Vidkharbigstepper",
-      "xp": 3,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 4,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-03T20:09:23.042509",
+  "last_updated": "2026-03-03T20:11:23.769186",
   "total_users": 20
 }
