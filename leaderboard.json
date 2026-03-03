@@ -33,14 +33,14 @@
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 218,
+      "xp": 220,
       "level": 2
     },
     {
       "rank": 6,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 164,
+      "xp": 165,
       "level": 1
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 117,
+      "xp": 118,
       "level": 1
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 8099191714,
       "username": "@dandotsui",
-      "xp": 5,
+      "xp": 6,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-03T18:42:32.719122",
+  "last_updated": "2026-03-03T18:44:33.409649",
   "total_users": 20
 }
