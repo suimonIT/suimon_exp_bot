@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 221,
+      "xp": 223,
       "level": 2
     },
     {
@@ -59,16 +59,16 @@
     },
     {
       "rank": 9,
-      "user_id": 7191017936,
-      "username": "@Balikis_eth",
-      "xp": 16,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 17,
       "level": 0
     },
     {
       "rank": 10,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 14,
+      "user_id": 7191017936,
+      "username": "@Balikis_eth",
+      "xp": 16,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-03T18:46:34.200757",
+  "last_updated": "2026-03-03T18:48:34.979248",
   "total_users": 20
 }
