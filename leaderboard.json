@@ -10,16 +10,16 @@
     },
     {
       "rank": 2,
-      "user_id": 7395105664,
-      "username": "@sauce_101",
-      "xp": 540,
-      "level": 5
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 635,
+      "level": 6
     },
     {
       "rank": 3,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 535,
+      "user_id": 7395105664,
+      "username": "@sauce_101",
+      "xp": 540,
       "level": 5
     },
     {
@@ -31,30 +31,30 @@
     },
     {
       "rank": 5,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 258,
+      "level": 2
+    },
+    {
+      "rank": 6,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 249,
       "level": 2
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 246,
       "level": 2
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 198,
-      "level": 1
-    },
-    {
-      "rank": 8,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 168,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-04T00:12:58.697509",
+  "last_updated": "2026-03-04T00:14:59.392761",
   "total_users": 20
 }
