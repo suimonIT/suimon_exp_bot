@@ -115,15 +115,15 @@
     },
     {
       "rank": 17,
-      "user_id": 7899878373,
-      "username": "@Bwhite7w",
-      "xp": 4,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 5,
       "level": 0
     },
     {
       "rank": 18,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
+      "user_id": 7899878373,
+      "username": "@Bwhite7w",
       "xp": 4,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-05T19:53:53.385894",
+  "last_updated": "2026-03-05T19:55:54.173239",
   "total_users": 20
 }
