@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 897,
+      "xp": 899,
       "level": 8
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 8099191714,
       "username": "@dandotsui",
-      "xp": 8,
+      "xp": 9,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-05T06:02:08.873526",
+  "last_updated": "2026-03-05T06:04:09.732370",
   "total_users": 20
 }
