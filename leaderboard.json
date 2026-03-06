@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 460,
+      "xp": 461,
       "level": 4
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 321,
+      "xp": 323,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-06T08:52:50.436979",
+  "last_updated": "2026-03-06T08:54:51.261627",
   "total_users": 20
 }
