@@ -73,22 +73,22 @@
     },
     {
       "rank": 11,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 10,
+      "level": 0
+    },
+    {
+      "rank": 12,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 9,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 7435782960,
       "username": "@bigjoeeeeeee",
-      "xp": 9,
-      "level": 0
-    },
-    {
-      "rank": 13,
-      "user_id": 7642527839,
-      "username": "RonnyR",
       "xp": 9,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-06T13:26:36.396559",
+  "last_updated": "2026-03-06T13:28:37.155152",
   "total_users": 20
 }
