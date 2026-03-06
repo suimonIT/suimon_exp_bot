@@ -108,22 +108,22 @@
     },
     {
       "rank": 16,
+      "user_id": 6969979739,
+      "username": "D",
+      "xp": 7,
+      "level": 0
+    },
+    {
+      "rank": 17,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 7,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6174387414,
       "username": "@Vidkharbigstepper",
-      "xp": 5,
-      "level": 0
-    },
-    {
-      "rank": 18,
-      "user_id": 6969979739,
-      "username": "D",
       "xp": 5,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-06T16:27:48.236615",
+  "last_updated": "2026-03-06T16:29:49.068985",
   "total_users": 20
 }
