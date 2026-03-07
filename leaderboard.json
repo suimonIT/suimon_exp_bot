@@ -19,8 +19,8 @@
       "rank": 3,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 881,
-      "level": 8
+      "xp": 961,
+      "level": 9
     },
     {
       "rank": 4,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-07T06:02:50.275417",
+  "last_updated": "2026-03-07T06:04:50.920291",
   "total_users": 20
 }
