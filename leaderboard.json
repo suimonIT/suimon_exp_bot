@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 1170,
+      "xp": 1171,
       "level": 11
     },
     {
       "rank": 3,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 973,
+      "xp": 974,
       "level": 9
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-07T12:51:09.660599",
+  "last_updated": "2026-03-07T12:53:10.359714",
   "total_users": 20
 }
