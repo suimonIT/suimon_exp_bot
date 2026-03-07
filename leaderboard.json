@@ -3,23 +3,23 @@
   "leaderboard": [
     {
       "rank": 1,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 1124,
+      "level": 11
+    },
+    {
+      "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
       "xp": 1066,
       "level": 10
     },
     {
-      "rank": 2,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 1049,
-      "level": 10
-    },
-    {
       "rank": 3,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 831,
+      "xp": 881,
       "level": 8
     },
     {
@@ -45,16 +45,16 @@
     },
     {
       "rank": 7,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 361,
-      "level": 3
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 454,
+      "level": 4
     },
     {
       "rank": 8,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 354,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 361,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-06T23:58:40.458284",
+  "last_updated": "2026-03-07T00:00:41.434053",
   "total_users": 20
 }
