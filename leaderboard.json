@@ -3,16 +3,16 @@
   "leaderboard": [
     {
       "rank": 1,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 1237,
-      "level": 12
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 1333,
+      "level": 13
     },
     {
       "rank": 2,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 1233,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 1237,
       "level": 12
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-08T00:13:04.749868",
+  "last_updated": "2026-03-08T00:15:05.413274",
   "total_users": 20
 }
