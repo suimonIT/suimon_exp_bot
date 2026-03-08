@@ -19,14 +19,14 @@
       "rank": 3,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 1150,
+      "xp": 1151,
       "level": 11
     },
     {
       "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 956,
+      "xp": 958,
       "level": 9
     },
     {
@@ -40,14 +40,14 @@
       "rank": 6,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 763,
-      "level": 7
+      "xp": 864,
+      "level": 8
     },
     {
       "rank": 7,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 537,
+      "xp": 540,
       "level": 5
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-08T12:17:14.901837",
+  "last_updated": "2026-03-08T12:19:15.573845",
   "total_users": 20
 }
