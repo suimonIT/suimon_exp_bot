@@ -26,14 +26,14 @@
       "rank": 4,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 999,
-      "level": 9
+      "xp": 1000,
+      "level": 10
     },
     {
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 971,
+      "xp": 972,
       "level": 9
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 512,
+      "xp": 513,
       "level": 5
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-08T16:22:39.251514",
+  "last_updated": "2026-03-08T16:24:39.880673",
   "total_users": 20
 }
