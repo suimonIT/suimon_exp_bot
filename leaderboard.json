@@ -66,15 +66,15 @@
     },
     {
       "rank": 10,
-      "user_id": 7358917477,
-      "username": "@Crypt_willie1",
-      "xp": 2,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 3,
       "level": 0
     },
     {
       "rank": 11,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
+      "user_id": 7358917477,
+      "username": "@Crypt_willie1",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-09T18:44:59.258178",
+  "last_updated": "2026-03-09T18:47:00.224470",
   "total_users": 20
 }
