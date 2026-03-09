@@ -52,36 +52,36 @@
     },
     {
       "rank": 8,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 9,
       "user_id": 7358917477,
       "username": "@Crypt_willie1",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 8044170213,
       "username": "@Drewdotsui",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 12,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-09T15:51:24.130816",
+  "last_updated": "2026-03-09T15:53:25.167886",
   "total_users": 20
 }
