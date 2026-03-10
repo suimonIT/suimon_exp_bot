@@ -5,50 +5,50 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 318,
+      "xp": 368,
       "level": 3
     },
     {
       "rank": 2,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 203,
-      "level": 2
+      "xp": 303,
+      "level": 3
     },
     {
       "rank": 3,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 155,
+      "level": 1
+    },
+    {
+      "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 153,
       "level": 1
     },
     {
-      "rank": 4,
+      "rank": 5,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
       "xp": 116,
       "level": 1
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 111,
       "level": 1
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 100,
       "level": 1
-    },
-    {
-      "rank": 7,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 80,
-      "level": 0
     },
     {
       "rank": 8,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-09T23:59:36.952924",
+  "last_updated": "2026-03-10T00:01:38.073125",
   "total_users": 20
 }
