@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 201,
+      "xp": 202,
       "level": 2
     },
     {
@@ -66,16 +66,16 @@
     },
     {
       "rank": 10,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
+      "user_id": 7642527839,
+      "username": "RonnyR",
       "xp": 5,
       "level": 0
     },
     {
       "rank": 11,
-      "user_id": 7642527839,
-      "username": "RonnyR",
-      "xp": 4,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 5,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-10T23:15:15.604960",
+  "last_updated": "2026-03-10T23:17:16.318252",
   "total_users": 20
 }
