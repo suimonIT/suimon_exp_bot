@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 253,
+      "xp": 255,
       "level": 2
     },
     {
@@ -52,16 +52,16 @@
     },
     {
       "rank": 8,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
-      "xp": 5,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 66,
       "level": 0
     },
     {
       "rank": 9,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
-      "xp": 4,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 5,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-10T07:30:45.547304",
+  "last_updated": "2026-03-10T07:32:46.439688",
   "total_users": 20
 }
