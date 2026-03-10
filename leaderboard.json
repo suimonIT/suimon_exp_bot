@@ -12,21 +12,21 @@
       "rank": 2,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 411,
+      "xp": 412,
       "level": 4
     },
     {
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 255,
+      "xp": 256,
       "level": 2
     },
     {
       "rank": 4,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 200,
+      "xp": 201,
       "level": 2
     },
     {
@@ -73,30 +73,30 @@
     },
     {
       "rank": 11,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 12,
       "user_id": 6013331358,
       "username": "@PrimeUz3",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 7358917477,
       "username": "@Crypt_willie1",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 8222602505,
       "username": "@Miss_Sahir_92",
       "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 14,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 1,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-10T07:34:47.154378",
+  "last_updated": "2026-03-10T07:36:47.826407",
   "total_users": 20
 }
