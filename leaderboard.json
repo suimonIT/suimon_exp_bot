@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 680,
+      "xp": 681,
       "level": 6
     },
     {
@@ -66,16 +66,16 @@
     },
     {
       "rank": 10,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
-      "xp": 6,
+      "user_id": 7191017936,
+      "username": "@Balikis_eth",
+      "xp": 7,
       "level": 0
     },
     {
       "rank": 11,
-      "user_id": 7191017936,
-      "username": "@Balikis_eth",
-      "xp": 5,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 6,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-11T20:29:53.024647",
+  "last_updated": "2026-03-11T20:31:53.937176",
   "total_users": 20
 }
