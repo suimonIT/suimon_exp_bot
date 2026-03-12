@@ -115,33 +115,33 @@
     },
     {
       "rank": 17,
+      "user_id": 8068660109,
+      "username": "@OfficerJenny_SUI",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 18,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 502893727,
       "username": "@CryptoLogiccc",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 524024810,
-      "username": "@hestaditya",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-12T11:17:27.726391",
+  "last_updated": "2026-03-12T11:19:28.519303",
   "total_users": 20
 }
