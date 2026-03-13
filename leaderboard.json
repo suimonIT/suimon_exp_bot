@@ -80,16 +80,16 @@
     },
     {
       "rank": 12,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
+      "user_id": 7219613578,
+      "username": "@AmiraYasmin1",
       "xp": 6,
       "level": 0
     },
     {
       "rank": 13,
-      "user_id": 7219613578,
-      "username": "@AmiraYasmin1",
-      "xp": 5,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 6,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-13T10:24:49.928743",
+  "last_updated": "2026-03-13T10:26:50.672546",
   "total_users": 20
 }
