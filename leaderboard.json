@@ -73,16 +73,16 @@
     },
     {
       "rank": 11,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
+      "user_id": 7642527839,
+      "username": "RonnyR",
       "xp": 6,
       "level": 0
     },
     {
       "rank": 12,
-      "user_id": 7642527839,
-      "username": "RonnyR",
-      "xp": 5,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 6,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-13T00:06:57.856993",
+  "last_updated": "2026-03-13T00:08:58.539696",
   "total_users": 20
 }
