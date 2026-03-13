@@ -66,15 +66,15 @@
     },
     {
       "rank": 10,
-      "user_id": 7191017936,
-      "username": "@Balikis_eth",
-      "xp": 8,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 9,
       "level": 0
     },
     {
       "rank": 11,
-      "user_id": 7642527839,
-      "username": "RonnyR",
+      "user_id": 7191017936,
+      "username": "@Balikis_eth",
       "xp": 8,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-13T17:39:42.395291",
+  "last_updated": "2026-03-13T17:41:43.160389",
   "total_users": 20
 }
