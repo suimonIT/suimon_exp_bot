@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7395105664,
       "username": "@sauce_101",
-      "xp": 1495,
+      "xp": 1496,
       "level": 14
     },
     {
@@ -33,14 +33,14 @@
       "rank": 5,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 830,
+      "xp": 831,
       "level": 8
     },
     {
       "rank": 6,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 622,
+      "xp": 626,
       "level": 6
     },
     {
@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 7191017936,
       "username": "@Balikis_eth",
-      "xp": 8,
+      "xp": 9,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-14T17:06:11.780662",
+  "last_updated": "2026-03-14T17:08:12.451281",
   "total_users": 20
 }
