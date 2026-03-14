@@ -101,15 +101,15 @@
     },
     {
       "rank": 15,
-      "user_id": 6344447763,
-      "username": "@suikamon",
-      "xp": 3,
+      "user_id": 7358917477,
+      "username": "@Crypt_willie1",
+      "xp": 4,
       "level": 0
     },
     {
       "rank": 16,
-      "user_id": 7358917477,
-      "username": "@Crypt_willie1",
+      "user_id": 6344447763,
+      "username": "@suikamon",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-14T02:12:51.944106",
+  "last_updated": "2026-03-14T02:14:52.885799",
   "total_users": 20
 }
