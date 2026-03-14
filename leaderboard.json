@@ -5,14 +5,14 @@
       "rank": 1,
       "user_id": 7395105664,
       "username": "@drazsui",
-      "xp": 1520,
+      "xp": 1521,
       "level": 15
     },
     {
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1222,
+      "xp": 1224,
       "level": 12
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 7642527839,
       "username": "RonnyR",
-      "xp": 17,
+      "xp": 18,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-14T23:28:23.674992",
+  "last_updated": "2026-03-14T23:30:24.299182",
   "total_users": 20
 }
