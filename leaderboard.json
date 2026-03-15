@@ -108,22 +108,22 @@
     },
     {
       "rank": 16,
+      "user_id": 6523845740,
+      "username": "@NiraNew",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 17,
       "user_id": 6969979739,
       "username": "D",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6344447763,
       "username": "@suikamon",
-      "xp": 3,
-      "level": 0
-    },
-    {
-      "rank": 18,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-15T20:31:41.302286",
+  "last_updated": "2026-03-15T20:33:41.967684",
   "total_users": 20
 }
