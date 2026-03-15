@@ -122,26 +122,26 @@
     },
     {
       "rank": 18,
+      "user_id": 6523845740,
+      "username": "@NiraNew",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 19,
       "user_id": 8221117420,
       "username": "@Light_4bl",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 8222602505,
       "username": "@Miss_Sahir_92",
       "xp": 3,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-15T20:19:36.951720",
+  "last_updated": "2026-03-15T20:21:37.613529",
   "total_users": 20
 }
