@@ -1,68 +1,68 @@
 {
   "success": true,
-  "week_start_date": "2026-03-08",
+  "week_start_date": "2026-03-15",
   "winners": [
     {
       "rank": 1,
+      "user_id": 7395105664,
+      "username": "drazsui",
+      "first_name": "Draz",
+      "display_name": "@drazsui",
+      "xp": 1807,
+      "level": 18
+    },
+    {
+      "rank": 2,
       "user_id": 6363051488,
       "username": "Jeffnatius",
       "first_name": "Sgt. Jeff \u2696\ufe0f \ud83d\udc38\ud83e\ude96",
       "display_name": "@Jeffnatius",
-      "xp": 1358,
-      "level": 13
-    },
-    {
-      "rank": 2,
-      "user_id": 7105730933,
-      "username": "abiclighter",
-      "first_name": "J.D.L",
-      "display_name": "@abiclighter",
-      "xp": 1345,
+      "xp": 1355,
       "level": 13
     },
     {
       "rank": 3,
-      "user_id": 7395105664,
-      "username": "sauce_101",
-      "first_name": "Draz",
-      "display_name": "@sauce_101",
-      "xp": 1166,
-      "level": 11
+      "user_id": 7105730933,
+      "username": "abiclighter",
+      "first_name": "J.D.L",
+      "display_name": "@abiclighter",
+      "xp": 1239,
+      "level": 12
     },
     {
       "rank": 4,
-      "user_id": 8112916103,
-      "username": "Oxninjasui",
-      "first_name": "NINJA\u2728",
-      "display_name": "@Oxninjasui",
-      "xp": 1004,
-      "level": 10
-    },
-    {
-      "rank": 5,
       "user_id": 7611709300,
       "username": "VanJohnovich",
       "first_name": "VanJohnovich",
       "display_name": "@VanJohnovich",
-      "xp": 975,
-      "level": 9
+      "xp": 1070,
+      "level": 10
     },
     {
-      "rank": 6,
+      "rank": 5,
       "user_id": 6909943871,
       "username": "otexfemi",
       "first_name": "\u014ctex",
       "display_name": "@otexfemi",
-      "xp": 868,
+      "xp": 834,
       "level": 8
     },
     {
-      "rank": 7,
+      "rank": 6,
       "user_id": 1268008610,
       "username": "Joybaeart",
       "first_name": "Justjoy",
       "display_name": "@Joybaeart",
-      "xp": 558,
+      "xp": 827,
+      "level": 8
+    },
+    {
+      "rank": 7,
+      "user_id": 8112916103,
+      "username": "Oxninjasui",
+      "first_name": "NINJA\u2728",
+      "display_name": "@Oxninjasui",
+      "xp": 591,
       "level": 5
     },
     {
@@ -71,8 +71,8 @@
       "username": "still_gordon",
       "first_name": "Gordon",
       "display_name": "@still_gordon",
-      "xp": 517,
-      "level": 5
+      "xp": 289,
+      "level": 2
     },
     {
       "rank": 9,
@@ -80,8 +80,8 @@
       "username": "IceFlurryX",
       "first_name": "ICEFLURRYX",
       "display_name": "@IceFlurryX",
-      "xp": 193,
-      "level": 1
+      "xp": 30,
+      "level": 0
     },
     {
       "rank": 10,
@@ -89,9 +89,9 @@
       "username": "",
       "first_name": "RonnyR",
       "display_name": "RonnyR",
-      "xp": 28,
+      "xp": 23,
       "level": 0
     }
   ],
-  "last_updated": "2026-03-08T22:00:00.011448"
+  "last_updated": "2026-03-15T22:00:00.012115"
 }
