@@ -12,8 +12,8 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1233,
-      "level": 12
+      "xp": 1334,
+      "level": 13
     },
     {
       "rank": 3,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-15T10:52:19.043098",
+  "last_updated": "2026-03-15T10:54:19.751536",
   "total_users": 20
 }
