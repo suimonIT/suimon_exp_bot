@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7395105664,
       "username": "@drazsui",
-      "xp": 225,
+      "xp": 226,
       "level": 2
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 57,
+      "xp": 58,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-16T20:17:02.181848",
+  "last_updated": "2026-03-16T20:19:03.055048",
   "total_users": 20
 }
