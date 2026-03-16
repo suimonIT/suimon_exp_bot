@@ -52,16 +52,16 @@
     },
     {
       "rank": 8,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 5,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 6,
       "level": 0
     },
     {
       "rank": 9,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 4,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 5,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-16T16:45:32.262336",
+  "last_updated": "2026-03-16T16:47:33.183442",
   "total_users": 20
 }
