@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 186,
+      "xp": 187,
       "level": 1
     },
     {
@@ -45,23 +45,23 @@
     },
     {
       "rank": 7,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 7,
+      "level": 0
+    },
+    {
+      "rank": 8,
       "user_id": 5865059897,
       "username": "Suimon CTO $SUIMON",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 6,
-      "level": 0
-    },
-    {
-      "rank": 9,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 5,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-16T17:33:53.327065",
+  "last_updated": "2026-03-16T17:35:54.167278",
   "total_users": 20
 }
