@@ -31,17 +31,17 @@
     },
     {
       "rank": 5,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 127,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 132,
       "level": 1
     },
     {
       "rank": 6,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 62,
-      "level": 0
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 127,
+      "level": 1
     },
     {
       "rank": 7,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-17T07:01:01.927975",
+  "last_updated": "2026-03-17T07:03:02.643295",
   "total_users": 20
 }
