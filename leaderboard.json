@@ -3,23 +3,23 @@
   "leaderboard": [
     {
       "rank": 1,
+      "user_id": 7395105664,
+      "username": "@drazsui",
+      "xp": 428,
+      "level": 4
+    },
+    {
+      "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
       "xp": 410,
       "level": 4
     },
     {
-      "rank": 2,
+      "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
       "xp": 375,
-      "level": 3
-    },
-    {
-      "rank": 3,
-      "user_id": 7395105664,
-      "username": "@drazsui",
-      "xp": 328,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-17T07:17:08.977906",
+  "last_updated": "2026-03-17T07:19:09.683869",
   "total_users": 20
 }
