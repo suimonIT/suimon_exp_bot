@@ -66,82 +66,82 @@
     },
     {
       "rank": 10,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 61,
+      "level": 0
+    },
+    {
+      "rank": 11,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 11,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 5865059897,
       "username": "Suimon CTO $SUIMON",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6013331358,
       "username": "@PrimeUz3",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 8044170213,
       "username": "@Drewdotsui",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 5368428662,
       "username": "@BCDXB333",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 6969979739,
       "username": "D",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 7123513156,
       "username": "@Will_Lord",
       "xp": 1,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-18T03:01:17.949736",
+  "last_updated": "2026-03-18T03:03:18.691751",
   "total_users": 20
 }
