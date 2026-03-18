@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 540,
+      "xp": 543,
       "level": 5
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 75,
+      "xp": 81,
       "level": 0
     },
     {
@@ -101,47 +101,47 @@
     },
     {
       "rank": 15,
+      "user_id": 1575936630,
+      "username": "@ProfessorPepeXCalls",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 16,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
+      "user_id": 5026820734,
+      "username": "@tidus1986",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 18,
       "user_id": 5368428662,
       "username": "@BCDXB333",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 19,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 20,
       "user_id": 6013331358,
       "username": "@PrimeUz3",
       "xp": 2,
       "level": 0
-    },
-    {
-      "rank": 19,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
-      "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 6969979739,
-      "username": "D",
-      "xp": 1,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-18T23:54:30.839460",
+  "last_updated": "2026-03-18T23:56:31.567433",
   "total_users": 20
 }
