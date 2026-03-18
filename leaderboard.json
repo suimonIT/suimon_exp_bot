@@ -101,15 +101,15 @@
     },
     {
       "rank": 15,
-      "user_id": 100294326,
-      "username": "@xXCHNGx",
-      "xp": 2,
+      "user_id": 5368428662,
+      "username": "@BCDXB333",
+      "xp": 3,
       "level": 0
     },
     {
       "rank": 16,
-      "user_id": 5368428662,
-      "username": "@BCDXB333",
+      "user_id": 100294326,
+      "username": "@xXCHNGx",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-18T16:47:21.030331",
+  "last_updated": "2026-03-18T16:49:21.974011",
   "total_users": 20
 }
