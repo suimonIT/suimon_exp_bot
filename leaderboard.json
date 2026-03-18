@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 804,
+      "xp": 808,
       "level": 8
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 153,
+      "xp": 158,
       "level": 1
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 112,
+      "xp": 116,
       "level": 1
     },
     {
@@ -96,7 +96,7 @@
       "rank": 14,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 4,
+      "xp": 5,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-18T23:00:08.342477",
+  "last_updated": "2026-03-18T23:02:09.334394",
   "total_users": 20
 }
