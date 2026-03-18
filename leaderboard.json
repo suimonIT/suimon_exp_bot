@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 543,
+      "xp": 545,
       "level": 5
     },
     {
@@ -80,43 +80,43 @@
     },
     {
       "rank": 12,
+      "user_id": 1575936630,
+      "username": "@ProfessorPepeXCalls",
+      "xp": 7,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 5865059897,
       "username": "Suimon CTO $SUIMON",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 5,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 5,
       "level": 0
     },
     {
-      "rank": 15,
-      "user_id": 1575936630,
-      "username": "@ProfessorPepeXCalls",
-      "xp": 3,
-      "level": 0
-    },
-    {
       "rank": 16,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 3,
+      "user_id": 5026820734,
+      "username": "@tidus1986",
+      "xp": 4,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 5026820734,
-      "username": "@tidus1986",
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-18T23:56:31.567433",
+  "last_updated": "2026-03-18T23:58:32.519443",
   "total_users": 20
 }
