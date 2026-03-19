@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 674,
+      "xp": 675,
       "level": 6
     },
     {
@@ -87,23 +87,23 @@
     },
     {
       "rank": 13,
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
+      "xp": 6,
+      "level": 0
+    },
+    {
+      "rank": 14,
       "user_id": 5865059897,
       "username": "Suimon CTO $SUIMON",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
       "xp": 6,
-      "level": 0
-    },
-    {
-      "rank": 15,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 5,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-19T23:28:34.938726",
+  "last_updated": "2026-03-19T23:30:35.668147",
   "total_users": 20
 }
