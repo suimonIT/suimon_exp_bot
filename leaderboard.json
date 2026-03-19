@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 675,
+      "xp": 677,
       "level": 6
     },
     {
@@ -80,16 +80,16 @@
     },
     {
       "rank": 12,
-      "user_id": 1575936630,
-      "username": "@ProfessorPepeXCalls",
-      "xp": 7,
+      "user_id": 1920467037,
+      "username": "@Se7enDigitsOrDie",
+      "xp": 8,
       "level": 0
     },
     {
       "rank": 13,
-      "user_id": 1920467037,
-      "username": "@Se7enDigitsOrDie",
-      "xp": 6,
+      "user_id": 1575936630,
+      "username": "@ProfessorPepeXCalls",
+      "xp": 7,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-19T23:30:35.668147",
+  "last_updated": "2026-03-19T23:32:36.641281",
   "total_users": 20
 }
