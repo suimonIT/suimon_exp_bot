@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7395105664,
       "username": "@drazsui",
-      "xp": 953,
+      "xp": 955,
       "level": 9
     },
     {
@@ -40,14 +40,14 @@
       "rank": 6,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 240,
+      "xp": 241,
       "level": 2
     },
     {
       "rank": 7,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 220,
+      "xp": 221,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-19T17:09:31.329027",
+  "last_updated": "2026-03-19T17:11:32.319025",
   "total_users": 20
 }
