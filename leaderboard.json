@@ -3,23 +3,23 @@
   "leaderboard": [
     {
       "rank": 1,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 925,
+      "level": 9
+    },
+    {
+      "rank": 2,
       "user_id": 7395105664,
       "username": "@drazsui",
       "xp": 851,
       "level": 8
     },
     {
-      "rank": 2,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 825,
-      "level": 8
-    },
-    {
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 545,
+      "xp": 546,
       "level": 5
     },
     {
@@ -31,24 +31,24 @@
     },
     {
       "rank": 5,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 234,
+      "level": 2
+    },
+    {
+      "rank": 6,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 215,
       "level": 2
     },
     {
-      "rank": 6,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 184,
-      "level": 1
-    },
-    {
       "rank": 7,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 135,
-      "level": 1
+      "xp": 211,
+      "level": 2
     },
     {
       "rank": 8,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-18T23:58:32.519443",
+  "last_updated": "2026-03-19T00:00:33.335280",
   "total_users": 20
 }
