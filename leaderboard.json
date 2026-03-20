@@ -38,23 +38,23 @@
     },
     {
       "rank": 6,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 293,
+      "level": 2
+    },
+    {
+      "rank": 7,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 293,
       "level": 2
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 247,
-      "level": 2
-    },
-    {
-      "rank": 8,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 232,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-20T10:21:01.666150",
+  "last_updated": "2026-03-20T10:23:02.733300",
   "total_users": 20
 }
