@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 888,
+      "xp": 889,
       "level": 8
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 1575936630,
       "username": "@ProfessorPepeXCalls",
-      "xp": 7,
+      "xp": 8,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-20T04:12:31.480337",
+  "last_updated": "2026-03-20T04:14:32.172628",
   "total_users": 20
 }
