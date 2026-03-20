@@ -40,8 +40,8 @@
       "rank": 6,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 298,
-      "level": 2
+      "xp": 300,
+      "level": 3
     },
     {
       "rank": 7,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-20T14:30:48.894282",
+  "last_updated": "2026-03-20T14:32:49.948352",
   "total_users": 20
 }
