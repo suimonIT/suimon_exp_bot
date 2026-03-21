@@ -101,22 +101,22 @@
     },
     {
       "rank": 15,
+      "user_id": 8099191714,
+      "username": "@p00lboyq",
+      "xp": 7,
+      "level": 0
+    },
+    {
+      "rank": 16,
       "user_id": 5865059897,
       "username": "Suimon CTO $SUIMON",
       "xp": 6,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 8068660109,
       "username": "@OfficerJenny_SUI",
-      "xp": 6,
-      "level": 0
-    },
-    {
-      "rank": 17,
-      "user_id": 8099191714,
-      "username": "@p00lboyq",
       "xp": 6,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-21T15:49:15.460106",
+  "last_updated": "2026-03-21T15:51:16.537019",
   "total_users": 20
 }
