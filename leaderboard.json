@@ -12,8 +12,8 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 1089,
-      "level": 10
+      "xp": 1189,
+      "level": 11
     },
     {
       "rank": 3,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-21T00:13:14.634143",
+  "last_updated": "2026-03-21T00:15:15.650398",
   "total_users": 20
 }
