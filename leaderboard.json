@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 916,
+      "xp": 917,
       "level": 9
     },
     {
@@ -94,15 +94,15 @@
     },
     {
       "rank": 14,
-      "user_id": 5865059897,
-      "username": "Suimon CTO $SUIMON",
-      "xp": 6,
+      "user_id": 6523845740,
+      "username": "@NiraNew",
+      "xp": 7,
       "level": 0
     },
     {
       "rank": 15,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
+      "user_id": 5865059897,
+      "username": "Suimon CTO $SUIMON",
       "xp": 6,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-21T14:40:49.067331",
+  "last_updated": "2026-03-21T14:42:49.723744",
   "total_users": 20
 }
