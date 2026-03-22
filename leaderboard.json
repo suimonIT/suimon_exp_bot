@@ -87,15 +87,15 @@
     },
     {
       "rank": 13,
-      "user_id": 1575936630,
-      "username": "@ProfessorPepeXCalls",
-      "xp": 8,
+      "user_id": 6274470012,
+      "username": "@levo100",
+      "xp": 10,
       "level": 0
     },
     {
       "rank": 14,
-      "user_id": 6274470012,
-      "username": "@levo100",
+      "user_id": 1575936630,
+      "username": "@ProfessorPepeXCalls",
       "xp": 8,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-22T11:51:04.410969",
+  "last_updated": "2026-03-22T11:53:05.117114",
   "total_users": 20
 }
