@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 548,
+      "xp": 549,
       "level": 5
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 12,
+      "xp": 13,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-22T18:17:36.277356",
+  "last_updated": "2026-03-22T18:19:36.909982",
   "total_users": 20
 }
