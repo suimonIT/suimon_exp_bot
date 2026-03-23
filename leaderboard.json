@@ -26,14 +26,14 @@
       "rank": 4,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 126,
+      "xp": 127,
       "level": 1
     },
     {
       "rank": 5,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 102,
+      "xp": 103,
       "level": 1
     },
     {
@@ -54,21 +54,21 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 77,
+      "xp": 80,
       "level": 0
     },
     {
       "rank": 9,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 69,
+      "xp": 71,
       "level": 0
     },
     {
       "rank": 10,
       "user_id": 977733309,
       "username": "@Loboszlai",
-      "xp": 62,
+      "xp": 64,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-23T09:00:52.555096",
+  "last_updated": "2026-03-23T09:02:53.446582",
   "total_users": 20
 }
