@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 6909943871,
       "username": "@otexfemi",
-      "xp": 100,
+      "xp": 101,
       "level": 1
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 68,
+      "xp": 69,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-23T08:34:41.855582",
+  "last_updated": "2026-03-23T08:36:42.571524",
   "total_users": 20
 }
