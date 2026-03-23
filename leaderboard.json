@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 129,
+      "xp": 133,
       "level": 1
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 6614656944,
       "username": "@PanbIaoowner",
-      "xp": 14,
+      "xp": 21,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-23T09:29:04.704712",
+  "last_updated": "2026-03-23T09:31:05.470581",
   "total_users": 20
 }
