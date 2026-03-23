@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 102,
+      "xp": 103,
       "level": 1
     },
     {
@@ -66,16 +66,16 @@
     },
     {
       "rank": 10,
-      "user_id": 7642527839,
-      "username": "RonnyR",
+      "user_id": 6274470012,
+      "username": "@levo100",
       "xp": 3,
       "level": 0
     },
     {
       "rank": 11,
-      "user_id": 6274470012,
-      "username": "@levo100",
-      "xp": 2,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 3,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-23T08:04:29.063004",
+  "last_updated": "2026-03-23T08:06:30.124827",
   "total_users": 20
 }
