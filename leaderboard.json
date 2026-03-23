@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 127,
+      "xp": 128,
       "level": 1
     },
     {
@@ -54,14 +54,14 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 80,
+      "xp": 90,
       "level": 0
     },
     {
       "rank": 9,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 74,
+      "xp": 77,
       "level": 0
     },
     {
@@ -73,75 +73,75 @@
     },
     {
       "rank": 11,
+      "user_id": 7191017936,
+      "username": "@Balikis_eth",
+      "xp": 16,
+      "level": 0
+    },
+    {
+      "rank": 12,
+      "user_id": 7188223463,
+      "username": "@Levy667",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 13,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 14,
       "user_id": 6195585474,
       "username": "@JUNIOR1923",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 13,
-      "user_id": 7191017936,
-      "username": "@Balikis_eth",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 14,
+      "rank": 15,
       "user_id": 7504672534,
       "username": "@KittyChan_CEO",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 354826749,
       "username": "@BrandonZora",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 384570203,
       "username": "@DarkXsilverID",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 502893727,
       "username": "@CryptoLogiccc",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 524024810,
       "username": "@hestaditya",
       "xp": 0,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 957149245,
-      "username": "@ErichG1991",
-      "xp": 0,
-      "level": 0
     }
   ],
-  "last_updated": "2026-03-23T09:04:54.143643",
+  "last_updated": "2026-03-23T09:06:54.898593",
   "total_users": 20
 }
