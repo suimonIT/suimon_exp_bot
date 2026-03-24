@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 258,
+      "xp": 260,
       "level": 2
     },
     {
@@ -108,23 +108,23 @@
     },
     {
       "rank": 16,
+      "user_id": 972499411,
+      "username": "@aleyweb",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 17,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 7188223463,
       "username": "@Levy667",
       "xp": 4,
-      "level": 0
-    },
-    {
-      "rank": 18,
-      "user_id": 972499411,
-      "username": "@aleyweb",
-      "xp": 3,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-24T23:04:56.443163",
+  "last_updated": "2026-03-24T23:06:57.184725",
   "total_users": 20
 }
