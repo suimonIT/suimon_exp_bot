@@ -101,29 +101,29 @@
     },
     {
       "rank": 15,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 16,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 7188223463,
       "username": "@Levy667",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 1575936630,
       "username": "@ProfessorPepeXCalls",
-      "xp": 3,
-      "level": 0
-    },
-    {
-      "rank": 18,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-24T21:02:04.664699",
+  "last_updated": "2026-03-24T21:04:05.383444",
   "total_users": 20
 }
