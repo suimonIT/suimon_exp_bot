@@ -94,22 +94,22 @@
     },
     {
       "rank": 14,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 1575936630,
       "username": "@ProfessorPepeXCalls",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6523845740,
       "username": "@NiraNew",
-      "xp": 3,
-      "level": 0
-    },
-    {
-      "rank": 16,
-      "user_id": 7642527839,
-      "username": "RonnyR",
       "xp": 3,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-24T00:07:05.363457",
+  "last_updated": "2026-03-24T00:09:06.069608",
   "total_users": 20
 }
