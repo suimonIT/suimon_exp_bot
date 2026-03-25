@@ -10,23 +10,23 @@
     },
     {
       "rank": 2,
+      "user_id": 6363051488,
+      "username": "@Jeffnatius",
+      "xp": 634,
+      "level": 6
+    },
+    {
+      "rank": 3,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 399,
       "level": 3
     },
     {
-      "rank": 3,
+      "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 362,
-      "level": 3
-    },
-    {
-      "rank": 4,
-      "user_id": 6363051488,
-      "username": "@Jeffnatius",
-      "xp": 334,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-25T01:01:56.171006",
+  "last_updated": "2026-03-25T01:03:56.837176",
   "total_users": 20
 }
