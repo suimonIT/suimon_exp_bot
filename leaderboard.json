@@ -101,15 +101,15 @@
     },
     {
       "rank": 15,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 5,
+      "user_id": 6523845740,
+      "username": "@NiraNew",
+      "xp": 6,
       "level": 0
     },
     {
       "rank": 16,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
       "xp": 5,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-25T00:05:27.297837",
+  "last_updated": "2026-03-25T00:07:29.370471",
   "total_users": 20
 }
