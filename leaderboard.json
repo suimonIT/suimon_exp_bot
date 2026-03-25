@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 156,
+      "xp": 157,
       "level": 1
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 114,
+      "xp": 116,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-25T08:03:39.077669",
+  "last_updated": "2026-03-25T08:05:41.107196",
   "total_users": 20
 }
