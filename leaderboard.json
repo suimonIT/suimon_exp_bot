@@ -26,14 +26,14 @@
       "rank": 4,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 369,
+      "xp": 371,
       "level": 3
     },
     {
       "rank": 5,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 311,
+      "xp": 312,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-25T11:39:36.673727",
+  "last_updated": "2026-03-25T11:41:37.426992",
   "total_users": 20
 }
