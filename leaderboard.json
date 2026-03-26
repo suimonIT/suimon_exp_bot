@@ -59,16 +59,16 @@
     },
     {
       "rank": 9,
-      "user_id": 6274470012,
-      "username": "@levo100",
-      "xp": 186,
-      "level": 1
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 210,
+      "level": 2
     },
     {
       "rank": 10,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 130,
+      "user_id": 6274470012,
+      "username": "@levo100",
+      "xp": 186,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-26T02:36:21.433764",
+  "last_updated": "2026-03-26T02:38:22.312166",
   "total_users": 20
 }
