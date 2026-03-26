@@ -101,23 +101,23 @@
     },
     {
       "rank": 15,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 22,
+      "level": 0
+    },
+    {
+      "rank": 16,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 22,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6614656944,
       "username": "@PanbIaoowner",
       "xp": 21,
-      "level": 0
-    },
-    {
-      "rank": 17,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 20,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-26T14:51:37.810919",
+  "last_updated": "2026-03-26T14:53:38.802539",
   "total_users": 20
 }
