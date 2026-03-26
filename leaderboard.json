@@ -122,16 +122,16 @@
     },
     {
       "rank": 18,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
-      "xp": 7,
+      "user_id": 8044170213,
+      "username": "@Drewdotsui",
+      "xp": 9,
       "level": 0
     },
     {
       "rank": 19,
-      "user_id": 8044170213,
-      "username": "@Drewdotsui",
-      "xp": 6,
+      "user_id": 6523845740,
+      "username": "@NiraNew",
+      "xp": 7,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-26T11:11:39.337933",
+  "last_updated": "2026-03-26T11:13:40.114727",
   "total_users": 20
 }
