@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 7395105664,
       "username": "@drazsui",
-      "xp": 283,
+      "xp": 284,
       "level": 2
     },
     {
@@ -75,8 +75,8 @@
       "rank": 11,
       "user_id": 977733309,
       "username": "@Loboszlai",
-      "xp": 83,
-      "level": 0
+      "xp": 143,
+      "level": 1
     },
     {
       "rank": 12,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-27T00:02:19.191510",
+  "last_updated": "2026-03-27T00:04:19.934777",
   "total_users": 20
 }
