@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 471,
+      "xp": 472,
       "level": 4
     },
     {
@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 361,
+      "xp": 362,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-27T22:13:36.235133",
+  "last_updated": "2026-03-27T22:15:37.042783",
   "total_users": 20
 }
