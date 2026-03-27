@@ -52,23 +52,23 @@
     },
     {
       "rank": 8,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 300,
+      "level": 3
+    },
+    {
+      "rank": 9,
       "user_id": 7395105664,
       "username": "@drazsui",
       "xp": 289,
       "level": 2
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 6274470012,
       "username": "@levo100",
       "xp": 270,
-      "level": 2
-    },
-    {
-      "rank": 10,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 210,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-27T05:58:54.509887",
+  "last_updated": "2026-03-27T06:00:55.164439",
   "total_users": 20
 }
