@@ -45,16 +45,16 @@
     },
     {
       "rank": 7,
-      "user_id": 6274470012,
-      "username": "@levo100",
-      "xp": 453,
+      "user_id": 6909943871,
+      "username": "@otexfemi",
+      "xp": 469,
       "level": 4
     },
     {
       "rank": 8,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 409,
+      "user_id": 6274470012,
+      "username": "@levo100",
+      "xp": 453,
       "level": 4
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-28T08:10:55.731934",
+  "last_updated": "2026-03-28T08:12:56.510196",
   "total_users": 20
 }
