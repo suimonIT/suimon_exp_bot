@@ -87,16 +87,16 @@
     },
     {
       "rank": 13,
-      "user_id": 2055088100,
-      "username": "@Abdulwrld",
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
       "xp": 68,
       "level": 0
     },
     {
       "rank": 14,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 67,
+      "user_id": 2055088100,
+      "username": "@Abdulwrld",
+      "xp": 68,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-29T08:15:40.938768",
+  "last_updated": "2026-03-29T08:17:41.618252",
   "total_users": 20
 }
