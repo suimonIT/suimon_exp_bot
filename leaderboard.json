@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "rank": 1,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
-      "xp": 1,
+      "user_id": 7642527839,
+      "username": "RonnyR",
+      "xp": 2,
       "level": 0
     },
     {
       "rank": 2,
-      "user_id": 7642527839,
-      "username": "RonnyR",
+      "user_id": 6523845740,
+      "username": "@NiraNew",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-29T23:45:21.108706",
+  "last_updated": "2026-03-29T23:47:21.845401",
   "total_users": 20
 }
