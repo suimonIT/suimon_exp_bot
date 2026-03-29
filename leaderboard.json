@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1440,
+      "xp": 1443,
       "level": 14
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 655,
+      "xp": 658,
       "level": 6
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-29T19:09:40.135669",
+  "last_updated": "2026-03-29T19:11:40.854798",
   "total_users": 20
 }
