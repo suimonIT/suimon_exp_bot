@@ -5,14 +5,14 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 1878,
+      "xp": 1879,
       "level": 18
     },
     {
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1393,
+      "xp": 1394,
       "level": 13
     },
     {
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 70,
+      "xp": 71,
       "level": 0
     },
     {
@@ -138,10 +138,10 @@
       "rank": 20,
       "user_id": 8068660109,
       "username": "@ShadowHunter_web3",
-      "xp": 19,
+      "xp": 21,
       "level": 0
     }
   ],
-  "last_updated": "2026-03-29T09:58:18.471706",
+  "last_updated": "2026-03-29T10:00:19.406512",
   "total_users": 20
 }
