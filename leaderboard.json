@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
-      "xp": 943,
+      "xp": 944,
       "level": 9
     },
     {
@@ -33,7 +33,7 @@
       "rank": 5,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 704,
+      "xp": 705,
       "level": 7
     },
     {
@@ -87,51 +87,51 @@
     },
     {
       "rank": 13,
+      "user_id": 8068660109,
+      "username": "@ShadowHunter_web3",
+      "xp": 84,
+      "level": 0
+    },
+    {
+      "rank": 14,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 71,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 2055088100,
       "username": "@Abdulwrld",
       "xp": 68,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 7508825532,
       "username": "@Rabii87",
       "xp": 61,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6041248770,
       "username": "@Iconic_bottt",
-      "xp": 53,
+      "xp": 54,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 7191017936,
       "username": "@Balikis_eth",
       "xp": 53,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 31,
-      "level": 0
-    },
-    {
-      "rank": 19,
-      "user_id": 8068660109,
-      "username": "@ShadowHunter_web3",
-      "xp": 23,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-29T10:08:22.394258",
+  "last_updated": "2026-03-29T10:10:23.152167",
   "total_users": 20
 }
