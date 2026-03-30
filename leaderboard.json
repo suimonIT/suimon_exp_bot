@@ -94,22 +94,22 @@
     },
     {
       "rank": 14,
+      "user_id": 8099191714,
+      "username": "@p00lboyq",
+      "xp": 3,
+      "level": 0
+    },
+    {
+      "rank": 15,
       "user_id": 1846091857,
       "username": "@ahhshoot",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 7965059437,
       "username": "@HneyRey",
-      "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 16,
-      "user_id": 8099191714,
-      "username": "@p00lboyq",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-30T22:08:30.043851",
+  "last_updated": "2026-03-30T22:10:30.783594",
   "total_users": 20
 }
