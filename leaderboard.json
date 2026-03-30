@@ -17,78 +17,78 @@
     },
     {
       "rank": 3,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 152,
+      "level": 1
+    },
+    {
+      "rank": 4,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 100,
       "level": 1
     },
     {
-      "rank": 4,
+      "rank": 5,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
       "xp": 93,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 80,
       "level": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 7225852894,
       "username": "@shadowx680",
       "xp": 66,
       "level": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "user_id": 6274470012,
+      "username": "@levo100",
+      "xp": 62,
+      "level": 0
+    },
+    {
+      "rank": 9,
       "user_id": 7373203214,
       "username": "@still_gordon",
       "xp": 61,
       "level": 0
     },
     {
-      "rank": 8,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 52,
-      "level": 0
-    },
-    {
-      "rank": 9,
+      "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 12,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 7642527839,
       "username": "RonnyR",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 3,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 1846091857,
       "username": "@ahhshoot",
-      "xp": 2,
-      "level": 0
-    },
-    {
-      "rank": 13,
-      "user_id": 6274470012,
-      "username": "@levo100",
       "xp": 2,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-30T09:55:11.608786",
+  "last_updated": "2026-03-30T09:57:12.466003",
   "total_users": 20
 }
