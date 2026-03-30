@@ -38,22 +38,22 @@
     },
     {
       "rank": 6,
+      "user_id": 8099191714,
+      "username": "@p00lboyq",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 7,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 6523845740,
       "username": "@NiraNew",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 8,
-      "user_id": 8099191714,
-      "username": "@p00lboyq",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-30T00:25:36.014070",
+  "last_updated": "2026-03-30T00:27:36.644696",
   "total_users": 20
 }
