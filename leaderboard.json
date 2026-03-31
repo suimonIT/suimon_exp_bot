@@ -33,8 +33,8 @@
       "rank": 5,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 93,
-      "level": 0
+      "xp": 194,
+      "level": 1
     },
     {
       "rank": 6,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-31T06:55:51.237989",
+  "last_updated": "2026-03-31T06:57:52.247170",
   "total_users": 20
 }
