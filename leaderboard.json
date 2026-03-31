@@ -59,16 +59,16 @@
     },
     {
       "rank": 9,
-      "user_id": 1638084297,
-      "username": "@IceFlurryX",
-      "xp": 66,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 67,
       "level": 0
     },
     {
       "rank": 10,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 64,
+      "user_id": 1638084297,
+      "username": "@IceFlurryX",
+      "xp": 66,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-03-31T01:19:43.130470",
+  "last_updated": "2026-03-31T01:21:43.939200",
   "total_users": 20
 }
