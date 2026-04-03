@@ -33,14 +33,14 @@
       "rank": 5,
       "user_id": 7373203214,
       "username": "@still_gordon",
-      "xp": 277,
+      "xp": 278,
       "level": 2
     },
     {
       "rank": 6,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 273,
+      "xp": 275,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-03T11:00:49.589382",
+  "last_updated": "2026-04-03T11:02:50.455873",
   "total_users": 20
 }
