@@ -108,15 +108,15 @@
     },
     {
       "rank": 16,
-      "user_id": 1189624171,
-      "username": "@iiiMrMiii",
-      "xp": 6,
+      "user_id": 8099191714,
+      "username": "@p00lboyq",
+      "xp": 7,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 8099191714,
-      "username": "@p00lboyq",
+      "user_id": 1189624171,
+      "username": "@iiiMrMiii",
       "xp": 6,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-03T22:08:15.063818",
+  "last_updated": "2026-04-03T22:10:15.929529",
   "total_users": 20
 }
