@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1236,
+      "xp": 1239,
       "level": 12
     },
     {
@@ -61,20 +61,20 @@
       "rank": 9,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 279,
+      "xp": 280,
       "level": 2
     },
     {
       "rank": 10,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 190,
+      "user_id": 7395105664,
+      "username": "@drazsui",
+      "xp": 192,
       "level": 1
     },
     {
       "rank": 11,
-      "user_id": 7395105664,
-      "username": "@drazsui",
+      "user_id": 7313537091,
+      "username": "Adnan",
       "xp": 190,
       "level": 1
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-04T12:58:28.260277",
+  "last_updated": "2026-04-04T13:00:29.033586",
   "total_users": 20
 }
