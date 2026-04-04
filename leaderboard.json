@@ -38,23 +38,23 @@
     },
     {
       "rank": 6,
+      "user_id": 7373203214,
+      "username": "@still_gordon",
+      "xp": 351,
+      "level": 3
+    },
+    {
+      "rank": 7,
       "user_id": 7611709300,
       "username": "@VanJohnovich",
       "xp": 320,
       "level": 3
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 6274470012,
       "username": "@levo100",
       "xp": 282,
-      "level": 2
-    },
-    {
-      "rank": 8,
-      "user_id": 7373203214,
-      "username": "@still_gordon",
-      "xp": 279,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-04T05:04:22.201372",
+  "last_updated": "2026-04-04T05:06:23.015224",
   "total_users": 20
 }
