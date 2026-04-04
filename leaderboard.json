@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 620,
+      "xp": 621,
       "level": 6
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 7395105664,
       "username": "@drazsui",
-      "xp": 192,
+      "xp": 194,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-04T16:38:58.246069",
+  "last_updated": "2026-04-04T16:40:59.034310",
   "total_users": 20
 }
