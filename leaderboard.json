@@ -3,23 +3,23 @@
   "leaderboard": [
     {
       "rank": 1,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 6,
+      "level": 0
+    },
+    {
+      "rank": 2,
       "user_id": 8099191714,
       "username": "@p00lboyq",
       "xp": 5,
       "level": 0
     },
     {
-      "rank": 2,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 4,
-      "level": 0
-    },
-    {
       "rank": 3,
       "user_id": 8034369966,
       "username": "@Maito_is_great",
-      "xp": 2,
+      "xp": 4,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-05T23:08:21.625390",
+  "last_updated": "2026-04-05T23:10:22.452477",
   "total_users": 20
 }
