@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 1,
+      "user_id": 6523845740,
+      "username": "@NiraNew",
+      "xp": 2,
       "level": 0
     },
     {
       "rank": 5,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-05T23:22:27.121584",
+  "last_updated": "2026-04-05T23:24:30.415925",
   "total_users": 20
 }
