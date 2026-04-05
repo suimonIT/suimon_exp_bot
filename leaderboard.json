@@ -3,127 +3,127 @@
   "leaderboard": [
     {
       "rank": 1,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 1,
+      "level": 0
+    },
+    {
+      "rank": 2,
       "user_id": 100294326,
       "username": "@xXCHNGx",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 2,
+      "rank": 3,
       "user_id": 977733309,
       "username": "@Loboszlai",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "user_id": 1189624171,
       "username": "@iiiMrMiii",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 4,
+      "rank": 5,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 1442345871,
       "username": "@Leventtao2783",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "user_id": 1575936630,
       "username": "@ProfessorPepeXCalls",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "user_id": 1846091857,
       "username": "@@ahhshoot",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 5073688855,
       "username": "@basedwojek",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 11,
+      "rank": 12,
       "user_id": 5581749567,
       "username": "@Mamoubdran",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 5978625584,
       "username": "@Sav_1age",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 6274470012,
       "username": "@levo100",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "user_id": 6909943871,
       "username": "@otexfemi",
       "xp": 0,
       "level": 0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "user_id": 6969979739,
       "username": "D",
-      "xp": 0,
-      "level": 0
-    },
-    {
-      "rank": 18,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
       "xp": 0,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-05T22:03:34.369472",
+  "last_updated": "2026-04-05T22:05:35.097446",
   "total_users": 20
 }
