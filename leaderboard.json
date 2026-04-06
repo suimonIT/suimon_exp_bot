@@ -52,30 +52,30 @@
     },
     {
       "rank": 8,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 80,
+      "level": 0
+    },
+    {
+      "rank": 9,
       "user_id": 1268008610,
       "username": "@Joybaeart",
       "xp": 76,
       "level": 0
     },
     {
-      "rank": 9,
+      "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 37,
       "level": 0
     },
     {
-      "rank": 10,
+      "rank": 11,
       "user_id": 7225852894,
       "username": "@shadowx680",
       "xp": 30,
-      "level": 0
-    },
-    {
-      "rank": 11,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
-      "xp": 9,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T06:55:26.859255",
+  "last_updated": "2026-04-06T06:57:29.885482",
   "total_users": 20
 }
