@@ -59,15 +59,15 @@
     },
     {
       "rank": 9,
-      "user_id": 6523845740,
-      "username": "@NiraNew",
-      "xp": 8,
+      "user_id": 7225852894,
+      "username": "@shadowx680",
+      "xp": 10,
       "level": 0
     },
     {
       "rank": 10,
-      "user_id": 7225852894,
-      "username": "@shadowx680",
+      "user_id": 6523845740,
+      "username": "@NiraNew",
       "xp": 8,
       "level": 0
     },
@@ -87,22 +87,22 @@
     },
     {
       "rank": 13,
+      "user_id": 7358917477,
+      "username": "@Crypt_willie1",
+      "xp": 2,
+      "level": 0
+    },
+    {
+      "rank": 14,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
       "xp": 1,
       "level": 0
     },
     {
-      "rank": 14,
+      "rank": 15,
       "user_id": 7020835758,
       "username": "@JJeremy11212",
-      "xp": 1,
-      "level": 0
-    },
-    {
-      "rank": 15,
-      "user_id": 7358917477,
-      "username": "@Crypt_willie1",
       "xp": 1,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T04:01:27.931364",
+  "last_updated": "2026-04-06T04:03:28.689579",
   "total_users": 20
 }
