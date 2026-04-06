@@ -45,15 +45,15 @@
     },
     {
       "rank": 7,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 80,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 81,
       "level": 0
     },
     {
       "rank": 8,
-      "user_id": 8112916103,
-      "username": "@Oxninjasui",
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
       "xp": 80,
       "level": 0
     },
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 37,
+      "xp": 39,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T06:59:31.127109",
+  "last_updated": "2026-04-06T07:01:31.885000",
   "total_users": 20
 }
