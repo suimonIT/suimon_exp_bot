@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 233,
+      "xp": 234,
       "level": 2
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 7225852894,
       "username": "@shadowx680",
-      "xp": 24,
+      "xp": 30,
       "level": 0
     },
     {
@@ -129,19 +129,19 @@
     },
     {
       "rank": 19,
-      "user_id": 7020835758,
-      "username": "@JJeremy11212",
+      "user_id": 1360154168,
+      "username": "@bilaazk",
       "xp": 1,
       "level": 0
     },
     {
       "rank": 20,
-      "user_id": 7642527839,
-      "username": "RonnyR",
+      "user_id": 7020835758,
+      "username": "@JJeremy11212",
       "xp": 1,
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T06:35:14.137568",
+  "last_updated": "2026-04-06T06:37:14.873487",
   "total_users": 20
 }
