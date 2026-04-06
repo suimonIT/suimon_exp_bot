@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 242,
+      "xp": 245,
       "level": 2
     },
     {
@@ -68,34 +68,34 @@
       "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 28,
+      "xp": 29,
       "level": 0
     },
     {
       "rank": 11,
+      "user_id": 1360154168,
+      "username": "@bilaazk",
+      "xp": 8,
+      "level": 0
+    },
+    {
+      "rank": 12,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 8,
       "level": 0
     },
     {
-      "rank": 12,
+      "rank": 13,
       "user_id": 8034369966,
       "username": "@Maito_is_great",
       "xp": 8,
       "level": 0
     },
     {
-      "rank": 13,
+      "rank": 14,
       "user_id": 849890778,
       "username": "@Bruno200113",
-      "xp": 5,
-      "level": 0
-    },
-    {
-      "rank": 14,
-      "user_id": 1360154168,
-      "username": "@bilaazk",
       "xp": 5,
       "level": 0
     },
@@ -108,40 +108,40 @@
     },
     {
       "rank": 16,
+      "user_id": 7090548617,
+      "username": "@Eddieshq",
+      "xp": 4,
+      "level": 0
+    },
+    {
+      "rank": 17,
       "user_id": 7358917477,
       "username": "@Crypt_willie1",
       "xp": 4,
       "level": 0
     },
     {
-      "rank": 17,
-      "user_id": 7090548617,
-      "username": "@Eddieshq",
-      "xp": 3,
+      "rank": 18,
+      "user_id": 8112916103,
+      "username": "@Oxninjasui",
+      "xp": 4,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 1920467037,
       "username": "@Se7enDigitsOrDie",
       "xp": 2,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 6515093738,
       "username": "@SynFuckingGates",
       "xp": 2,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 6945657195,
-      "username": "@phonixy",
-      "xp": 2,
-      "level": 0
     }
   ],
-  "last_updated": "2026-04-06T06:43:20.034992",
+  "last_updated": "2026-04-06T06:45:20.761619",
   "total_users": 20
 }
