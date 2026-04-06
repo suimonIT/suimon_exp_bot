@@ -12,21 +12,21 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 226,
+      "xp": 229,
       "level": 2
     },
     {
       "rank": 3,
-      "user_id": 8099191714,
-      "username": "@p00lboyq",
+      "user_id": 6274470012,
+      "username": "@levo100",
       "xp": 118,
       "level": 1
     },
     {
       "rank": 4,
-      "user_id": 6274470012,
-      "username": "@levo100",
-      "xp": 116,
+      "user_id": 8099191714,
+      "username": "@p00lboyq",
+      "xp": 118,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T08:34:45.817032",
+  "last_updated": "2026-04-06T08:36:48.609418",
   "total_users": 20
 }
