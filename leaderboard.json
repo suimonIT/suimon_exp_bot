@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 213,
+      "xp": 215,
       "level": 2
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 87,
+      "xp": 90,
       "level": 0
     },
     {
@@ -68,14 +68,14 @@
       "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 59,
+      "xp": 60,
       "level": 0
     },
     {
       "rank": 11,
       "user_id": 7225852894,
       "username": "@shadowx680",
-      "xp": 31,
+      "xp": 34,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T07:11:37.061438",
+  "last_updated": "2026-04-06T07:13:37.793378",
   "total_users": 20
 }
