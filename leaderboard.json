@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 91,
+      "xp": 93,
       "level": 0
     },
     {
@@ -68,14 +68,14 @@
       "rank": 10,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 60,
+      "xp": 67,
       "level": 0
     },
     {
       "rank": 11,
       "user_id": 7225852894,
       "username": "@shadowx680",
-      "xp": 35,
+      "xp": 38,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-06T07:15:38.943099",
+  "last_updated": "2026-04-06T07:17:39.705148",
   "total_users": 20
 }
