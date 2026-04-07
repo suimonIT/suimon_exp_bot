@@ -52,15 +52,15 @@
     },
     {
       "rank": 8,
-      "user_id": 6909943871,
-      "username": "@otexfemi",
-      "xp": 213,
+      "user_id": 8577623791,
+      "username": "@Capalot669",
+      "xp": 214,
       "level": 2
     },
     {
       "rank": 9,
-      "user_id": 8577623791,
-      "username": "@Capalot669",
+      "user_id": 6909943871,
+      "username": "@otexfemi",
       "xp": 213,
       "level": 2
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T16:25:37.405482",
+  "last_updated": "2026-04-07T16:27:38.574135",
   "total_users": 20
 }
