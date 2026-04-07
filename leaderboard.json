@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 624,
+      "xp": 626,
       "level": 6
     },
     {
@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 248,
+      "xp": 250,
       "level": 2
     },
     {
@@ -94,16 +94,16 @@
     },
     {
       "rank": 14,
-      "user_id": 8577623791,
-      "username": "@Capalot669",
-      "xp": 68,
+      "user_id": 7395105664,
+      "username": "@drazsui",
+      "xp": 79,
       "level": 0
     },
     {
       "rank": 15,
-      "user_id": 7395105664,
-      "username": "@drazsui",
-      "xp": 17,
+      "user_id": 8577623791,
+      "username": "@Capalot669",
+      "xp": 68,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T07:22:59.293582",
+  "last_updated": "2026-04-07T07:25:00.175630",
   "total_users": 20
 }
