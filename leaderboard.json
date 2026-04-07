@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 560,
+      "xp": 562,
       "level": 5
     },
     {
@@ -24,16 +24,16 @@
     },
     {
       "rank": 4,
-      "user_id": 6274470012,
-      "username": "@levo100",
-      "xp": 145,
+      "user_id": 8099191714,
+      "username": "@p00lboyq",
+      "xp": 147,
       "level": 1
     },
     {
       "rank": 5,
-      "user_id": 8099191714,
-      "username": "@p00lboyq",
-      "xp": 144,
+      "user_id": 6274470012,
+      "username": "@levo100",
+      "xp": 145,
       "level": 1
     },
     {
@@ -108,16 +108,16 @@
     },
     {
       "rank": 16,
-      "user_id": 1360154168,
-      "username": "@bilaazk",
-      "xp": 10,
+      "user_id": 7395105664,
+      "username": "@drazsui",
+      "xp": 12,
       "level": 0
     },
     {
       "rank": 17,
-      "user_id": 7395105664,
-      "username": "@drazsui",
-      "xp": 8,
+      "user_id": 1360154168,
+      "username": "@bilaazk",
+      "xp": 10,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T00:37:58.255798",
+  "last_updated": "2026-04-07T00:39:58.961397",
   "total_users": 20
 }
