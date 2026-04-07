@@ -12,7 +12,7 @@
       "rank": 2,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 622,
+      "xp": 623,
       "level": 6
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 218,
+      "xp": 220,
       "level": 2
     },
     {
@@ -129,19 +129,19 @@
     },
     {
       "rank": 19,
-      "user_id": 6096193569,
-      "username": "@Justplutos",
-      "xp": 13,
+      "user_id": 8610724873,
+      "username": "@drazzsui",
+      "xp": 14,
       "level": 0
     },
     {
       "rank": 20,
-      "user_id": 8068660109,
-      "username": "@ShadowHunter_web3",
+      "user_id": 6096193569,
+      "username": "@Justplutos",
       "xp": 13,
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T18:18:40.281450",
+  "last_updated": "2026-04-07T18:20:41.369391",
   "total_users": 20
 }
