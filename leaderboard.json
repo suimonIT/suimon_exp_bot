@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 8313869505,
       "username": "@mekus012",
-      "xp": 218,
+      "xp": 221,
       "level": 2
     },
     {
@@ -110,7 +110,7 @@
       "rank": 16,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 28,
+      "xp": 29,
       "level": 0
     },
     {
@@ -124,7 +124,7 @@
       "rank": 18,
       "user_id": 6523845740,
       "username": "@NiraNew",
-      "xp": 17,
+      "xp": 18,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T15:31:05.861514",
+  "last_updated": "2026-04-07T15:33:06.969509",
   "total_users": 20
 }
