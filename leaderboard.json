@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 541,
+      "xp": 543,
       "level": 5
     },
     {
@@ -94,16 +94,16 @@
     },
     {
       "rank": 14,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 80,
+      "user_id": 7395105664,
+      "username": "@drazsui",
+      "xp": 81,
       "level": 0
     },
     {
       "rank": 15,
-      "user_id": 7395105664,
-      "username": "@drazsui",
-      "xp": 79,
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
+      "xp": 80,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T15:47:15.469269",
+  "last_updated": "2026-04-07T15:49:16.600561",
   "total_users": 20
 }
