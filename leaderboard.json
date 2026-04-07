@@ -115,22 +115,22 @@
     },
     {
       "rank": 17,
+      "user_id": 7395105664,
+      "username": "@drazsui",
+      "xp": 8,
+      "level": 0
+    },
+    {
+      "rank": 18,
       "user_id": 8034369966,
       "username": "@Maito_is_great",
       "xp": 8,
       "level": 0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "user_id": 7090548617,
       "username": "@Eddieshq",
-      "xp": 6,
-      "level": 0
-    },
-    {
-      "rank": 19,
-      "user_id": 7395105664,
-      "username": "@drazsui",
       "xp": 6,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T00:07:45.241562",
+  "last_updated": "2026-04-07T00:09:46.233439",
   "total_users": 20
 }
