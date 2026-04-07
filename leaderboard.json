@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 654,
+      "xp": 655,
       "level": 6
     },
     {
@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 411,
+      "xp": 414,
       "level": 4
     },
     {
@@ -129,19 +129,19 @@
     },
     {
       "rank": 19,
-      "user_id": 8034369966,
-      "username": "@Maito_is_great",
-      "xp": 8,
+      "user_id": 8068660109,
+      "username": "@ShadowHunter_web3",
+      "xp": 10,
       "level": 0
     },
     {
       "rank": 20,
-      "user_id": 8068660109,
-      "username": "@ShadowHunter_web3",
+      "user_id": 8034369966,
+      "username": "@Maito_is_great",
       "xp": 8,
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T11:28:48.889384",
+  "last_updated": "2026-04-07T11:30:50.044916",
   "total_users": 20
 }
