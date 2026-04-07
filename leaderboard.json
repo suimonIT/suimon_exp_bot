@@ -12,14 +12,14 @@
       "rank": 2,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 665,
+      "xp": 670,
       "level": 6
     },
     {
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 650,
+      "xp": 652,
       "level": 6
     },
     {
@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 221,
+      "xp": 225,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T19:43:27.121759",
+  "last_updated": "2026-04-07T19:45:28.057724",
   "total_users": 20
 }
