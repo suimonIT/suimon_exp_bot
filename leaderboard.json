@@ -54,7 +54,7 @@
       "rank": 8,
       "user_id": 8313869505,
       "username": "@mekus012",
-      "xp": 177,
+      "xp": 180,
       "level": 1
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 132,
+      "xp": 134,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T11:12:42.049611",
+  "last_updated": "2026-04-07T11:14:42.809544",
   "total_users": 20
 }
