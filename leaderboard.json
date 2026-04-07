@@ -68,15 +68,15 @@
       "rank": 10,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 100,
+      "xp": 101,
       "level": 1
     },
     {
       "rank": 11,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 99,
-      "level": 0
+      "xp": 100,
+      "level": 1
     },
     {
       "rank": 12,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T08:15:23.547661",
+  "last_updated": "2026-04-07T08:17:24.405106",
   "total_users": 20
 }
