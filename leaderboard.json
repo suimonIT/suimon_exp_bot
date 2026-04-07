@@ -12,21 +12,21 @@
       "rank": 2,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 679,
+      "xp": 680,
       "level": 6
     },
     {
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 659,
+      "xp": 662,
       "level": 6
     },
     {
       "rank": 4,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 321,
+      "xp": 325,
       "level": 3
     },
     {
@@ -124,7 +124,7 @@
       "rank": 18,
       "user_id": 8610724873,
       "username": "@drazzsui",
-      "xp": 23,
+      "xp": 24,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T19:51:31.276254",
+  "last_updated": "2026-04-07T19:53:32.327226",
   "total_users": 20
 }
