@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 496,
+      "xp": 497,
       "level": 4
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 200,
+      "xp": 203,
       "level": 2
     },
     {
@@ -68,7 +68,7 @@
       "rank": 10,
       "user_id": 8577623791,
       "username": "@Capalot669",
-      "xp": 187,
+      "xp": 188,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T14:00:12.453775",
+  "last_updated": "2026-04-07T14:02:13.618254",
   "total_users": 20
 }
