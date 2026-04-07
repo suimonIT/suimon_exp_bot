@@ -24,23 +24,23 @@
     },
     {
       "rank": 4,
+      "user_id": 6274470012,
+      "username": "@levo100",
+      "xp": 245,
+      "level": 2
+    },
+    {
+      "rank": 5,
       "user_id": 8099191714,
       "username": "@p00lboyq",
       "xp": 243,
       "level": 2
     },
     {
-      "rank": 5,
+      "rank": 6,
       "user_id": 8313869505,
       "username": "@mekus012",
       "xp": 167,
-      "level": 1
-    },
-    {
-      "rank": 6,
-      "user_id": 6274470012,
-      "username": "@levo100",
-      "xp": 145,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T07:04:51.497402",
+  "last_updated": "2026-04-07T07:06:52.341440",
   "total_users": 20
 }
