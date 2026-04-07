@@ -59,16 +59,16 @@
     },
     {
       "rank": 9,
-      "user_id": 8577623791,
-      "username": "@Capalot669",
+      "user_id": 7508825532,
+      "username": "@Rabii87",
       "xp": 150,
       "level": 1
     },
     {
       "rank": 10,
-      "user_id": 7508825532,
-      "username": "@Rabii87",
-      "xp": 149,
+      "user_id": 8577623791,
+      "username": "@Capalot669",
+      "xp": 150,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T12:01:06.233405",
+  "last_updated": "2026-04-07T12:03:07.225294",
   "total_users": 20
 }
