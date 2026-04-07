@@ -19,7 +19,7 @@
       "rank": 3,
       "user_id": 7105730933,
       "username": "@abiclighter",
-      "xp": 688,
+      "xp": 690,
       "level": 6
     },
     {
@@ -40,14 +40,14 @@
       "rank": 6,
       "user_id": 8313869505,
       "username": "@mekus012",
-      "xp": 260,
+      "xp": 262,
       "level": 2
     },
     {
       "rank": 7,
       "user_id": 1268008610,
       "username": "@Joybaeart",
-      "xp": 244,
+      "xp": 248,
       "level": 2
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-07T20:31:53.121680",
+  "last_updated": "2026-04-07T20:33:54.201471",
   "total_users": 20
 }
