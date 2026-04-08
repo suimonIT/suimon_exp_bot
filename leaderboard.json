@@ -61,7 +61,7 @@
       "rank": 9,
       "user_id": 8577623791,
       "username": "@Capalot669",
-      "xp": 278,
+      "xp": 280,
       "level": 2
     },
     {
@@ -103,14 +103,14 @@
       "rank": 15,
       "user_id": 7395105664,
       "username": "@drazsui",
-      "xp": 96,
+      "xp": 99,
       "level": 0
     },
     {
       "rank": 16,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 88,
+      "xp": 91,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T13:04:20.121715",
+  "last_updated": "2026-04-08T13:06:21.129408",
   "total_users": 20
 }
