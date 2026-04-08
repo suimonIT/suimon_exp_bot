@@ -5,14 +5,14 @@
       "rank": 1,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 1010,
+      "xp": 1020,
       "level": 10
     },
     {
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 936,
+      "xp": 939,
       "level": 9
     },
     {
@@ -45,16 +45,16 @@
     },
     {
       "rank": 7,
-      "user_id": 1268008610,
-      "username": "@Joybaeart",
-      "xp": 363,
+      "user_id": 8313869505,
+      "username": "@mekus012",
+      "xp": 364,
       "level": 3
     },
     {
       "rank": 8,
-      "user_id": 8313869505,
-      "username": "@mekus012",
-      "xp": 361,
+      "user_id": 1268008610,
+      "username": "@Joybaeart",
+      "xp": 363,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T15:55:59.425557",
+  "last_updated": "2026-04-08T15:58:00.638100",
   "total_users": 20
 }
