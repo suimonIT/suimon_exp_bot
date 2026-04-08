@@ -45,16 +45,16 @@
     },
     {
       "rank": 7,
-      "user_id": 8577623791,
-      "username": "@Capalot669",
-      "xp": 388,
+      "user_id": 8313869505,
+      "username": "@mekus012",
+      "xp": 389,
       "level": 3
     },
     {
       "rank": 8,
-      "user_id": 8313869505,
-      "username": "@mekus012",
-      "xp": 386,
+      "user_id": 8577623791,
+      "username": "@Capalot669",
+      "xp": 388,
       "level": 3
     },
     {
@@ -96,7 +96,7 @@
       "rank": 14,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 131,
+      "xp": 132,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T19:03:44.492677",
+  "last_updated": "2026-04-08T19:05:45.648634",
   "total_users": 20
 }
