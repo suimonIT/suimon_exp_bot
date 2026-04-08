@@ -5,8 +5,8 @@
       "rank": 1,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 936,
-      "level": 9
+      "xp": 1000,
+      "level": 10
     },
     {
       "rank": 2,
@@ -122,26 +122,26 @@
     },
     {
       "rank": 18,
+      "user_id": 8331282312,
+      "username": "@cheasy0",
+      "xp": 68,
+      "level": 0
+    },
+    {
+      "rank": 19,
       "user_id": 7285590673,
       "username": "@Lil_Angel01",
       "xp": 34,
       "level": 0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "user_id": 6523845740,
       "username": "@NiraNew",
       "xp": 25,
       "level": 0
-    },
-    {
-      "rank": 20,
-      "user_id": 7191017936,
-      "username": "@Balikis_eth",
-      "xp": 19,
-      "level": 0
     }
   ],
-  "last_updated": "2026-04-08T15:49:56.153333",
+  "last_updated": "2026-04-08T15:51:57.209652",
   "total_users": 20
 }
