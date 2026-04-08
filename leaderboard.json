@@ -75,7 +75,7 @@
       "rank": 11,
       "user_id": 8313869505,
       "username": "@mekus012",
-      "xp": 278,
+      "xp": 280,
       "level": 2
     },
     {
@@ -131,7 +131,7 @@
       "rank": 19,
       "user_id": 6523845740,
       "username": "@NiraNew",
-      "xp": 24,
+      "xp": 25,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T15:33:47.162403",
+  "last_updated": "2026-04-08T15:35:48.281387",
   "total_users": 20
 }
