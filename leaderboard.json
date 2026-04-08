@@ -5,7 +5,7 @@
       "rank": 1,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 1090,
+      "xp": 1091,
       "level": 10
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 8313869505,
       "username": "@mekus012",
-      "xp": 396,
+      "xp": 398,
       "level": 3
     },
     {
@@ -96,7 +96,7 @@
       "rank": 14,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 145,
+      "xp": 146,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T19:23:55.519618",
+  "last_updated": "2026-04-08T19:25:56.705214",
   "total_users": 20
 }
