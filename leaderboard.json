@@ -87,17 +87,17 @@
     },
     {
       "rank": 13,
-      "user_id": 8610724873,
-      "username": "@drazzsui",
-      "xp": 100,
+      "user_id": 7313537091,
+      "username": "Adnan",
+      "xp": 150,
       "level": 1
     },
     {
       "rank": 14,
-      "user_id": 7313537091,
-      "username": "Adnan",
-      "xp": 90,
-      "level": 0
+      "user_id": 8610724873,
+      "username": "@drazzsui",
+      "xp": 100,
+      "level": 1
     },
     {
       "rank": 15,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T08:07:39.121287",
+  "last_updated": "2026-04-08T08:09:40.121651",
   "total_users": 20
 }
