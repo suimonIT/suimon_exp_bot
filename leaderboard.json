@@ -19,14 +19,14 @@
       "rank": 3,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 759,
+      "xp": 760,
       "level": 7
     },
     {
       "rank": 4,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 489,
+      "xp": 491,
       "level": 4
     },
     {
@@ -110,7 +110,7 @@
       "rank": 16,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 57,
+      "xp": 58,
       "level": 0
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T00:19:47.934708",
+  "last_updated": "2026-04-08T00:21:48.944505",
   "total_users": 20
 }
