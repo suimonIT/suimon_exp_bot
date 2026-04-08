@@ -75,8 +75,8 @@
       "rank": 11,
       "user_id": 8112916103,
       "username": "@Oxninjasui",
-      "xp": 299,
-      "level": 2
+      "xp": 300,
+      "level": 3
     },
     {
       "rank": 12,
@@ -89,7 +89,7 @@
       "rank": 13,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 155,
+      "xp": 157,
       "level": 1
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-08T20:02:16.129600",
+  "last_updated": "2026-04-08T20:04:17.209418",
   "total_users": 20
 }
