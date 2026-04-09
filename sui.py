@@ -153,7 +153,8 @@ class SQLiteStorage:
                     quest_type TEXT,
                     quest_description TEXT,
                     quest_goal INTEGER,
-                    xp_reward INTEGER
+                    xp_reward INTEGER,
+                    started_at TIMESTAMP
                 )
             """)
             conn.execute("""
@@ -161,6 +162,7 @@ class SQLiteStorage:
                     quest_date TEXT,
                     user_id INTEGER,
                     progress INTEGER DEFAULT 0,
+                    baseline INTEGER DEFAULT 0,
                     completed INTEGER DEFAULT 0,
                     completed_at TIMESTAMP,
                     PRIMARY KEY (quest_date, user_id)
@@ -435,29 +437,45 @@ class SQLiteStorage:
     def get_active_quest(self, quest_date: str) -> Optional[Dict]:
         with sqlite3.connect(self.db_path) as conn:
             result = conn.execute(
-                "SELECT quest_type, quest_description, quest_goal, xp_reward FROM daily_quests WHERE quest_date = ?",
+                "SELECT quest_type, quest_description, quest_goal, xp_reward, started_at FROM daily_quests WHERE quest_date = ?",
                 (quest_date,)
             ).fetchone()
             if result:
-                return {'quest_type': result[0], 'description': result[1], 'goal': result[2], 'xp_reward': result[3]}
+                return {
+                    'quest_type': result[0],
+                    'description': result[1],
+                    'goal': result[2],
+                    'xp_reward': result[3],
+                    'started_at': result[4]
+                }
             return None
 
     def set_daily_quest(self, quest_date: str, quest_type: str, description: str, goal: int, xp_reward: int):
+        started_at = datetime.now(timezone.utc).isoformat()
         with sqlite3.connect(self.db_path) as conn:
             conn.execute("""
-                INSERT OR REPLACE INTO daily_quests (quest_date, quest_type, quest_description, quest_goal, xp_reward)
-                VALUES (?, ?, ?, ?, ?)
-            """, (quest_date, quest_type, description, goal, xp_reward))
+                INSERT OR REPLACE INTO daily_quests (quest_date, quest_type, quest_description, quest_goal, xp_reward, started_at)
+                VALUES (?, ?, ?, ?, ?, ?)
+            """, (quest_date, quest_type, description, goal, xp_reward, started_at))
 
     def get_quest_progress(self, quest_date: str, user_id: int) -> Dict:
         with sqlite3.connect(self.db_path) as conn:
             result = conn.execute(
-                "SELECT progress, completed FROM user_quest_progress WHERE quest_date = ? AND user_id = ?",
+                "SELECT progress, baseline, completed FROM user_quest_progress WHERE quest_date = ? AND user_id = ?",
                 (quest_date, user_id)
             ).fetchone()
             if result:
-                return {'progress': result[0], 'completed': bool(result[1])}
-            return {'progress': 0, 'completed': False}
+                return {'progress': result[0], 'baseline': result[1], 'completed': bool(result[2])}
+            return {'progress': 0, 'baseline': -1, 'completed': False}
+
+    def set_quest_baseline(self, quest_date: str, user_id: int, baseline: int):
+        """Set the message count baseline when user first interacts after quest start"""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("""
+                INSERT INTO user_quest_progress (quest_date, user_id, progress, baseline)
+                VALUES (?, ?, 0, ?)
+                ON CONFLICT(quest_date, user_id) DO UPDATE SET baseline = ?
+            """, (quest_date, user_id, baseline, baseline))
 
     def update_quest_progress(self, quest_date: str, user_id: int, new_progress: int):
         with sqlite3.connect(self.db_path) as conn:
@@ -1076,58 +1094,67 @@ def update_github_weekly_winners(week_start_date: str, winners_data: List[Dict])
 import random
 
 def pick_and_save_daily_quest(today: str) -> Dict:
-    """Wählt zufällig eine Quest aus dem Pool und speichert sie"""
+    """Randomly picks a quest from the pool and saves it"""
     quest_type, description_template, goal, xp_reward = random.choice(QUEST_POOL)
     description = description_template.format(goal=goal)
     db.set_daily_quest(today, quest_type, description, goal, xp_reward)
     return {'quest_type': quest_type, 'description': description, 'goal': goal, 'xp_reward': xp_reward}
 
-def get_or_create_daily_quest(today: str) -> Dict:
-    """Holt die heutige Quest oder erstellt eine neue"""
-    quest = db.get_active_quest(today)
-    if not quest:
-        quest = pick_and_save_daily_quest(today)
-    return quest
+def get_or_create_daily_quest(today: str) -> Optional[Dict]:
+    """Gets today's quest — returns None if no quest has been started yet"""
+    return db.get_active_quest(today)
+
+async def _announce_quest_completion(user: types.User, quest: Dict):
+    """Send quest completion message to group"""
+    display_name = f"@{user.username}" if user.username else user.first_name
+    if ALLOWED_GROUP_ID:
+        try:
+            await bot.send_message(
+                ALLOWED_GROUP_ID,
+                f"✅ {display_name} completed today's quest!\n"
+                f"🎯 {quest['description']}\n"
+                f"🎉 +{quest['xp_reward']} XP earned!"
+            )
+        except Exception as e:
+            logger.error(f"Quest completion announcement failed: {e}")
 
 async def check_quest_progress_messages(user: types.User, today: str):
-    """Wird nach jeder Nachricht aufgerufen — prüft message-basierte Quests"""
+    """Called after each message — checks message-based quest progress"""
     quest = get_or_create_daily_quest(today)
-    if quest['quest_type'] != 'messages':
+    if not quest or quest['quest_type'] != 'messages':
         return
 
     user_progress = db.get_quest_progress(today, user.id)
     if user_progress['completed']:
         return
 
-    # Aktuellen Message-Count aus daily_activity holen
+    # Get current total message count
     with sqlite3.connect(db.db_path) as conn:
         result = conn.execute(
             "SELECT message_count FROM daily_activity WHERE date = ? AND user_id = ? AND chat_id = ?",
             (today, user.id, ALLOWED_GROUP_ID)
         ).fetchone()
-        msg_count = result[0] if result else 0
+        total_msg_count = result[0] if result else 0
 
-    db.update_quest_progress(today, user.id, msg_count)
+    # Set baseline on first interaction after quest start
+    if user_progress['baseline'] == -1:
+        db.set_quest_baseline(today, user.id, total_msg_count - 1)
+        user_progress = db.get_quest_progress(today, user.id)
 
-    # Quest completed?
-    if msg_count >= quest['goal']:
+    # Progress = messages sent SINCE quest started
+    progress = max(0, total_msg_count - user_progress['baseline'])
+    db.update_quest_progress(today, user.id, progress)
+
+    if progress >= quest['goal']:
         db.complete_quest_for_user(today, user.id)
         db.award_xp(user.id, quest['xp_reward'])
-        display_name = f"@{user.username}" if user.username else user.first_name
-        if ALLOWED_GROUP_ID:
-            try:
-                await bot.send_message(
-                    ALLOWED_GROUP_ID,
-                    f"✅ {display_name} completed today's quest!\n"
-                    f"🎯 {quest['description']}\n"
-                    f"🎉 +{quest['xp_reward']} XP earned!"
-                )
-            except Exception as e:
-                logger.error(f"Quest completion announcement failed: {e}")
+        await _announce_quest_completion(user, quest)
 
 async def check_quest_progress_checkin(user: types.User, today: str, new_streak: int):
-    """Wird nach einem Check-in aufgerufen — prüft streak/checkin Quests"""
+    """Called after a check-in — checks streak/checkin quest progress"""
     quest = get_or_create_daily_quest(today)
+    if not quest:
+        return
 
     user_progress = db.get_quest_progress(today, user.id)
     if user_progress['completed']:
@@ -1137,17 +1164,7 @@ async def check_quest_progress_checkin(user: types.User, today: str, new_streak:
         db.update_quest_progress(today, user.id, 1)
         db.complete_quest_for_user(today, user.id)
         db.award_xp(user.id, quest['xp_reward'])
-        display_name = f"@{user.username}" if user.username else user.first_name
-        if ALLOWED_GROUP_ID:
-            try:
-                await bot.send_message(
-                    ALLOWED_GROUP_ID,
-                    f"✅ {display_name} completed today's quest!\n"
-                    f"🎯 {quest['description']}\n"
-                    f"🎉 +{quest['xp_reward']} XP earned!"
-                )
-            except Exception as e:
-                logger.error(f"Quest completion announcement failed: {e}")
+        await _announce_quest_completion(user, quest)
 
     elif quest['quest_type'] == 'streak':
         db.update_quest_progress(today, user.id, new_streak)
@@ -1156,17 +1173,7 @@ async def check_quest_progress_checkin(user: types.User, today: str, new_streak:
             if not user_progress2['completed']:
                 db.complete_quest_for_user(today, user.id)
                 db.award_xp(user.id, quest['xp_reward'])
-                display_name = f"@{user.username}" if user.username else user.first_name
-                if ALLOWED_GROUP_ID:
-                    try:
-                        await bot.send_message(
-                            ALLOWED_GROUP_ID,
-                            f"✅ {display_name} completed today's quest!\n"
-                            f"🎯 {quest['description']}\n"
-                            f"🎉 +{quest['xp_reward']} XP earned!"
-                        )
-                    except Exception as e:
-                        logger.error(f"Quest completion announcement failed: {e}")
+                await _announce_quest_completion(user, quest)
 
 async def announce_daily_quest(today: str, force_new: bool = False):
     """Post the daily quest in the group and pin it"""
@@ -1174,6 +1181,8 @@ async def announce_daily_quest(today: str, force_new: bool = False):
         quest = pick_and_save_daily_quest(today)
     else:
         quest = get_or_create_daily_quest(today)
+        if not quest:
+            quest = pick_and_save_daily_quest(today)
 
     if ALLOWED_GROUP_ID:
         try:
@@ -1213,24 +1222,53 @@ async def daily_reset_task():
             logger.error(f"Error in daily reset: {e}")
 
 async def quest_announcement_task():
-    """Background task to post the daily quest at 08:00 UTC"""
+    """Background task — sends warning at 07:55, posts new quest at 08:00 UTC"""
+    warning_sent = False
     while True:
         now = datetime.now(timezone.utc)
-        # Calculate next 08:00 UTC
+
+        # Next 07:55 UTC (warning)
+        next_warning = now.replace(hour=7, minute=55, second=0, microsecond=0)
+        if now >= next_warning:
+            next_warning += timedelta(days=1)
+
+        # Next 08:00 UTC (new quest)
         next_8am = now.replace(hour=8, minute=0, second=0, microsecond=0)
         if now >= next_8am:
             next_8am += timedelta(days=1)
-        sleep_seconds = (next_8am - now).total_seconds()
 
-        logger.info(f"Quest announcement scheduled in {sleep_seconds:.0f} seconds (next: {next_8am})")
+        # Sleep until whichever is sooner
+        sleep_until = min(next_warning, next_8am)
+        sleep_seconds = (sleep_until - now).total_seconds()
+        logger.info(f"Quest task sleeping {sleep_seconds:.0f}s (next event: {sleep_until})")
         await asyncio.sleep(sleep_seconds)
 
-        try:
-            today = get_today_key()
-            await announce_daily_quest(today, force_new=True)
-            logger.info("Daily quest announced successfully")
-        except Exception as e:
-            logger.error(f"Error in quest announcement task: {e}")
+        now = datetime.now(timezone.utc)
+
+        # Warning at 07:55
+        if now.hour == 7 and now.minute >= 55 and not warning_sent:
+            warning_sent = True
+            if ALLOWED_GROUP_ID:
+                try:
+                    await bot.send_message(
+                        ALLOWED_GROUP_ID,
+                        "⏳ **Quest ending in 5 minutes!**\n"
+                        "Last chance to complete today's quest. Type /quest to check your progress!",
+                        parse_mode='Markdown'
+                    )
+                    logger.info("Quest ending warning sent")
+                except Exception as e:
+                    logger.error(f"Quest warning failed: {e}")
+
+        # New quest at 08:00
+        if now.hour == 8 and now.minute == 0:
+            warning_sent = False
+            try:
+                today = get_today_key()
+                await announce_daily_quest(today, force_new=True)
+                logger.info("Daily quest announced successfully")
+            except Exception as e:
+                logger.error(f"Error in quest announcement task: {e}")
 
 # Role reward system
 def set_role_threshold(chat_id: int, role_name: str, level_threshold: int):
@@ -1942,8 +1980,14 @@ async def cmd_quest(message: types.Message):
 
     today = get_today_key()
     quest = get_or_create_daily_quest(today)
-    user_progress = db.get_quest_progress(today, message.from_user.id)
 
+    if not quest:
+        response = format_response_with_username(message, "🎯 No active quest right now. A new quest drops every day at 8:00 AM!")
+        await message.reply(response)
+        await delete_command_message(message)
+        return
+
+    user_progress = db.get_quest_progress(today, message.from_user.id)
     progress = user_progress['progress']
     completed = user_progress['completed']
 
@@ -2397,14 +2441,8 @@ async def on_startup():
     # Start quest announcement task (fires daily at 08:00 UTC)
     asyncio.create_task(quest_announcement_task())
     
-    # Ensure today's quest exists silently (no announcement on restart)
-    today = get_today_key()
-    quest = db.get_active_quest(today)
-    if not quest:
-        pick_and_save_daily_quest(today)
-        logger.info("✅ Daily quest created for today (no announcement — use /startquest to post)")
-    else:
-        logger.info(f"✅ Daily quest already exists: {quest['description']}")
+    # Don't auto-post quest on restart — use /startquest to begin
+    logger.info("✅ Quest system ready — use /startquest to post the first quest")
 
     # Start GitHub sync
     start_github_sync()
