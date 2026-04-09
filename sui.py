@@ -503,7 +503,7 @@ class SQLiteStorage:
             """, (quest_date, user_id))
 
 # Initialize database
-db = SQLiteStorage("DB_PATH")
+db = SQLiteStorage(DB_PATH)
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -847,7 +847,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("DB_PATH") as conn:
+        with sqlite3.connect(DB_PATH) as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -1003,7 +1003,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("DB_PATH") as conn:
+    with sqlite3.connect(DB_PATH) as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
@@ -2030,37 +2030,36 @@ async def cmd_questintro(message: types.Message):
 
     intro_text = (
         "⚔️ *Daily Quests have arrived!*\n\n"
-        "Every day a new challenge drops for the community. "
-        "Complete it to earn bonus XP on top of your usual grind.\n\n"
+        "Every day a new challenge drops for the community\\. "
+        "Complete it to earn bonus XP on top of your usual grind\\.\n\n"
         "🌅 *A fresh quest goes live every morning at 8:00 AM*\n"
         "Each quest is different — some will test your activity, "
-        "others your consistency. Stay sharp.\n\n"
+        "others your consistency\\. Stay sharp\\.\n\n"
         "📊 *Difficulty levels:*\n"
         "🟢 Easy — warm up\n"
         "🟡 Medium — step it up\n"
         "🔴 Hard — prove yourself\n"
         "💎 Legendary — only the dedicated\n\n"
-        "📌 Use /quest to check your daily progress\n"
+        "📌 Use */quest* to check your daily progress\n"
         "🏆 Rewards are added to your XP instantly upon completion\n\n"
-        "The grind never stops. Are you ready? 👀"
+        "The grind never stops\\. Are you ready? 👀"
     )
 
-    quest_img = os.path.join(BASE_DIR, "quest.jpg")
     try:
         # Try to send with quest.jpg image
-        photo = types.FSInputFile(quest_img)
+        photo = types.FSInputFile("quest.jpg")
         await bot.send_photo(
             chat_id=message.chat.id,
             photo=photo,
             caption=intro_text,
-            parse_mode='Markdown'
+            parse_mode='MarkdownV2'
         )
     except Exception:
         # Fallback: send as text if image not found
         await bot.send_message(
             chat_id=message.chat.id,
             text=intro_text,
-            parse_mode='Markdown'
+            parse_mode='MarkdownV2'
         )
 
     await delete_command_message(message)
