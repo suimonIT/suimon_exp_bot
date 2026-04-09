@@ -115,15 +115,15 @@
     },
     {
       "rank": 17,
-      "user_id": 7611709300,
-      "username": "@VanJohnovich",
-      "xp": 80,
+      "user_id": 8068660109,
+      "username": "@ShadowHunter_web3",
+      "xp": 81,
       "level": 0
     },
     {
       "rank": 18,
-      "user_id": 8068660109,
-      "username": "@ShadowHunter_web3",
+      "user_id": 7611709300,
+      "username": "@VanJohnovich",
       "xp": 80,
       "level": 0
     },
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-09T18:52:23.834541",
+  "last_updated": "2026-04-09T18:54:24.788961",
   "total_users": 20
 }
