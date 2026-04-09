@@ -169,6 +169,15 @@ class SQLiteStorage:
                 )
             """)
 
+            # Migrations: add columns that may be missing from older DB versions
+            existing_quest_cols = [row[1] for row in conn.execute("PRAGMA table_info(daily_quests)").fetchall()]
+            if 'started_at' not in existing_quest_cols:
+                conn.execute("ALTER TABLE daily_quests ADD COLUMN started_at TIMESTAMP")
+
+            existing_progress_cols = [row[1] for row in conn.execute("PRAGMA table_info(user_quest_progress)").fetchall()]
+            if 'baseline' not in existing_progress_cols:
+                conn.execute("ALTER TABLE user_quest_progress ADD COLUMN baseline INTEGER DEFAULT 0")
+
             # Create indexes for better performance
             conn.execute("CREATE INDEX IF NOT EXISTS idx_users_xp ON users(xp DESC)")
             conn.execute("CREATE INDEX IF NOT EXISTS idx_daily_activity_date_chat ON daily_activity(date, chat_id)")
