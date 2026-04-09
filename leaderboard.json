@@ -5,14 +5,14 @@
       "rank": 1,
       "user_id": 1638084297,
       "username": "@IceFlurryX",
-      "xp": 1343,
+      "xp": 1347,
       "level": 13
     },
     {
       "rank": 2,
       "user_id": 6363051488,
       "username": "@Jeffnatius",
-      "xp": 1064,
+      "xp": 1067,
       "level": 10
     },
     {
@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 789,
+      "xp": 792,
       "level": 7
     },
     {
@@ -47,7 +47,7 @@
       "rank": 7,
       "user_id": 8577623791,
       "username": "@Capalot669",
-      "xp": 512,
+      "xp": 513,
       "level": 5
     },
     {
@@ -82,7 +82,7 @@
       "rank": 12,
       "user_id": 6999217122,
       "username": "@Em_jeiz",
-      "xp": 315,
+      "xp": 320,
       "level": 3
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-09T12:06:33.062939",
+  "last_updated": "2026-04-09T12:08:34.169659",
   "total_users": 20
 }
