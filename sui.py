@@ -503,7 +503,7 @@ class SQLiteStorage:
             """, (quest_date, user_id))
 
 # Initialize database
-db = SQLiteStorage("DB_PATH")
+db = SQLiteStorage(DB_PATH)
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -847,7 +847,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("DB_PATH") as conn:
+        with sqlite3.connect(DB_PATH) as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -1003,7 +1003,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("DB_PATH") as conn:
+    with sqlite3.connect(DB_PATH) as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
