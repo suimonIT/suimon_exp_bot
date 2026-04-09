@@ -1,5 +1,4 @@
 import os
-import html
 import asyncio
 import logging
 import sqlite3
@@ -20,6 +19,20 @@ from aiohttp import web
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from aiogram.filters import CommandObject
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "suimon_xp.db")
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+logger.warning("📂 Files in BASE_DIR:")
+for f in os.listdir(BASE_DIR):
+    logger.warning(f" - {f}")
 
 # ---- Load config ----
 load_dotenv(".env.sui")
@@ -52,12 +65,12 @@ if not OWNER_IDS and os.getenv('OWNER_ID'):
 # Add these new configuration variables
 ALLOWED_GROUP_ID = int(os.getenv('ALLOWED_GROUP_ID')) if os.getenv('ALLOWED_GROUP_ID') else None
 ALLOWED_GROUP_LINK = os.getenv('ALLOWED_GROUP_LINK', 'the authorized group')
-DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@iceflurryx')
+DEVELOPER_CONTACT = os.getenv('DEVELOPER_CONTACT', '@IceFlurryX')
 
 # GitHub Configuration
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'Prosper0013')
-REPO_NAME = os.getenv('REPO_NAME', 'xp-leaderboard-data')
+GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', 'suimonIT')
+REPO_NAME = os.getenv('REPO_NAME', 'suimon_exp_bot')
 BRANCH = os.getenv('BRANCH', 'main')
 
 # Weekly Reset Configuration
@@ -71,7 +84,7 @@ if not BOT_TOKEN:
 
 # ---- SQLite Database ----
 class SQLiteStorage:
-    def __init__(self, db_path="xp_bot.db"):
+    def __init__(self, db_path=DB_PATH):
         self.db_path = db_path
         self._init_db()
         self.create_weekly_reports_table()
@@ -133,6 +146,27 @@ class SQLiteStorage:
                 )
             """)
             
+            # Quest tables
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS daily_quests (
+                    quest_date TEXT PRIMARY KEY,
+                    quest_type TEXT,
+                    quest_description TEXT,
+                    quest_goal INTEGER,
+                    xp_reward INTEGER
+                )
+            """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS user_quest_progress (
+                    quest_date TEXT,
+                    user_id INTEGER,
+                    progress INTEGER DEFAULT 0,
+                    completed INTEGER DEFAULT 0,
+                    completed_at TIMESTAMP,
+                    PRIMARY KEY (quest_date, user_id)
+                )
+            """)
+
             # Create indexes for better performance
             conn.execute("CREATE INDEX IF NOT EXISTS idx_users_xp ON users(xp DESC)")
             conn.execute("CREATE INDEX IF NOT EXISTS idx_daily_activity_date_chat ON daily_activity(date, chat_id)")
@@ -396,9 +430,53 @@ class SQLiteStorage:
                 SELECT week_start_date FROM weekly_reports ORDER BY week_start_date DESC
             """).fetchall()
             return [result[0] for result in results]
-        
+
+    # ---- Quest System ----
+    def get_active_quest(self, quest_date: str) -> Optional[Dict]:
+        with sqlite3.connect(self.db_path) as conn:
+            result = conn.execute(
+                "SELECT quest_type, quest_description, quest_goal, xp_reward FROM daily_quests WHERE quest_date = ?",
+                (quest_date,)
+            ).fetchone()
+            if result:
+                return {'quest_type': result[0], 'description': result[1], 'goal': result[2], 'xp_reward': result[3]}
+            return None
+
+    def set_daily_quest(self, quest_date: str, quest_type: str, description: str, goal: int, xp_reward: int):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("""
+                INSERT OR REPLACE INTO daily_quests (quest_date, quest_type, quest_description, quest_goal, xp_reward)
+                VALUES (?, ?, ?, ?, ?)
+            """, (quest_date, quest_type, description, goal, xp_reward))
+
+    def get_quest_progress(self, quest_date: str, user_id: int) -> Dict:
+        with sqlite3.connect(self.db_path) as conn:
+            result = conn.execute(
+                "SELECT progress, completed FROM user_quest_progress WHERE quest_date = ? AND user_id = ?",
+                (quest_date, user_id)
+            ).fetchone()
+            if result:
+                return {'progress': result[0], 'completed': bool(result[1])}
+            return {'progress': 0, 'completed': False}
+
+    def update_quest_progress(self, quest_date: str, user_id: int, new_progress: int):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("""
+                INSERT INTO user_quest_progress (quest_date, user_id, progress)
+                VALUES (?, ?, ?)
+                ON CONFLICT(quest_date, user_id) DO UPDATE SET progress = ?
+            """, (quest_date, user_id, new_progress, new_progress))
+
+    def complete_quest_for_user(self, quest_date: str, user_id: int):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("""
+                INSERT INTO user_quest_progress (quest_date, user_id, completed, completed_at)
+                VALUES (?, ?, 1, CURRENT_TIMESTAMP)
+                ON CONFLICT(quest_date, user_id) DO UPDATE SET completed = 1, completed_at = CURRENT_TIMESTAMP
+            """, (quest_date, user_id))
+
 # Initialize database
-db = SQLiteStorage("xp_bot.db")
+db = SQLiteStorage("DB_PATH")
 
 # Constants
 DAILY_CHECKIN_BASE_XP = 50
@@ -408,6 +486,18 @@ ACTIVE_USER_XP = [100, 75, 50]  # 1st, 2nd, 3rd place
 
 # Level formula
 LEVEL_XP = 100
+
+# Quest pool — (quest_type, description_template, goal, xp_reward)
+# quest_type: "messages" or "streak"
+QUEST_POOL = [
+    ("messages", "Schreib heute {goal} Nachrichten", 10,  50),
+    ("messages", "Schreib heute {goal} Nachrichten", 25, 100),
+    ("messages", "Schreib heute {goal} Nachrichten", 50, 200),
+    ("streak",   "Erreiche einen Check-in Streak von {goal} Tagen", 3, 150),
+    ("streak",   "Erreiche einen Check-in Streak von {goal} Tagen", 5, 200),
+    ("streak",   "Erreiche einen Check-in Streak von {goal} Tagen", 7, 300),
+    ("checkin",  "Check-in heute um deinen Streak zu erhalten", 1,  75),
+]
 
 # Bot and dispatcher setup
 bot = Bot(token=BOT_TOKEN)
@@ -720,7 +810,7 @@ async def get_leaderboard(request):
 async def get_stats(request):
     """API endpoint to get overall bot statistics"""
     try:
-        with sqlite3.connect("xp_bot.db") as conn:
+        with sqlite3.connect("DB_PATH") as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -810,52 +900,51 @@ def get_user_streak(user_id: int) -> int:
 
 def process_daily_checkin(user: types.User) -> Dict:
     """Process daily check-in and return reward details"""
-    
     user_id = user.id
-
-    # 🔧 WICHTIGER FIX:
-    # Stelle sicher, dass der User sofort in der DB existiert
-    db.update_user_profile(user.id, user.username or '', user.first_name or '')
-
     today_key = get_today_key()
     
     # Check if already checked in today
     if not can_check_in_today(user_id):
         return {'success': False, 'message': 'You have already checked in today!'}
-
+    
     # Get current streak
     current_streak = get_user_streak(user_id)
     user_profile = db.get_user_profile(user_id)
     last_checkin_date = user_profile[4] if user_profile else None
-
+    
     # Check streak continuity
     if last_checkin_date:
         last_date = datetime.strptime(last_checkin_date, '%Y-%m-%d').date()
         today_date = datetime.now(timezone.utc).date()
         yesterday = today_date - timedelta(days=1)
-
+        
         if last_date == yesterday:
+            # Streak continues
             new_streak = current_streak + 1
         elif last_date == today_date:
+            # Already checked in today
             return {'success': False, 'message': 'You have already checked in today!'}
         else:
+            # Streak broken
             new_streak = 1
     else:
+        # First check-in
         new_streak = 1
-
+    
     # Calculate XP reward
     streak_bonus = min(new_streak * 10, MAX_STREAK_BONUS)
     total_xp = DAILY_CHECKIN_BASE_XP + streak_bonus
-
+    
     # Weekly bonus
     weekly_bonus = 0
-    if new_streak % 7 == 0:
+    if new_streak % 7 == 0:  # Every 7 days
         weekly_bonus = WEEKLY_STREAK_BONUS
         total_xp += weekly_bonus
-
+    
     # Update records
     db.update_streak_and_checkin(user_id, new_streak, today_key, total_xp)
-
+    db.update_user_profile(user.id, user.username or '', user.first_name or '')
+    
     return {
         'success': True,
         'xp': total_xp,
@@ -863,7 +952,7 @@ def process_daily_checkin(user: types.User) -> Dict:
         'base_xp': DAILY_CHECKIN_BASE_XP,
         'streak_bonus': streak_bonus,
         'weekly_bonus': weekly_bonus,
-        'message': '✅ Daily check-in successful!'
+        'message': f'✅ Daily check-in successful!'
     }
 
 # Most Active User System
@@ -877,7 +966,7 @@ async def award_most_active_users():
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Get all unique chat IDs from yesterday's activity
-    with sqlite3.connect("xp_bot.db") as conn:
+    with sqlite3.connect("DB_PATH") as conn:
         chat_ids = conn.execute(
             "SELECT DISTINCT chat_id FROM daily_activity WHERE date = ?", (yesterday,)
         ).fetchall()
@@ -971,8 +1060,134 @@ def update_github_weekly_winners(week_start_date: str, winners_data: List[Dict])
         logger.error(f"❌ Weekly winners GitHub sync error: {e}")
         return False
         
+# =====================================================================
+# QUEST SYSTEM
+# =====================================================================
+import random
+
+def pick_and_save_daily_quest(today: str) -> Dict:
+    """Wählt zufällig eine Quest aus dem Pool und speichert sie"""
+    quest_type, description_template, goal, xp_reward = random.choice(QUEST_POOL)
+    description = description_template.format(goal=goal)
+    db.set_daily_quest(today, quest_type, description, goal, xp_reward)
+    return {'quest_type': quest_type, 'description': description, 'goal': goal, 'xp_reward': xp_reward}
+
+def get_or_create_daily_quest(today: str) -> Dict:
+    """Holt die heutige Quest oder erstellt eine neue"""
+    quest = db.get_active_quest(today)
+    if not quest:
+        quest = pick_and_save_daily_quest(today)
+    return quest
+
+async def check_quest_progress_messages(user: types.User, today: str):
+    """Wird nach jeder Nachricht aufgerufen — prüft message-basierte Quests"""
+    quest = get_or_create_daily_quest(today)
+    if quest['quest_type'] != 'messages':
+        return
+
+    user_progress = db.get_quest_progress(today, user.id)
+    if user_progress['completed']:
+        return
+
+    # Aktuellen Message-Count aus daily_activity holen
+    with sqlite3.connect(db.db_path) as conn:
+        result = conn.execute(
+            "SELECT message_count FROM daily_activity WHERE date = ? AND user_id = ? AND chat_id = ?",
+            (today, user.id, ALLOWED_GROUP_ID)
+        ).fetchone()
+        msg_count = result[0] if result else 0
+
+    db.update_quest_progress(today, user.id, msg_count)
+
+    # Quest abgeschlossen?
+    if msg_count >= quest['goal']:
+        db.complete_quest_for_user(today, user.id)
+        db.award_xp(user.id, quest['xp_reward'])
+        display_name = f"@{user.username}" if user.username else user.first_name
+        if ALLOWED_GROUP_ID:
+            try:
+                await bot.send_message(
+                    ALLOWED_GROUP_ID,
+                    f"✅ {display_name} hat die heutige Quest abgeschlossen!\n"
+                    f"🎯 {quest['description']}\n"
+                    f"🎉 +{quest['xp_reward']} XP verdient!"
+                )
+            except Exception as e:
+                logger.error(f"Quest completion announcement failed: {e}")
+
+async def check_quest_progress_checkin(user: types.User, today: str, new_streak: int):
+    """Wird nach einem Check-in aufgerufen — prüft streak/checkin Quests"""
+    quest = get_or_create_daily_quest(today)
+
+    user_progress = db.get_quest_progress(today, user.id)
+    if user_progress['completed']:
+        return
+
+    if quest['quest_type'] == 'checkin':
+        db.update_quest_progress(today, user.id, 1)
+        db.complete_quest_for_user(today, user.id)
+        db.award_xp(user.id, quest['xp_reward'])
+        display_name = f"@{user.username}" if user.username else user.first_name
+        if ALLOWED_GROUP_ID:
+            try:
+                await bot.send_message(
+                    ALLOWED_GROUP_ID,
+                    f"✅ {display_name} hat die heutige Quest abgeschlossen!\n"
+                    f"🎯 {quest['description']}\n"
+                    f"🎉 +{quest['xp_reward']} XP verdient!"
+                )
+            except Exception as e:
+                logger.error(f"Quest completion announcement failed: {e}")
+
+    elif quest['quest_type'] == 'streak':
+        db.update_quest_progress(today, user.id, new_streak)
+        if new_streak >= quest['goal']:
+            user_progress2 = db.get_quest_progress(today, user.id)
+            if not user_progress2['completed']:
+                db.complete_quest_for_user(today, user.id)
+                db.award_xp(user.id, quest['xp_reward'])
+                display_name = f"@{user.username}" if user.username else user.first_name
+                if ALLOWED_GROUP_ID:
+                    try:
+                        await bot.send_message(
+                            ALLOWED_GROUP_ID,
+                            f"✅ {display_name} hat die heutige Quest abgeschlossen!\n"
+                            f"🎯 {quest['description']}\n"
+                            f"🎉 +{quest['xp_reward']} XP verdient!"
+                        )
+                    except Exception as e:
+                        logger.error(f"Quest completion announcement failed: {e}")
+
+async def announce_daily_quest(today: str, force_new: bool = False):
+    """Postet die neue Quest des Tages in die Gruppe und heftet sie an"""
+    if force_new:
+        quest = pick_and_save_daily_quest(today)
+    else:
+        quest = get_or_create_daily_quest(today)
+
+    if ALLOWED_GROUP_ID:
+        try:
+            quest_emoji = "📨" if quest['quest_type'] == 'messages' else "🔥" if quest['quest_type'] == 'streak' else "📅"
+            sent = await bot.send_message(
+                ALLOWED_GROUP_ID,
+                f"🎯 **Quest des Tages!**\n\n"
+                f"{quest_emoji} {quest['description']}\n"
+                f"💰 Belohnung: +{quest['xp_reward']} XP\n\n"
+                f"Tippe /quest um deinen Fortschritt zu sehen!",
+                parse_mode='Markdown'
+            )
+            # Nachricht anheften und Mitglieder benachrichtigen
+            await bot.pin_chat_message(
+                chat_id=ALLOWED_GROUP_ID,
+                message_id=sent.message_id,
+                disable_notification=False  # False = Mitglieder werden benachrichtigt
+            )
+            logger.info(f"Quest announced and pinned: {quest['description']}")
+        except Exception as e:
+            logger.error(f"Quest announcement failed: {e}")
+
 async def daily_reset_task():
-    """Background task to reset daily counters and award most active users"""
+    """Background task to reset daily counters and award most active users — runs at midnight UTC"""
     while True:
         now = datetime.now(timezone.utc)
         next_midnight = (now + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
@@ -986,6 +1201,26 @@ async def daily_reset_task():
             logger.info("Daily most active users awarded successfully")
         except Exception as e:
             logger.error(f"Error in daily reset: {e}")
+
+async def quest_announcement_task():
+    """Background task to post the daily quest at 08:00 UTC"""
+    while True:
+        now = datetime.now(timezone.utc)
+        # Nächstes 08:00 UTC berechnen
+        next_8am = now.replace(hour=8, minute=0, second=0, microsecond=0)
+        if now >= next_8am:
+            next_8am += timedelta(days=1)
+        sleep_seconds = (next_8am - now).total_seconds()
+
+        logger.info(f"Quest announcement scheduled in {sleep_seconds:.0f} seconds (next: {next_8am})")
+        await asyncio.sleep(sleep_seconds)
+
+        try:
+            today = get_today_key()
+            await announce_daily_quest(today, force_new=True)
+            logger.info("Daily quest announced successfully")
+        except Exception as e:
+            logger.error(f"Error in quest announcement task: {e}")
 
 # Role reward system
 def set_role_threshold(chat_id: int, role_name: str, level_threshold: int):
@@ -1454,20 +1689,15 @@ async def process_weekly_reset():
     # Announce winners in the allowed group
     if ALLOWED_GROUP_ID:
         try:
-            html_lines = []
-            for line in announcement_lines:
-                html_lines.append(html.escape(str(line)))
-                
-            announcement = "\n".join(html_lines)
-
+            announcement = '\n'.join(announcement_lines)
             await bot.send_message(
                 ALLOWED_GROUP_ID,
                 announcement,
-                parse_mode="HTML"
+                parse_mode='Markdown'
             )
             logger.info(f"Weekly winners announced in group {ALLOWED_GROUP_ID}")
-        except Exception:
-            logger.exception("Failed to announce weekly winners")
+        except Exception as e:
+            logger.error(f"Failed to announce weekly winners: {e}")
     
     # Reset all XP for new week
     db.reset_weekly_xp()
@@ -1503,10 +1733,12 @@ async def cmd_checkin(message: types.Message):
     
     sent_message = await message.reply(response)
     
+    # Check quest progress for checkin/streak quests
+    if result['success']:
+        await check_quest_progress_checkin(message.from_user, get_today_key(), result['streak'])
+    
     # Delete the command message after responding
     await delete_command_message(message)
-
-@dp.message(Command('streak', 'streaks'))
 async def cmd_streak(message: types.Message):
     """Check current streak"""
     if not await should_process_message(message):
@@ -1565,7 +1797,7 @@ async def cmd_xp(message: types.Message):
     sent_message = await message.reply(response)
     await delete_command_message(message)
 
-@dp.message(Command('top'))
+@dp.message(Command('leaderboard', 'lb', 'top'))
 async def cmd_leaderboard(message: types.Message):
     """Show XP leaderboard"""
     if not await should_process_message(message):
@@ -1692,6 +1924,52 @@ async def cmd_debug(message: types.Message):
     
     await message.reply(debug_info)
 
+@dp.message(Command('quest', 'quests'))
+async def cmd_quest(message: types.Message):
+    """Zeigt die aktuelle Quest und den Fortschritt des Users"""
+    if not await should_process_message(message):
+        return
+
+    today = get_today_key()
+    quest = get_or_create_daily_quest(today)
+    user_progress = db.get_quest_progress(today, message.from_user.id)
+
+    progress = user_progress['progress']
+    completed = user_progress['completed']
+
+    if completed:
+        status = f"✅ Abgeschlossen! +{quest['xp_reward']} XP erhalten"
+        bar = "██████████ 100%"
+    else:
+        pct = min(int((progress / quest['goal']) * 10), 10)
+        bar = "█" * pct + "░" * (10 - pct) + f" {progress}/{quest['goal']}"
+        status = f"⏳ In Bearbeitung..."
+
+    quest_emoji = "📨" if quest['quest_type'] == 'messages' else "🔥" if quest['quest_type'] == 'streak' else "📅"
+
+    base_response = (
+        f"🎯 Quest des Tages:\n\n"
+        f"{quest_emoji} {quest['description']}\n"
+        f"📊 Fortschritt: {bar}\n"
+        f"💰 Belohnung: +{quest['xp_reward']} XP\n"
+        f"📌 Status: {status}"
+    )
+    response = format_response_with_username(message, base_response)
+    await message.reply(response)
+    await delete_command_message(message)
+
+@dp.message(Command('startquest'))
+async def cmd_startquest(message: types.Message):
+    """Manuell die Quest des Tages starten — nur für Admins"""
+    if not await is_user_admin(message.from_user.id):
+        await message.reply("❌ Nur für Admins.")
+        return
+
+    today = get_today_key()
+    await announce_daily_quest(today, force_new=True)
+    await message.reply("✅ Quest gepostet und angepinnt!", )
+    await delete_command_message(message)
+
 @dp.message()
 async def handle_message(message: types.Message):
     """Track messages for most active user competition but don't award XP for commands"""
@@ -1718,6 +1996,9 @@ async def handle_message(message: types.Message):
     
     # Track message for daily activity
     track_daily_message(message.from_user, message.chat.id)
+
+    # Check quest progress for message-based quests
+    await check_quest_progress_messages(message.from_user, get_today_key())
 
 @dp.message(Command('web'))
 async def cmd_web(message: types.Message):
@@ -1908,7 +2189,7 @@ async def cmd_remove_role_threshold(message: types.Message):
 async def show_bot_stats(callback: CallbackQuery):
     """Show bot statistics with proper refresh handling"""
     try:
-        with sqlite3.connect("xp_bot.db") as conn:
+        with sqlite3.connect(DB_PATH) as conn:
             total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
             total_xp = conn.execute("SELECT SUM(xp) FROM users").fetchone()[0] or 0
             avg_xp = conn.execute("SELECT AVG(xp) FROM users").fetchone()[0] or 0
@@ -2059,7 +2340,19 @@ async def on_startup():
     # Start weekly reset task
     asyncio.create_task(weekly_reset_task())
     db.create_weekly_reports_table()
+
+    # Start quest announcement task (fires daily at 08:00 UTC)
+    asyncio.create_task(quest_announcement_task())
     
+    # Ensure today's quest exists silently (no announcement on restart)
+    today = get_today_key()
+    quest = db.get_active_quest(today)
+    if not quest:
+        pick_and_save_daily_quest(today)
+        logger.info("✅ Daily quest created for today (no announcement — use /startquest to post)")
+    else:
+        logger.info(f"✅ Daily quest already exists: {quest['description']}")
+
     # Start GitHub sync
     start_github_sync()
     
@@ -2096,13 +2389,3 @@ async def main():
 if __name__ == '__main__':
     logger.info('Starting Telegram XP Bot with Web Dashboard...')
     asyncio.run(main())
-
-
-
-
-
-
-
-
-
-
