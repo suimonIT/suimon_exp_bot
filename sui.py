@@ -2030,36 +2030,37 @@ async def cmd_questintro(message: types.Message):
 
     intro_text = (
         "⚔️ *Daily Quests have arrived!*\n\n"
-        "Every day a new challenge drops for the community\\. "
-        "Complete it to earn bonus XP on top of your usual grind\\.\n\n"
+        "Every day a new challenge drops for the community. "
+        "Complete it to earn bonus XP on top of your usual grind.\n\n"
         "🌅 *A fresh quest goes live every morning at 8:00 AM*\n"
         "Each quest is different — some will test your activity, "
-        "others your consistency\\. Stay sharp\\.\n\n"
+        "others your consistency. Stay sharp.\n\n"
         "📊 *Difficulty levels:*\n"
         "🟢 Easy — warm up\n"
         "🟡 Medium — step it up\n"
         "🔴 Hard — prove yourself\n"
         "💎 Legendary — only the dedicated\n\n"
-        "📌 Use */quest* to check your daily progress\n"
+        "📌 Use /quest to check your daily progress\n"
         "🏆 Rewards are added to your XP instantly upon completion\n\n"
-        "The grind never stops\\. Are you ready? 👀"
+        "The grind never stops. Are you ready? 👀"
     )
 
+    quest_img = os.path.join(BASE_DIR, "quest.jpg")
     try:
         # Try to send with quest.jpg image
-        photo = types.FSInputFile("quest.jpg")
+        photo = types.FSInputFile(quest_img)
         await bot.send_photo(
             chat_id=message.chat.id,
             photo=photo,
             caption=intro_text,
-            parse_mode='MarkdownV2'
+            parse_mode='Markdown'
         )
     except Exception:
         # Fallback: send as text if image not found
         await bot.send_message(
             chat_id=message.chat.id,
             text=intro_text,
-            parse_mode='MarkdownV2'
+            parse_mode='Markdown'
         )
 
     await delete_command_message(message)
