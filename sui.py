@@ -488,15 +488,25 @@ ACTIVE_USER_XP = [100, 75, 50]  # 1st, 2nd, 3rd place
 LEVEL_XP = 100
 
 # Quest pool — (quest_type, description_template, goal, xp_reward)
-# quest_type: "messages" or "streak"
+# quest_type: "messages" or "streak" or "checkin"
 QUEST_POOL = [
-    ("messages", "Schreib heute {goal} Nachrichten", 10,  50),
-    ("messages", "Schreib heute {goal} Nachrichten", 25, 100),
-    ("messages", "Schreib heute {goal} Nachrichten", 50, 200),
-    ("streak",   "Erreiche einen Check-in Streak von {goal} Tagen", 3, 150),
-    ("streak",   "Erreiche einen Check-in Streak von {goal} Tagen", 5, 200),
-    ("streak",   "Erreiche einen Check-in Streak von {goal} Tagen", 7, 300),
-    ("checkin",  "Check-in heute um deinen Streak zu erhalten", 1,  75),
+    # Easy
+    ("messages", "Send {goal} messages today",              20,   50),
+    ("messages", "Send {goal} messages today",              40,   75),
+    ("checkin",  "Check-in today to maintain your streak",   1,   75),
+    ("streak",   "Reach a check-in streak of {goal} days",   3,  150),
+    # Medium
+    ("messages", "Send {goal} messages today",              75,  100),
+    ("messages", "Send {goal} messages today",             100,  150),
+    ("streak",   "Reach a check-in streak of {goal} days",   5,  200),
+    # Hard
+    ("messages", "Send {goal} messages today",             180,  200),
+    ("messages", "Send {goal} messages today",             220,  300),
+    ("streak",   "Reach a check-in streak of {goal} days",   7,  300),
+    # Legendary
+    ("messages", "Send {goal} messages today",             240,  500),
+    ("messages", "Send {goal} messages today",             260,  600),
+    ("streak",   "Reach a check-in streak of {goal} days",  14,  500),
 ]
 
 # Bot and dispatcher setup
@@ -1099,7 +1109,7 @@ async def check_quest_progress_messages(user: types.User, today: str):
 
     db.update_quest_progress(today, user.id, msg_count)
 
-    # Quest abgeschlossen?
+    # Quest completed?
     if msg_count >= quest['goal']:
         db.complete_quest_for_user(today, user.id)
         db.award_xp(user.id, quest['xp_reward'])
@@ -1108,9 +1118,9 @@ async def check_quest_progress_messages(user: types.User, today: str):
             try:
                 await bot.send_message(
                     ALLOWED_GROUP_ID,
-                    f"✅ {display_name} hat die heutige Quest abgeschlossen!\n"
+                    f"✅ {display_name} completed today's quest!\n"
                     f"🎯 {quest['description']}\n"
-                    f"🎉 +{quest['xp_reward']} XP verdient!"
+                    f"🎉 +{quest['xp_reward']} XP earned!"
                 )
             except Exception as e:
                 logger.error(f"Quest completion announcement failed: {e}")
@@ -1132,9 +1142,9 @@ async def check_quest_progress_checkin(user: types.User, today: str, new_streak:
             try:
                 await bot.send_message(
                     ALLOWED_GROUP_ID,
-                    f"✅ {display_name} hat die heutige Quest abgeschlossen!\n"
+                    f"✅ {display_name} completed today's quest!\n"
                     f"🎯 {quest['description']}\n"
-                    f"🎉 +{quest['xp_reward']} XP verdient!"
+                    f"🎉 +{quest['xp_reward']} XP earned!"
                 )
             except Exception as e:
                 logger.error(f"Quest completion announcement failed: {e}")
@@ -1151,15 +1161,15 @@ async def check_quest_progress_checkin(user: types.User, today: str, new_streak:
                     try:
                         await bot.send_message(
                             ALLOWED_GROUP_ID,
-                            f"✅ {display_name} hat die heutige Quest abgeschlossen!\n"
+                            f"✅ {display_name} completed today's quest!\n"
                             f"🎯 {quest['description']}\n"
-                            f"🎉 +{quest['xp_reward']} XP verdient!"
+                            f"🎉 +{quest['xp_reward']} XP earned!"
                         )
                     except Exception as e:
                         logger.error(f"Quest completion announcement failed: {e}")
 
 async def announce_daily_quest(today: str, force_new: bool = False):
-    """Postet die neue Quest des Tages in die Gruppe und heftet sie an"""
+    """Post the daily quest in the group and pin it"""
     if force_new:
         quest = pick_and_save_daily_quest(today)
     else:
@@ -1170,17 +1180,17 @@ async def announce_daily_quest(today: str, force_new: bool = False):
             quest_emoji = "📨" if quest['quest_type'] == 'messages' else "🔥" if quest['quest_type'] == 'streak' else "📅"
             sent = await bot.send_message(
                 ALLOWED_GROUP_ID,
-                f"🎯 **Quest des Tages!**\n\n"
+                f"🎯 **Daily Quest!**\n\n"
                 f"{quest_emoji} {quest['description']}\n"
-                f"💰 Belohnung: +{quest['xp_reward']} XP\n\n"
-                f"Tippe /quest um deinen Fortschritt zu sehen!",
+                f"💰 Reward: +{quest['xp_reward']} XP\n\n"
+                f"Type /quest to check your progress!",
                 parse_mode='Markdown'
             )
-            # Nachricht anheften und Mitglieder benachrichtigen
+            # Pin message and notify members
             await bot.pin_chat_message(
                 chat_id=ALLOWED_GROUP_ID,
                 message_id=sent.message_id,
-                disable_notification=False  # False = Mitglieder werden benachrichtigt
+                disable_notification=False
             )
             logger.info(f"Quest announced and pinned: {quest['description']}")
         except Exception as e:
@@ -1206,7 +1216,7 @@ async def quest_announcement_task():
     """Background task to post the daily quest at 08:00 UTC"""
     while True:
         now = datetime.now(timezone.utc)
-        # Nächstes 08:00 UTC berechnen
+        # Calculate next 08:00 UTC
         next_8am = now.replace(hour=8, minute=0, second=0, microsecond=0)
         if now >= next_8am:
             next_8am += timedelta(days=1)
@@ -1926,7 +1936,7 @@ async def cmd_debug(message: types.Message):
 
 @dp.message(Command('quest', 'quests'))
 async def cmd_quest(message: types.Message):
-    """Zeigt die aktuelle Quest und den Fortschritt des Users"""
+    """Show current quest and user progress"""
     if not await should_process_message(message):
         return
 
@@ -1938,36 +1948,79 @@ async def cmd_quest(message: types.Message):
     completed = user_progress['completed']
 
     if completed:
-        status = f"✅ Abgeschlossen! +{quest['xp_reward']} XP erhalten"
+        status = f"✅ Completed! +{quest['xp_reward']} XP earned"
         bar = "██████████ 100%"
     else:
         pct = min(int((progress / quest['goal']) * 10), 10)
         bar = "█" * pct + "░" * (10 - pct) + f" {progress}/{quest['goal']}"
-        status = f"⏳ In Bearbeitung..."
+        status = "⏳ In progress..."
 
     quest_emoji = "📨" if quest['quest_type'] == 'messages' else "🔥" if quest['quest_type'] == 'streak' else "📅"
 
     base_response = (
-        f"🎯 Quest des Tages:\n\n"
+        f"🎯 Daily Quest:\n\n"
         f"{quest_emoji} {quest['description']}\n"
-        f"📊 Fortschritt: {bar}\n"
-        f"💰 Belohnung: +{quest['xp_reward']} XP\n"
+        f"📊 Progress: {bar}\n"
+        f"💰 Reward: +{quest['xp_reward']} XP\n"
         f"📌 Status: {status}"
     )
     response = format_response_with_username(message, base_response)
     await message.reply(response)
     await delete_command_message(message)
 
+@dp.message(Command('questintro'))
+async def cmd_questintro(message: types.Message):
+    """Post quest introduction with image — admin only"""
+    if not await is_user_admin(message.from_user.id):
+        await message.reply("❌ This command is only available for bot admins.")
+        return
+
+    intro_text = (
+        "⚔️ *Daily Quests have arrived!*\n\n"
+        "Every day a new challenge drops for the community\\. "
+        "Complete it to earn bonus XP on top of your usual grind\\.\n\n"
+        "🌅 *A fresh quest goes live every morning at 8:00 AM*\n"
+        "Each quest is different — some will test your activity, "
+        "others your consistency\\. Stay sharp\\.\n\n"
+        "📊 *Difficulty levels:*\n"
+        "🟢 Easy — warm up\n"
+        "🟡 Medium — step it up\n"
+        "🔴 Hard — prove yourself\n"
+        "💎 Legendary — only the dedicated\n\n"
+        "📌 Use */quest* to check your daily progress\n"
+        "🏆 Rewards are added to your XP instantly upon completion\n\n"
+        "The grind never stops\\. Are you ready? 👀"
+    )
+
+    try:
+        # Try to send with quest.jpg image
+        photo = types.FSInputFile("quest.jpg")
+        await bot.send_photo(
+            chat_id=message.chat.id,
+            photo=photo,
+            caption=intro_text,
+            parse_mode='MarkdownV2'
+        )
+    except Exception:
+        # Fallback: send as text if image not found
+        await bot.send_message(
+            chat_id=message.chat.id,
+            text=intro_text,
+            parse_mode='MarkdownV2'
+        )
+
+    await delete_command_message(message)
+
 @dp.message(Command('startquest'))
 async def cmd_startquest(message: types.Message):
-    """Manuell die Quest des Tages starten — nur für Admins"""
+    """Manually post today's quest — admin only"""
     if not await is_user_admin(message.from_user.id):
-        await message.reply("❌ Nur für Admins.")
+        await message.reply("❌ This command is only available for bot admins.")
         return
 
     today = get_today_key()
     await announce_daily_quest(today, force_new=True)
-    await message.reply("✅ Quest gepostet und angepinnt!", )
+    await message.reply("✅ Quest posted and pinned!")
     await delete_command_message(message)
 
 @dp.message()
