@@ -26,7 +26,7 @@
       "rank": 4,
       "user_id": 7508825532,
       "username": "@Rabii87",
-      "xp": 1279,
+      "xp": 1280,
       "level": 12
     },
     {
@@ -40,7 +40,7 @@
       "rank": 6,
       "user_id": 6274470012,
       "username": "@levo100",
-      "xp": 852,
+      "xp": 855,
       "level": 8
     },
     {
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-10T07:58:26.657098",
+  "last_updated": "2026-04-10T08:00:27.640933",
   "total_users": 20
 }
