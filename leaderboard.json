@@ -17,17 +17,17 @@
     },
     {
       "rank": 3,
+      "user_id": 7105730933,
+      "username": "@abiclighter",
+      "xp": 1295,
+      "level": 12
+    },
+    {
+      "rank": 4,
       "user_id": 7508825532,
       "username": "@Rabii87",
       "xp": 1182,
       "level": 11
-    },
-    {
-      "rank": 4,
-      "user_id": 7105730933,
-      "username": "@abiclighter",
-      "xp": 995,
-      "level": 9
     },
     {
       "rank": 5,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-10T00:12:35.870091",
+  "last_updated": "2026-04-10T00:14:36.973257",
   "total_users": 20
 }
