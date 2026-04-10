@@ -162,7 +162,7 @@ class SQLiteStorage:
                     quest_date TEXT,
                     user_id INTEGER,
                     progress INTEGER DEFAULT 0,
-                    baseline INTEGER DEFAULT 0,
+                    baseline INTEGER DEFAULT -1,
                     completed INTEGER DEFAULT 0,
                     completed_at TIMESTAMP,
                     PRIMARY KEY (quest_date, user_id)
@@ -176,7 +176,7 @@ class SQLiteStorage:
 
             existing_progress_cols = [row[1] for row in conn.execute("PRAGMA table_info(user_quest_progress)").fetchall()]
             if 'baseline' not in existing_progress_cols:
-                conn.execute("ALTER TABLE user_quest_progress ADD COLUMN baseline INTEGER DEFAULT 0")
+                conn.execute("ALTER TABLE user_quest_progress ADD COLUMN baseline INTEGER DEFAULT -1")
 
             # Create indexes for better performance
             conn.execute("CREATE INDEX IF NOT EXISTS idx_users_xp ON users(xp DESC)")
@@ -476,6 +476,15 @@ class SQLiteStorage:
             if result:
                 return {'progress': result[0], 'baseline': result[1], 'completed': bool(result[2])}
             return {'progress': 0, 'baseline': -1, 'completed': False}
+
+    def get_next_quest_index(self) -> int:
+        """Get current quest index and increment for next time"""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("CREATE TABLE IF NOT EXISTS quest_state (key TEXT PRIMARY KEY, value INTEGER DEFAULT 0)")
+            result = conn.execute("SELECT value FROM quest_state WHERE key = 'quest_index'").fetchone()
+            current = result[0] if result else 0
+            conn.execute("INSERT OR REPLACE INTO quest_state (key, value) VALUES ('quest_index', ?)", (current + 1,))
+            return current
 
     def set_quest_baseline(self, quest_date: str, user_id: int, baseline: int):
         """Set the message count baseline when user first interacts after quest start"""
@@ -1103,8 +1112,9 @@ def update_github_weekly_winners(week_start_date: str, winners_data: List[Dict])
 import random
 
 def pick_and_save_daily_quest(today: str) -> Dict:
-    """Randomly picks a quest from the pool and saves it"""
-    quest_type, description_template, goal, xp_reward = random.choice(QUEST_POOL)
+    """Picks the next quest in the cycle (Easy → Medium → Hard → Legendary → repeat)"""
+    index = db.get_next_quest_index() % len(QUEST_POOL)
+    quest_type, description_template, goal, xp_reward = QUEST_POOL[index]
     description = description_template.format(goal=goal)
     db.set_daily_quest(today, quest_type, description, goal, xp_reward)
     return {'quest_type': quest_type, 'description': description, 'goal': goal, 'xp_reward': xp_reward}
@@ -1176,8 +1186,16 @@ async def check_quest_progress_checkin(user: types.User, today: str, new_streak:
         await _announce_quest_completion(user, quest)
 
     elif quest['quest_type'] == 'streak':
-        db.update_quest_progress(today, user.id, new_streak)
-        if new_streak >= quest['goal']:
+        # Set baseline on first checkin after quest start
+        if user_progress['baseline'] == -1:
+            db.set_quest_baseline(today, user.id, new_streak - 1)
+            user_progress = db.get_quest_progress(today, user.id)
+
+        # Progress = streak days gained SINCE quest started
+        progress = max(0, new_streak - user_progress['baseline'])
+        db.update_quest_progress(today, user.id, progress)
+
+        if progress >= quest['goal']:
             user_progress2 = db.get_quest_progress(today, user.id)
             if not user_progress2['completed']:
                 db.complete_quest_for_user(today, user.id)
