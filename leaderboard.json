@@ -89,8 +89,8 @@
       "rank": 13,
       "user_id": 7225852894,
       "username": "@shadowx680",
-      "xp": 280,
-      "level": 2
+      "xp": 370,
+      "level": 3
     },
     {
       "rank": 14,
@@ -142,6 +142,6 @@
       "level": 0
     }
   ],
-  "last_updated": "2026-04-10T01:13:07.192920",
+  "last_updated": "2026-04-10T01:15:08.268214",
   "total_users": 20
 }
